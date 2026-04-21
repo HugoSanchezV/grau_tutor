@@ -2,10 +2,11 @@ streamlit
 langchain
 langchain-anthropic
 langchain-openai
-langchain-groq
 langgraph
 chromadb
 python-chess
 pydantic-settings
+pydantic>=2.0
 python-dotenv
+openai
 pandas

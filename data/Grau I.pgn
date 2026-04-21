@@ -1,0 +1,3484 @@
+﻿[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Diagrama 49"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r3q2k/4p3/8/4N3/8/R7/P7/3RK3 w - - 0 1"]
+[PlyCount "4"]
+
+1. Rxa8 Qxa8 2. Rd8+ Qxd8 {Estamos en la posición anterior. Ahora el blanco
+juega Cf7+. Esto, aunque sencillo, es ya visión mediata del juego.} *
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Diagrama 50"]
+[Black "?"]
+[Result "*"]
+[SetUp "1"]
+[FEN "1r2k1r1/pbppnp1p/1bn2P2/7q/Q7/B1PB1N2/P4PPP/R3R1K1 w - - 0 1"]
+[PlyCount "11"]
+
+{Aquí el negro tiene una pieza más y habiendo puesto su torre en g8 amenaza
+comer el caballo con la dama. A pesar de eso, el blanco, con una profunda
+visión mediata del juego, responde:} 1. Rad1 $1 Qxf3 2. Rxe7+ Nxe7 3. Qxd7+ $1
+Kxd7 4. Bf5+ Ke8 5. Bd7+ Kf8 6. Bxe7# *
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Adversario, 1."]
+[Black "Nosotros, 1."]
+[Result "0-1"]
+[ECO "A00"]
+[Annotator "R. Grau"]
+[PlyCount "4"]
+
+1. g4 {Nuestro adversario ha abierto el juego. ¿Qué intenta? Obsérvese el
+juego. La única alteración que presenta es que en la jugada siguiente podrá
+mover g5 o Ag2 o Ah3. Y ninguna de esas jugadas es peligrosa (obsérvese).
+Nuestro contrario no ataca; tampoco ha hecho una jugada de defensa. No vemos
+que sea un error. Estamos, pues, ante una jugada neutra. Contestamos:} e5 {
+Con ella podemos jugar ..., e4 o mover el alfil o la dama, según convenga, en
+su oportunidad.} 2. f3 {¿Qué amenaza? Nada inmediato. No es una jugada de
+ataque ni de defensa, ya que nosotros no atacamos nada. Es una jugada neutra o
+un error. Observemos el juego. A poco que lo hagamos veremos que con..., Dh4
+damos jaque, y observando qué puede contestarnos, veremos que es jaque mate.
+La jugada f3 es, pues, un error. Aprovechando ese error, contestamos, pues:}
+Qh4# {Hemos ganado nuestra primera partida. ¿CuáI ha sido el factor de nuestro
+triunfo? Sencillamente, que hemos observado cuidadosamente el juego de nuestro
+rival. Con esto se dice que ante una jugada de nuestro contrario lo esencial
+es saber lo que intenta para según ello contestar.} 0-1
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Nosotros, 2."]
+[Black "Adversario, 2."]
+[Result "1-0"]
+[ECO "C23"]
+[Annotator "R. Grau"]
+[PlyCount "7"]
+
+1. e4 {Queremos dar juego al alfil y la dama.} e5 {¿Qué intenta? Evidentemente,
+lo mismo que nosotros. No es jugada de ataque ni de defensa; observando vemos
+que no es tampoco un error; es una jugada neutra. Estamos, pues, en libertad
+de jugar, atacando o preparando un ataque.} 2. Bc4 {Ponemos el alfil en juego
+y atacamos un peón, el de f7, si bien es cierto que está defendido con el rey.}
+Bc5 {¿Qué intenta? Lo mismo que nosotros. El peón está defendido con el rey y
+nuestro ataque es, pues, más fuerte, pues le llevamos una jugada de ventaja.
+Es, pues, prácticamente, una jugada neutra. Debemos atacar o preparar un
+ataque. ¿Qué hacemos? Pensamos que si atacáramos el punto f7 con otra pieza,
+podríamos comernos el peón con jaque. ¿Cómo hacerlo? Tenemos Df3 o Dh5; con
+ambas amenazamos comer el peón con la Dama y dar mate. Jugamos, pues:} 3. Qf3
+d6 {Esto es un error. Nuestra jugada era de ataque y el negro se debió haber
+defendido. No lo ha hecho y pierde. Jugamos pues:} 4. Qxf7# {Nuevamente hemos
+ganado. Nuestro adversario está cometiendo un grave error. Juega sin pensar
+cuáles son nuestras intenciones. Ni siquiera se fija en las consecuencias de
+sus jugadas. Tenemos, pues, que no hay que efectuar jugada alguna sin haber
+pensado bien cuáles son las ideas o flnes que persigue el contrario. Ante
+cualquier jugada la primera pregunta debe ser simple: ¿Qué intenta nuestro
+contrario?} 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Adversario, 3."]
+[Black "Nosotros, 3."]
+[Result "0-1"]
+[ECO "A02"]
+[Annotator "R. Grau"]
+[PlyCount "6"]
+
+1. f4 {¿Qué intenta? Lo único es no permitirnos jugar ..., e5, pues si ahora
+jugásemos ..., e5, contestaría fxe5. Pero a nuestra vez -observamos- podríamos
+jugar ..., Dh4+, a lo que debe replicar necesariamente g3, y entonces, jugando
+..., De4, le atacamos la torre y el peón y comemos uno de los dos. Nos agrada
+atacar y jugamos:} e5 2. g3 {Eso nos sorprende. Esperábamos fxe5.
+Evidentemente temió ..., Dh4+ y ha preferido defender su peón de "f". La
+jugada es de defensa. Tenemos libertad de jugar. Observamos el juego. ¿Es de
+defensa su jugada? Defiende f4 y defIende el jaque de h4. Esto nos da una idea.
+Si tomamos el peón, no puede contestarnos con gxf4 a causa de ..., Dh4++.
+Luego su jugada es un error. Contestamos aprovechándonos:} exf4 3. gxf4 Qh4# {
+Otra vez nuestro adversario no piensa en las consecuencias de sus jugadas A su
+costa hemos aprendido lo caro que cuesta el error de no prestar atención a las
+consecuencias de nuestras jugadas y a no observar el juego contrario.} 0-1
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Nosotros, 4."]
+[Black "Adversario, 4."]
+[Result "1-0"]
+[ECO "C23"]
+[Annotator "R. Grau"]
+[PlyCount "7"]
+
+1. e4 e5 {Esta jugada es neutra, según ya vimos.} 2. Bc4 Bc5 {Ataca f7, pero
+es i ndiferente según vimos. Yo debo atacar, e insisto en el mate de mi
+partida 2" ; pero, para cambiar, juego:} 3. Qh5 Nf6 {Ataca mi dama, pero no
+defiende el mate. Juego, pues} 4. Qxf7# {Otra vez más tenemos la misma
+enseñanza. Hay que pensar ante todo qué es lo que intenta el adversario. Si no
+se hace así es mejor no jugar al ajedrez, pues en cada jugada estaremos
+expuestos a recibir un mate.} 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Nosotros, 5."]
+[Black "Adversario, 5."]
+[Result "1-0"]
+[ECO "C23"]
+[Annotator "R. Grau"]
+[PlyCount "11"]
+
+1. e4 e5 {Ya sabemos que esta jugada no amenaza nada directo. La hemos
+catalogado como neutra y nos juzgamos, por ende, en libertad de elegir
+continuación. Recordamos nuestros éxitos anteriores y contestamos:} 2. Bc4 Bc5
+{También esta jugada está catalogada como neutra. Pensamos lo siguiente: Con 3.
+Df3 amenazamos mate (Dxf7). Es una jugada de ataque. El negro deberá
+defenderse. ¿Cómo puede hacerlo? 3. ..., d5 obstruye la acción del alfil. Pero
+nosotros podemos replicar Axd5; luego ..., d5 no es defensa: es un error. 3. ..
+., De7: esa jugada defiende el mate; pero como es puramente defensiva nos deja
+en libertad de jugar. Podríamos elegir cualquier jugada para proseguir el
+ataque; ejemplo: Cc3, para llevarlo a d5; o d3 para sacar el AD, u otra.
+Podría contestar también 3. ..., Df6: de ésta razonamos más o menos como de la
+anterior y lo mismo de 3. ... , f6 y ..., Ch6. 3. ..., f5 nos parece por lo
+contrario, mala por 4. exf5. En resumen, que contra ..., Df3 no vemos réplica
+peligrosa y por lo tanto nos decidimos a jugarla. (Notemos aquí la reducción
+del análIisis. El negro puede efectuar aquí 33 movidas y nosotros sólo
+consideramos siete.} 3. Qf3 Nh6 {Observamos que nuestro adversario ha
+progresado. Esta vez ha pensado en cuáles eran nuestros planes y defiende el
+peón de f7. Su jugada es defensiva. Estamos, pues, nuevamente en libertad de
+elegir jugada. Queremos insistir en el ataque. Para ello debemos llevar una
+pieza al ataque del punto f7, o bien, eliminar el caballo de h6. El primer
+plan no es fácil. No vemos cómo llevar una pieza pronto al lugar requerido.
+Más fácil parece atacar el caballo avanzando el peón dama. Pero, ¿dónde
+conviene adelantarlo?, ¿a d3 o d4? Inmediatamente vemos que si lo avanzamos a
+d4 atacamos el alfil enemigo. ¿Qué puede contestar a esto nuestro adversario?
+Aquí entra el segundo punto del razonamiento: si retira el alfil comemos el
+caballo amenazado, y si retira el caballo, damos mate inmediatamente. Si
+defiende el caballo y el mate mediante ..., Df6 ganamos el alfil. Contra d4
+nuestro adversario tiene dos órdenes de respuesta: con una ganamos el caballo,
+con la otra ganamos el alfil. Jugamos:} 4. d4 Bxd4 5. Bxh6 gxh6 {Evidentemente,
+nuestro contrincante ha vuelto a no fijarse en nuestras amenazas y se deja dar
+mate.} 6. Qxf7# 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Nosotros, 6."]
+[Black "Adversario, 6."]
+[Result "1-0"]
+[ECO "C41"]
+[Annotator "R. Grau"]
+[PlyCount "13"]
+
+1. e4 e5 2. Bc4 d6 {Esta jugada no ataca nada. Es una jugada neutra. Estamos
+en libertad de jugar.} 3. Nf3 {Procediendo al análisis de la posición, vemos
+que a esta jugada el negro tiene varias respuestas; pero ninguna de ellas
+puede afectar seriamente el juego blanco. Contra todas hay paradas
+convenientes.} g6 {¿Qué intenta? Evidentemente el negro quiere enrocarse, y
+como debido a su segunda jugada el alfil no puede salir hacia el ala de la
+dama, pretende llevarlo a g7 y después de ..., Cf6 seguir con ..., 0-0. El
+negro juega disponiendo sus piezas para e! futuro. La jugada no ataca, la
+juzgamos neutra y estamos en libertad de jugar. ¿Qué podemos hacer? Lo mejor
+debe ser llevar una pieza más al juego. Pensamos en d3 o d4 o en Cc3. Tras un
+ligero análisis, todas se muestran factibles. Elegimos, pues:} 4. Nc3 Bg4 {
+El negro ha jugado ..., Ag4. Trata de clavar el caballo, que en adelante no
+podrá ser movido sin perder la dama. La jugada adversaria nos parece muy
+incómoda, pues priva de agilidad a nuestras piezas. ¿Qué podemos replicar?
+Primeramente aparece 5. h3 para agredir al incómodo alfil, que debería
+retirarse. Segundo 5. d3, desarrollando el juego y poniendo en acción el alfil
+dama. Pensamos también que acaso podríamos jugar 5. Cxe5, y si contesta 5. ...,
+dxe5 tendríamos 6. Dxg4, con lo que ganaríamos un peón. Concentramos en esta
+variante nuestra arención. Supongamos que hemos jugado 5. Cxe5. Eviden remente,
+si ..., dxe5; 6. Dxg4 y a Cf6, retiro mi dama, habiendo ganado el peón; de
+paso observo que mi dama tiene buenas agresivas casillas donde ubicarse. Pero
+a 5. Cxe5 puede contestar ..., Axd1 y hemos perdido la dama. Ciertamente hemos
+perdido la dama, pero hemos vulnerado la casilla f7 del contrario y sabemos ya
+que eso suele darnos el triunfo. Analicemos, pues; 5. Cxe5 Axd1, 6. Axf7+ Re7.
+El rey enemigo tiene esta sola casilla para moverse. ¿Qué podemos hacer? Entre
+las primeras jugadas aparece Cd5+. ¿Qué puede contestar? El rey negro no puede
+tomar el alfil que está defendido y todas las casillas donde podría ir están
+vulneradas; con Cd5 damos mate. Luego, con Cxe5 nos aseguramos buenas
+perspectivas. Jugamos, pues:} 5. Nxe5 Bxd1 {Nuestro adversario, que no analiza,
+por lo visto, el juego, escoge lo peor.} 6. Bxf7+ Ke7 7. Nd5# 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Nosotros, 7."]
+[Black "Adversario, 7."]
+[Result "1-0"]
+[ECO "B00"]
+[Annotator "R. Grau"]
+[PlyCount "15"]
+
+1. e4 h6 {¿Qué intenta? Evidentemente esta jugada no amplía el número de
+posibilidades del juego negro. No la tomamos, por lo tanto, mayormente en
+cuenta, y jugamos:} 2. Nf3 a6 {Opinamos lo mismo que de la jugada anterior.
+Nuestro adversario está jugando sin plan. Efectúa jugadas anodinas:} 3. Bc4 b5
+{Ahora sí, nos ataca nuestro alfil, y es menester prestar atención. El alfil
+debe retirarse y, de hacerlo, conviene -así nos parece- llevarlo a b3, para
+persistir en el ataque del peón f7, ataque tan promisorio, según lo confirman
+nuestras experiencias anteriores. Ese peón es muy débil, y sabemos por las
+anteriores partidas que de su captura resultan bonitas combinaciones.} (3... b5
+{Consideramos, pues, ante todo, esa captura:} 4. Bxf7+ {la respuesta única
+sería} Kxf7 {El ataque podría seguirse con} 5. Ne5+ {acercando el caballo y
+dando juego a la dama. Si contestase} Ke8 {seguiría} 6. Qh5+ g6 {única} 7.
+Qxg6# {Pero el rey no tiene por qué ir a e8. Puede ir a e6 y a f6. Tomemos e6:}
+) (3... b5 4. Bxf7+ Kxf7 5. Ne5+ {Tomemos e6:} Ke6 {¿Qué podremos contestar?
+Entre nuestras jugadas se destaca en seguida} 6. Qg4+ {y a} Kxe5 ({si} 6... Kf6
+7. Qf5#) ({si} 6... Kd6 7. Nf7+ {ganamos la dama y tenemos grandes chances de
+dar mate, pues el caballo, de d8, quita la huida del rey por c6 y b7.}) 7. Qf5+
+{y 8. Dd5++. Tenemos, pues, íntegra una segunda variante ganadora. Queda aún
+la tercera (6. ..., Rf6).}) (3... b5 4. Bxf7+ Kxf7 5. Ne5+ {Tercera variante:}
+Kf6 {Vemos de inmediato que, con} 6. Qf3+ {si} Kg5 ({si} 6... Kxe5 {y estamos
+en la variante anterior} 7. Qf5+) ({si} 6... Ke6 {estamos también en la
+variante anterior.}) 7. h4# {Quiere decir esto que tenemos la partida ganada.})
+{Jugamos:} 4. Bxf7+ Kxf7 {(única)} 5. Ne5+ Ke6 {(prevista)} 6. Qg4+ Kxe5 {
+(prevista)} 7. Qf5+ Kd6 {(prevista)} 8. Qd5# 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Nosotros, 8."]
+[Black "Adversario, 8."]
+[Result "1-0"]
+[ECO "C37"]
+[Annotator "R. Grau"]
+[PlyCount "17"]
+
+1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 {Atacando el célebre punto f7.} f6 {
+Con su jugada ..., f6, el contrario se descubre demasiado. Las experiencias
+anteriores nos hacen presentir que en esta posición debe haber algo. Pensamos
+que con Cxg5 amenazamos una vez más el punto f7 y a la vez amenazamos Dh5+. Es
+una amenaza doble y debe, por ello, ser estudiada. En primer lugar, veamos si
+a 5. Cxg5 contesta ..., fxg5 aceptando la pieza.} (4... f6 {Tenemos} 5. Nxg5
+fxg5 6. Qh5+ Ke7 {(única). Aquí tenemos dos variantes que nos atraen: 7. Df7+
+y 7. Dxg5+. Supongamos:} 7. Qf7+ Kd6 {(única)} 8. Qd5+ Ke7 {(única)} 9. Qe5#) {
+Luego, a 5. Cxg5, debe defender el mate visto, evitando el jaque de dama; debe
+jugar ..., h5, o ..., d6, etcétera, pero en estos casos podríamos llevar el
+caballo a f7, y habríamos ganado un peón, prosiguiendo el ataque. Nuestro
+juego es rico en posibilidades. Jugamos pues:} 5. Nxg5 fxg5 {Nuestro
+adversario entró en la variante prevista que termina en mate.} 6. Qh5+ Ke7 7.
+Qf7+ (7. Qxg5+ Ke8 8. Qh5+ Ke7 9. Qe5#) 7... Kd6 8. Qd5+ Ke7 9. Qe5# 1-0
+
+[Event "New York"]
+[Site "?"]
+[Date "1896.??.??"]
+[Round "?"]
+[White "Teed, Frank"]
+[Black "Delmar, Eugene"]
+[Result "1-0"]
+[ECO "A80"]
+[Annotator "R. Grau"]
+[PlyCount "15"]
+[EventDate "1896.??.??"]
+
+1. d4 f5 2. Bg5 h6 3. Bh4 g5 4. Bg3 f4 {El negro ha encerraao el alfil blanco;
+pero ha desguarnecido demasiado el rey. Con e3 amenazarnos Dh5++ y a la vez
+liberamos al alfil, pues al defenderse podemos replicar con exf4 y a ..., gxf4,
+Axf4, con lo que el alfil está salvado. Jugamos:} 5. e3 h5 {Íbamos a continuar
+con exf4; pero pensamos ahora que con Ad3 amenazamos mate en g6. Si Ad3,
+deberá, pues, buscar salida avanzando uno o dos peones, o jugar ..., Th6
+defendiendo la casilla g6. Pero nuestra dama está atacando el peón de h5, que
+está defendiendo precisamente la torre de h6. Esta torre defiende, pues, dos
+cosas distintas. Esa doble función nos da una idea. Si jugásemos Ag6+ a ...,
+Txg6 podríamos seguir con Dxh5; pero el negro podría replicar entonces ...,
+Rf7, defendiendo la torre. Mas entonces podríamos invertir, y a 6. Ad3 Th6,
+contestar con Dxh5+ y, claro está, ahora es necesario ..., Txh5 y entonces,
+Ag6++. Luego de 6. Ad3 no puede jugar ..., Th6, y debe en cambio efectuar ...,
+d6 o ..., e6 o ..., Rf7 y siempre, no habiendo nada mejor, podemos jugar exf4
+y salvar el alfil. Jugamos:} 6. Bd3 Rh6 {El negro se ha equivocado.} 7. Qxh5+
+Rxh5 8. Bg6# 1-0
+
+[Event "Leipzig"]
+[Site "?"]
+[Date "1877.??.??"]
+[Round "?"]
+[White "Goering, Carl Theodor"]
+[Black "Schallopp, Emil"]
+[Result "0-1"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "rn2r1k1/ppp1q2p/3b1np1/1Q1p2N1/6b1/2N5/PPPB1PPP/2K1RB1R b - - 0 1"]
+[PlyCount "7"]
+
+{Esta es la posición de una partida entre Schallopp y Goring. En esta posición
+le tocaba jugar a Schallopp, quien conducía las negras, y que inicia una
+bonita combinación, no muy difícil. El negro piensa que si jugase 1. ...,
+Dxe1+ y siguiese 2. Axe1 Txe1+, 3. Cd1, podría continuar con 3. ..., Txd1++.
+La acción de la dama y la torre sobre e1 junto con la del alfil sobre d1 ha
+provocado la idea de la combinación. Analizando tenemos:} 1... Qxe1+ {Aquí hay
+sólo dos jugadas: 2. Cd1 y 2. Axe1.} 2. Bxe1 ({Si} 2. Nd1 {seguiría} Qxd1#) {
+Ahora, a 2. ..., Txe1+ el blanco podrá contestar 3. Rd2 y a 3. ..., Af4+, 4.
+Rd3 (o Rxc1) y el rey se ha escapado. El secreto estaría en evitar esa salida
+del rey, tomando la casilla d2. Aquí tenemos la idea; hay que contestar:} 2...
+Bf4+ {Y ahora el rey no saldrá. El blanco puede contestar Ad2 o Rd1:} 3. Bd2 ({
+Si} 3. Kb1 {seguiría} Rxe1+ 4. Nd1 {única} Rxd1#) 3... Re1+ 4. Nd1 Rxd1# {
+Luego con 1. ..., Dxe1+ damos mate inevitable.} 0-1
+
+[Event "?"]
+[Site "?"]
+[Date "1862.??.??"]
+[Round "?"]
+[White "Taylor, Tim"]
+[Black "X"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "rnbqkb1r/pppp2pp/5p2/2n1N3/2B5/2N5/PPPP1PPP/R1BQK2R w KQkq - 0 1"]
+[PlyCount "15"]
+
+{Aquí tenemos un ejemplo de una combinación mucho más larga, y sin embargo,
+bastante fácil. El negro acaba de jugar ..., f6. Nuestro alfil domina el punto
+f7. Nuestro caballo también. Además, debido a la última jugada negra, se nos
+ha abierto la diagonal h5-e8, que tan valiosa nos ha sido en otras
+circunstancias. La acción que ejercemos sobre el "talón de Aquiles" del juego
+negro nos invita a pensar qué podemos hacer, y nos orienta al respecto. La
+jugada está entre Af7+, Cf7 y Dh5+. Esta última ofrece, sobre las anteriores,
+una apreciable ventaja, y es que lleva una nueva pieza contra el punto f7.
+Analicemos:} 1. Qh5+ {El negro tiene sólo dos respuestas: ..., Re7 y ..., g6 .}
+g6 ({Si} 1... Ke7 {Inmediatamente vemos que podemos hostigar y circunscribir
+los movimientos del rey mediante} 2. Qf7+ Kd6 {(única). Ahora podemos contestar
+} 3. Qd5+ Ke7 {(única)} 4. Qxc5+ d6 5. Qd5 {etc. Por este camino parece que no
+se obtiene el mate. Lo esencial sería poder arrancar al rey de sus defensas.
+Pensamos con esa base:}) ({Pensamos con esa base:} 1... Ke7 2. Qf7+ Kd6 3. Nb5+
+Kxe5 {(única)} 4. Qd5+ Kf4 {(única). Y ya tenemos al rey a merced de nuestras
+piezas, pudiendo seguir con} 5. d4+ ({o bien, aun más rápidamente, con} 5. g3+
+Kg4 6. h3#) 5... Kg4 6. Be2+ Kh4 {(única)} 7. Qh5# {En resumen, que con 1.
+Dh5+, si el negro replica ..., Re7 damos mate en 5 jugadas más. Por lo tanto
+debe jugar: 1. ..., g6.}) {Pero con 1. ..., g6 también aparecen una serie de
+jaques que obligan al rey negro a emprender un accidentado viaje. Veamos lo
+que sucede:} 2. Bf7+ Ke7 3. Nd5+ Kd6 4. Nc4+ Kc6 5. Nb4+ Kb5 {ahora con} 6. a4+
+{obligaríamos al rey a proyectarse sobre nuestras piezas; pero dejaríamos una
+pieza, el caballo de b4, a merced del monarca enemigo; mas éste quedaría en
+cambio en posición de mate:} Kxb4 {Podríamos, por ejemplo, jaquearlo con} 7.
+c3+ {y obligarlo a jugar} Kb3 {para seguir con} 8. Qd1# {Luego si el negro nos
+replica 1. ..., g6, recibe mate y, por lo tanto, con 1. Dh5 damos mate
+inevitable. Un anáIisis similar a éste debió efectuar Taylor, pues la partida
+fue así.} 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "XX, 1."]
+[Black "NN, 1."]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "k5r1/6r1/2NP3R/pRPp4/P4p2/4p3/4P3/n4K2 w - - 0 1"]
+[PlyCount "7"]
+
+{En esta posición el negro está amenazando ..., Tg1++. El blanco debe jugar y
+piensa que la torre negra de g7, no sólo amenaza el mate en g1, sino que
+estorba todos sus planes de ataque sobre el rey enemigo. Si esa torre no
+existiese podría, en efecto, desarrollarse una linda combinación así: 1. Txa5+
+Rb7, 2. Ta7+ Rxc6; 3. Tc7++. O bien si 2. ..., Rc8, 3. Tc7++. Pero la torre de
+g7 evita el mate de c7 y la combinación falla. Pero esto le da al blanco una
+idea. ¿Si jugase Tg6? Evidentemente si el negro contestase ..., Txg6 seguiría
+la combinación anterior y el mate sería inevitable. ¿Qué podría contestar el
+negro? Analicemos:} 1. Rg6 (1. Rg6 {Si mantiene el negro el "statu quo" y
+juega , por ejemplo} Nc2 {seguiríamos con} (1... f3 {no sería defensa, pues
+seguiría} 2. Rxg7 fxe2+ 3. Kxe2 {y mate a la siguiente.}) 2. Rxg7 {(amenazando
+Ta7++) y si} Rxg7 3. Rb8# {Luego, a Tg6 no es posible guardar el "staru quo".
+Hay que defender la amenaza Txg7.}) (1. Rg6 {Hay aún otras, el negro puede
+replicar} Rh8 {pero seguiría} ({si} 1... Rxg6 {sigue el mate que primero se ha
+visto.}) 2. Rxa5+ Kb7 3. Rxg7+ Kxc6 4. Rc7#) {Tenemos, pues, que 1. Tg6 es una
+jugada ganadora en todas las variantes.} 1... Rxg6 2. Rxa5+ Kb7 3. Ra7+ Kxc6 4.
+Rc7# {En este ejemplo se ve bien cómo dada nuestra jugada a cualquier
+respuesta del adversario podemos replicar con jugadas ganadoras.} 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "XX, 2."]
+[Black "NN, 2."]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "3q1r1k/p5pp/3p1p2/4n2Q/7B/7P/4RPPK/8 w - - 0 1"]
+[PlyCount "7"]
+
+{En esta posición el blanco, viendo perdido el final por sus peones de menos,
+da comienzo a una interesante celada. Juega:} 1. f4 {Obsérvese la posición de
+la dama blanca casi encerrada. Si el negro jugase ..., g6. la dama tendría
+como única casilla donde refugiarse la de h6, y en tonces, con ..., Cf7, la
+dama quedaría atacada y sin escapatoria. pues la jugada 1. f4 le ha quitado la
+retirada por la diagonal h6-c1. El blanco pierde la dama. Pero, sin embargo,
+sobre esta apariencia especula el blanco, pues ha pensado más lejos y tiene
+una variante ganadora. El negro juega efectivamente:} g6 2. Qh6 Nf7 $2 3. Bxf6+
+$1 {y si} Qxf6 4. Qxf8# {Como se ve, ésta es una celada, pues a mi jugada
+espero su respuesta aparente, para contestar con una maniobra ganadora (en
+este caso Axf6+). Si el negro a 1. f4 hubiese contestado sencillamente ...,
+Cg6 (y aun después de ..., g6 y Dh6, no hubiese intentado ganar la dama), todo
+peligro habría desaparecido y la partida estaría seguramente ganada.} 1-0
+
+[Event "Torneo Mayor"]
+[Site "?"]
+[Date "1927.??.??"]
+[Round "?"]
+[White "Subirá y del Río, Mariano"]
+[Black "Reca, Damián"]
+[Result "0-1"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "6k1/pp4pp/2p5/8/3Pp2q/2P1P2P/PP3r1P/1Q4RK b - - 0 1"]
+[PlyCount "9"]
+
+{En esta posición el negro (Reca) jugó ... Dxh3, amenazando ..., Dxh2++,
+amenaza contra la cual el blanco no puede defenderse directamente, pues si Tg2,
+seguiría, evidentemente ..., Dxg2++. Es ésta, pues, una posición de abandonar;
+pero, sin embargo, el blanco, en esta posición claramente perdida, encuentra
+una celada que si no hubiese sido vista con justeza, hubiera malogrado el
+triunfo negro.} 1... Qxh3 {El Dr. Subirá y del Río contestó:} 2. Rxg7+ Kf8 $1 {
+Reca vió la celada y por eso jugó ..., Rf8.} ({Ahora, si} 2... Kxg7 3. Qg1+ {
+Y a cualquiera, 3. Dxf2, llegando a un final superior para el blanco.}) ({Si} 
+2... Kh8 3. Rg8+ Kxg8 {única} 4. Qg1+ {y a cualquiera, 4. Dxf2.}) {Y ahora si}
+3. Rg8+ ({Si} 3. Qg1 {seguiría} Qf3+ {y ..., Tf1, lo que es inmediatamente
+ganador.}) 3... Kf7 ({Si} 3... Ke7 {seguiría} 4. Qxe4+) 4. Rg7+ Kf6 {y no es
+posible seguir} 5. Rg6+ {por} hxg6 {con lo que gana la torre, evitando el
+jaque desde g1, y el mate se hace totalmente inevitable.} 0-1
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Jacobson"]
+[Black "Von Henning"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "4b3/pkb4q/1pp1Bp2/4pPp1/4P2r/2PQB3/PP6/2KR4 w - - 0 1"]
+[PlyCount "11"]
+
+{Veamos cómo se prepara una combinación. En esta posición, el blanco piensa
+que si las casillas a5 y b5 estuviesen vulneradas, la posición se prestaría
+para un bonito mate, procediendo así: 1. Da6+ Rxa6, 2. Ac8++; o bien: 1. Da6+
+Rb8; 2. Dc8++, o, por fin, 1. Da6+ Ra8; 2. Dc8+ Ab8, 3. Td8. Pensamos que aún
+es posible mejorar la variante trasponiendo las jugadas así: 1. Da6+ Ra8, 2.
+Td8+ Axd8, 3. Dc8++, o, en caso de, 2. ..., Ab8, 3. Txb8+! y a Rxb8, 4. Dc8++.
+Con esta base el blanco empieza a preparar la combinación, y juega:} 1. a4 Qh5
+2. b4 $1 {El negro permaneció ajeno a las amenazas del blanco y jugó:} Qf3 3.
+Qa6+ Ka8 4. Rd8+ Bb8 5. Rxb8+ Kxb8 6. Qc8# 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "NN"]
+[Black "Pillsbury, Harry Nelson"]
+[Result "0-1"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "6qk/p6p/1pb5/2p2B2/4p2Q/2P1B3/P6P/7K b - - 0 1"]
+[PlyCount "7"]
+
+{CELADA. El negro juega 1. ..., Df7. Amenaza comer el alfil de f5 y a su vez
+entrega el peón de e4. El blanco toma el peón de e4 (2. Axe4). ¿Qué jugada más
+justa? Saca el alfil atacado, come un peón y opone el alfil blanco al alfil
+negro. Si 2. ..., Axe4, 3. Dxe4; y a 2. ..., Df1+, 3. Ag1, y ahora el negro
+debe apresurarse a defender su desguarnecido rey. El razonamiento parece justo;
+pero el negro ha visto mejor, y contra Axe4 jugará 2. ..., Df1+; 3. Ag1 (única)
+Df3+!!, 4. Axf3 (única) y Axf3++! La partida se desarrolló efectivamente así:} 
+1... Qf7 2. Bxe4 (2. Qg5 $1) 2... Qf1+ 3. Bg1 Qf3+ 4. Bxf3 Bxf3# {Si el blanco
+hubiese analizado con más atención, habría evitado la celada jugando, a 1. ...,
+Df7, 2. Dg5!, con lo que hubiera ganado, seguramente, la partida.} 0-1
+
+[Event "New York Rice"]
+[Site "?"]
+[Date "1916.??.??"]
+[Round "?"]
+[White "Bernstein, Jacob"]
+[Black "Capablanca, Jose Raul"]
+[Result "0-1"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "6k1/ppp2rp1/3pq3/4p2R/4P3/2P1Br2/P1P2P1P/6QK b - - 0 1"]
+[PlyCount "23"]
+
+{BUEN EJEMPLO DE COMBINACIÓN. En esta posición juega el negro, que medita una
+linda combinación a base de ..., Txe3. Contra esto, el blanco debe, o bien
+capturar la torre, con lo que ha ganado calidad, o bien efectuar una jugada de
+ataque, pues a cualquier otra jugada retiramos la torre y habremos ganado el
+alfil. El análisis demuestra rápidamente que no hay ataque posible. Tg5
+atacaría un punto (g7) sólidamente defendido, la dama negra no puede ser
+atacada, y a Dg5, seguiría ..., Te1+ y ..., Df6. Luego, 2. fxe3, es la jugada
+única para el blanco, a esto seguiría: 2. ..., Dc4, amenazando ..., Tf1,
+ganando la damal. ¿Cómo oponerse a la amenaza? 1).- Retirando la dama a g2,
+seguiría ..., Tf1+, Dxf1 Dxf1++. 2).- Retirando la dama a g3, g4, g5 o g6,
+seguiría ..., Df1+, Dg1 Df3+, ganando en seguida. Con esto tenemos que la dama
+blanca no puede retirarse. Veamos entonces la retirada del rey a g2. En
+seguida observamos que con ..., De2+ ganamos al menos la torre. En resumen,
+que no se puede salir con el rey, y en cuanto a Tf5, sería mala por ..., Dxe4+,
+ganando. Redoblamos la atención en el análisis. La combinación del negro se
+basa en la jugada ..., Tf1; pero con ello priva de defensa al punto g7. Luego,
+acaso el blanco pudiese intentar Tg5, y a ..., Tf1, Txg7+, y tratar de seguir
+dando jaque.} 1... Rxe3 ({Veamos el asunto:} 1... Rxe3 2. fxe3 Qc4 3. Rg5 Rf1
+4. Rxg7+ Kh8 5. Rg8+ Kh7 6. Rg7+ Kh6 7. Rg6+ {etc., haciendo tablas. Luego, a
+Txg7+, malo es contestar ..., Rh8. Pensemos en ..., Rf8:}) ({Veamos ..., Rf8:} 
+1... Rxe3 2. fxe3 Qc4 3. Rg5 Rf1 4. Rxg7+ Kf8 {seguiría} 5. Rg8+ {Y ahora
+contra los jaques de torre hay una evolución, escapando con el rey de esta
+suerte:} Ke7 6. Rg7+ Kd8 7. Rg8+ Kd7 8. Rg7+ Kc6 $1 {y ya no hay más jaques de
+torre y el juego está ganado. Esta escapatoria del rey es lo que vio el negro
+y lo que le permitió jugar ..., Txe3, e iniciar esta bonita y ganadora
+combinación.}) {He aquí la combinación completa:} 2. fxe3 Qc4 3. Rg5 Rf1 4.
+Rxg7+ Kf8 5. Rg8+ Ke7 6. Rg7+ Kd8 7. Rg8+ Kd7 8. Rg7+ Kc6 $1 {y entonces a
+cualquier jugada, por ejemplo:} 9. Rg4 {sigue} Rxg1+ {y se gana en seguida la
+partida.} 10. Kxg1 Qxa2 11. h4 Qxc2 12. Rg3 a5 0-1
+
+[Event "Lodz m"]
+[Site "?"]
+[Date "1907.??.??"]
+[Round "?"]
+[White "Salwe, Georg"]
+[Black "Rubinstein, Akiba"]
+[Result "0-1"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "2r4k/pp2Q1pp/5r2/P2P4/3Pb1P1/4Ppq1/1P1R3N/3R3K b - - 0 1"]
+[PlyCount "7"]
+
+{Veamos ahora una combinación con más variantes y más difícil por lo tanto.
+Juega el negro. Como se ve, la base de su juego está en el avance del peón "f"
+a f2, con jaque descubierto. Pero eso no puede hacerse en seguida, pues si 1. .
+.., f2+...} 1... Qe1+ $1 ({...} 1... f2+ 2. Qxe4 Rh6 $1 3. Qg2 $1 {y todo
+queda defendido y el blanco con una pieza más.}) ({Rubinstein aquí soluciona
+el asunto con una brillante combinación. Piensa: Si} 1... Qe1+ $1 2. Rxe1 f2+
+3. Qxe4 fxe1=Q+ 4. Kg2 Qxd2+ {y evidentemente se gana. Prima facie, la jugada .
+.., De1+ parece, pues, excelente, pues el descubierto resulta a la vez un
+doble y hace inevitable la entrada a dama del blanco. En esas circunstancias, .
+.., De1 no puede considerarse casi una entrega de dama. Pero analicemos con
+atención:}) ({Tenemos} 1... Qe1+ $1 {El blanco tiene dos contestaciones: 2.
+Txe1, y 2. Cf1. Tomemos la primera:} 2. Rxe1 f2+ 3. Qxe4 fxe1=Q+ 4. Kg2 Qxd2+ {
+y si} 5. Kh1 {(o 5. Rg1)} ({si} 5. Kg3 Qf2+ 6. Kh3 Rh6#) ({si} 5. Kh3 Rh6+ 6.
+Kg3 Qxh2+ 7. Kf3 Rh3#) 5... Rc1+ {y mate a la siguiente. Todo esto es
+inevitable si el blanco juega 4. Rg2 ¿Qué otra cosa puede hacer? La disyuntiva
+es 4. Rg2, ó 4. Cf1. Hemos visto la primera; veamos la segunda:}) ({Veamos la
+segunda:} 1... Qe1+ $1 2. Rxe1 f2+ 3. Qxe4 fxe1=Q+ 4. Nf1 Qxf1+ 5. Kh2 Rh6+ 6.
+Kg3 Rh3# {Luego, la salvación del juego blanco, si es posible, debe estar en
+la jugada 3.}) ({Reconstruyamos:} 1... Qe1+ $1 2. Rxe1 f2+ 3. Qxe4 fxe1=Q+ {
+Y 4. Rg2, o Cf1, pierden. Evidentemente no hay otras jugadas; luego, debe
+analizarse si no hay jugada mejor que 3. Dxe4. Poco hay que elegir. El blanco
+en la tercera jugada sólo puede efectuar dos movidas: 3. Dxe4, y 3. Cf3. La
+primera pierde. Veamos la segunda:}) ({Veamos la segunda: Tenemos} 1... Qe1+ $1
+2. Rxe1 f2+ 3. Nf3 fxe1=Q+ 4. Kg2 ({si} 4. Kh2 Rh6+ 5. Nh4 Rxh4+ 6. Qxh4 Qxh4+
+7. Kg1 Rc1+ {y mate a la siguiente. Y si 5. Dh4 Txh4+, y a 6. Cxh4 seguiría
+igual que el anterior, y a 6. Rg2 Dh1+, 7. Rf2 Dxf3+, y mate a la siguiente.})
+4... Bxf3+ 5. Kh2 {(o Rh3)} Rh6+ 6. Qh4 Rxh4#) {Repasemos lo analizado: a 3.
+Cf3 fxe1=D+, 4. Rg2 o Rh2. Si 4. Rg2, el mate es inevitable, como hemos visto.
+Si 4. Rh2 Th6+, y a 5. Ch4 o Dh4, el negro gana, según también se vió. ¿Qué
+otra cosa puede jugar el blanco? Tan sólo puede intentar 5. Rg2, pero seguiría
+..., Dh1+, 6. Rf2 Dxf3+, y mate a la siguiente. Luego, una vez que el blanco
+ejecuta como 3a jugada Dxe4, o Cf3, su juego está perdido, y como no tiene
+otras necesita rectificar su jugada segunda para salvar el juego. Si 1. ...,
+De1+, no puede contestar Txe1. Pero, ¿qué otra cosa puede inentar? La única
+posibilidad estaría en 2. Cf1, pero en ese caso ..., Th6+, 3. Rg1 f2+, 4. Txf2
+(única) y ..., Th1++; y si en lugar de 3. Rg1, el blanco juega Th2, el negro
+con ..., Df2 da mate en g2, o, en caso de Td2, con ..., Dxf1++. Hemos
+analizado todas las variantes posibles, las que demuestran que el blanco no
+tiene réplica posible contra la jugada 1. ..., De1+ de las negras que gana en
+todas las variantes.} 2. Rxe1 f2+ 3. Qxe4 fxe1=Q+ 4. Kg2 Qxd2+ 0-1
+
+[Event "Prague"]
+[Site "?"]
+[Date "1900.??.??"]
+[Round "?"]
+[White "Distl, B."]
+[Black "Rozsypal,  ."]
+[Result "1-0"]
+[ECO "C45"]
+[Annotator "R. Grau"]
+[PlyCount "27"]
+[EventDate "1900.??.??"]
+
+1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 Ne7 6. Bc4 c6 7. Nc3 d6 8.
+Bg5 Qb6 9. Qxd6 $1 {Primer detalle de la combinación. Las blancas, para una
+vista poco afinada, han ganado un peón, pero en cambio el negro puede replicar
+a su vez con ..., Dxb2, recuperando no sólo el peón, sino atacando al mismo
+tiempo dos piezas adversarias, piezas que no pueden ser defendidas
+simultáneamente. El blanco ha realizado, pues, una combinación, o a cometido
+un error. Pero estudiando la posición de acuerdo con nuestras experiencias
+anteriores, veremos cosas interesantes. Ya sabemos que el objeto de la partida
+es dar mate, y para dar mate se precisa dar un jaque al rey adversario no
+teniendo éste retirada, ya por estar bloqueado por sus propias piezas, o por
+estar tomadas las casillas de escape por nuestras piezas. Si pudiéramos dar un
+jaque en d8 con la dama defendida, daríamos mate si no mediara la
+circunstancia de que la dama negra domina ese cuadro. Debemos, pues, como
+primera providencia, desalojar la dama enemiga de b6 por medios directos o
+indirectos. Si logramos que la dama negra se aleje del dominio o fiscalización
+de la diagonal d8-a5, podremos quizá llevar a la práctica nuestro plan. La
+idea de la combinación que el blanco realiza es, pues, perfectamente lógica y
+fácil para quien sepa discernir y juegue con vistas al mate.} Qxb2 {El negro
+ha seguido el plan ideado en la jugada anterior. Entregó un peón en d6 con el
+propósito de buscar compensaciones en otro sector del tablero, y ahora quiere
+explotar el aparente error de las blancas, reconquistando no sólo el peón,
+sino ganando una pieza. La dama ahora ataca el caballo y la torre, y las
+blancas no tienen amenaza directa de mate. Deben, pues, realizar una jugada
+complementaria de ese plan. Como hicimos notar antes, debe apoyarse la acción
+de la dama, y salta entonces a la vista la movida Td1, que no sólo sustrae la
+torre de la acción de la dama adversaria, sino que da realidad a la terrible
+amenaza de las blancas.} 10. Rd1 $1 Qxc3+ {Aparentemente, una desagradable
+sorpresa. La captura del caballo que el blanco ha entregado en pos de su
+combinación de mate, tiene un complemento poco agradable, base de tantas
+sorpresas en ajedrez. El negro da jaque, y como el jaque debe ser siempre
+defendido, el plan de dar mate ha sufrido un paréntesis y el blanco ha perdido
+una pieza. A simple vista, las consecuencias de este jaque no pueden ser más
+desastrosas para el blanco. Si el rey se mueve, podría ser capturado el alfil
+de c4 con jaque, y una nueva pieza caería sin que la amenaza de mate de las
+blancas pudiera aún hacerse efectiva. Otro detalle aparece, que complica la
+situación. El negro puede ahora continuar con ..., Ag4, sacando el alfil de su
+casilla inicial para defender con la torre el cuadro d8 que atacan las blancas,
+y en el cual esperan dar mate. Para evitar que esta jugada de alfil -que
+anularía todos los planes de ataque- llegue a realizarse, sería necesario
+efectuar una movida muy agresiva que obligara a demorar esa jugada. Sería
+oportuno, pues, cubrir nuestro jaque atacando la dama, ya que el alfil en
+ningún caso puede ser debidamente apoyado.} 11. Bd2 {Las negras deben sacar la
+dama de la posición actual. Ya indicaremos más adelante el valor de las piezas,
+que por lógica el aficionado conoce, máxime después de las anteriores
+experiencias, de los últimos ejemplos. Cómodamente pueden sustraerse a la
+amenaza mediante ..., Dxc4, ganando una nueva pieza.} Qxc4 {La posición se ha
+aclarado un tanto aparentemente y el negro tiene una amplia ventaja material.
+Ha ganado dos piezas, pero el blanco cuenta con la amenaza de mate, en aras de
+la cual ha entregado sus fuerzas. Pero un nuevo inconveniente ha surgido para
+dar mate. Al cubrir con el alfil el jaque de la dama enemiga, se ha obstruido
+la acción de apoyo que la torre ejercía sobre la dama, y el mate en una jugada
+es ya imposible. No obstante, no debemos perder las esperanzas, por un detalle
+fundamental. La posición del rey enemigo se mantiene exactamente igual. No
+dispone de buenas casillas de retirada y el plan del mate es aún viable. Es
+necesario sacar el alfil para dar acción a la torre. Analizamos primero Aa5,
+pero se presenta la desagradable respuesta de las negras ..., f6, que hace
+desaparecer la amenaza sobre el punto d8. Es preciso, es indispensable
+realizar una nueva jugada agresiva que se anticipe a esa jugada liberadora de
+las negras, que al hacer desaparecer la situación característica del rey negro,
+daría por tierra con todos los proyectos de dar mate, y que ya le han costado
+dos piezas. Profundizando el análisis, se observa que bastaría un jaque con la
+torre en d8 para dar mate, si esta pieza estuviera debidamente apoyada, y en
+ese tren de buscar posibilidades, audaces si se quiere, o desesperadas, dada
+la inferioridad de material, se puede observar que el alfil negro, desde a5
+también puede vulnerar el cuadro d8, base de todas las preocupaciones
+agresivas de las blancas, y repentinamente aparece la posibilidad de una
+combinación deflnitiva. ¿Y si entregáramos la dama en d8? Podríamos luego
+seguir con un doble jaque, ubicando nuestro alfil en a5 y abriendo la acción
+de la torre sobre el rey, para que estas piezas desarrollen una acción
+conjunta sobre el cuadro débil de d8. Surge, pues, la jugada sorprendente y
+agresiva Dd8+, que limita el campo de réplicas adversarias a la más mínima
+expresión. La combinación no es, pues, de análisis difícil, por cuanto el rey
+negro sólo tiene una jugada para replicar, dada su precaria movilidad.} 12.
+Qd8+ $1 Kxd8 13. Ba5+ {El jaque doble ha sido dado y el rey no tiene ningún
+otro recurso que moverse ante tan simultáneas agresiones. No tiene más que una
+jugada: volver a su mala posición anterior.} Ke8 {A costa del sacrificio de la
+dama el blanco ha conseguido, después de una serie de jugadas dilatorias, la
+posición buscada: vulnerar simultáneamente con dos piezas el cuadro d8 del
+adversario, tan débil, y poder apoyar así la acción proyectada de dar mate
+especulando en esa debilidad. Juegan, pues:} 14. Rd8# 1-0
+
+[Event "GB tour sim Great Britain"]
+[Site "?"]
+[Date "1923.??.??"]
+[Round "?"]
+[White "Alekhine, Alexander"]
+[Black "Forrester"]
+[Result "1-0"]
+[ECO "C77"]
+[Annotator "R. Grau"]
+[PlyCount "29"]
+[EventDate "1923.??.??"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. Nc3 Bc5 6. Nxe5 {Una pequeña
+combinación muy practicada en numerosas aperturas. Oportunamente nos
+ocuparemos de las posiciones características de dobles ataques a piezas, y
+observaremos una serie de variantes similares a la presente, pero no podelllos
+sustraernos al deseo de hacer una pequeña nota a esta jugada, que sin duda
+sorprenderá al principiante. El blanco ha capturado un peón importante, pero
+entrega una pieza, dado que este peón estaba defendido por un caballo. No
+obstante, es una jugada buena y perfectamente practicable en las posiciones
+peculiares, en que dos piezas adversarias se colocan en la misma línea, con
+una casilla entremedio, y hay un peón en situación de vulnerar simultáneamente
+ambos cuadros. El caballo puede ser capturado por el caballo, pero al hacerlo,
+el blanco puede replicar con d4, atacando simultáneamente ambas piezas
+adversarias, razón por la cual recuperará una, y además ganará un valioso
+tiempo en el desarrollo.} Nxe5 7. d4 {Fácilmente se observa que la combinación
+era perfectamente lógica y justa. Ahora el negro debe devolver la pieza
+capturada y el blanco ha logrado abrir su juego. En realidad, mantiene el peón
+de ventaja, pero éste puede ser recuperado en varias formas, entre otras,
+retirando el alfil a d6 defendiendo el caballo, o bien con ..., De7, apoyando
+ambas piezas atacadas, y asimismo, como lo efectúa el adversario de Alekhine.}
+Bb4 {Sacando el alfil de la amenaza y asi mismo fijando el caballo que apoya
+el peón de e4, que el caballo de f6 ataca. Las negras quieren realizar un
+pequeño ataque que carece de consistencia.} 8. dxe5 {La pieza ha sido
+recuperada.} Nxe4 9. Qd4 {Hay dos piezas negras en el centro del tablero, y
+las blancas las atacan simultáneamente. Con esta jugada el Dr. Alekhine
+comienza una combinación de ataque sobre el ala del rey, que luego se hará
+evidente para el aficionado principiante. Contra un ataque de esta naturaleza
+sólo quedan pocos recursos defensivos. Primero debe considerarse si las piezas
+atacadas pueden apoyarse entre sí, o si es posible realizar una movida que
+defienda a las dos al mismo tiempo. Fácilmente se observa que no. El alfil
+corre por casillas negras y el caballo está en un cuadro blanco; no puede,
+pues, defenderlo directamente en ningún caso. Vemos, pues, que estas piezas no
+pueden apoyarse entre sí. Es menester, entonces, desechar este plan y ver si
+hay alguna jugada que pueda defender ambas piezas a la vez, y se observa
+rápidamente que no, por la falta de acción de las demás piezas negras.
+Busquemos entonces una jugada de contraataque, y observemos ..., b5 atacando
+el alfil:} (9. Qd4 b5 {Rápidamente reparamos que si nosotros, contra 9. ...,
+b5 seguimos con} 10. Qxb4 {hacemos obligatorio continuar con} Nxc3 {para no
+perder también el caballo. Contra eso podríamos seguir con} 11. Bb3 {y si bien
+las negras han recuperado la pieza atacada, el caballo no tiene buenas
+retiradas y está atacado. Sólo podría acudir a} Na4 {perdiendo un peón mediante
+} 12. Bxa4 {Este plan no es, pues, bueno.}) (9. Qd4 {Otra jugada de
+contraataque y de acuerdo con la estrategia elemental que hemos estado
+observando en las otras partidas sería jugar} Qh4 {pero a esto seguiría} 10.
+Qxb4 ({no} 10. Qxe4 {a causa de} Qxe4+ {ganando la dama, porque el caballo
+dama está inmovilizado por la acción del alfil adversario.}) {y si} 10... Qxf2+
+11. Kd1 {ganando.}) {Todas estas dificultades permiten establecer en forma
+terminante que las jugadas de contraataque en esta posición son peligrosas, de
+posibilidades muy confusas. Debemos por sobre todas las cosas especular sobre
+los procedimientos claros y fáciles, ya que nuestra capacidad de ver y
+combinar es relativa. Apelamos en esta forma al último procedimiento, y el más
+elemental por cierto. Veamos si es posible cambiar una de las piezas atacadas
+por otra adversaria, para luego retirar la pieza restante. Bien es verdad que
+este cambio hará desaparecer el ataque que el negro proyectó, pero la posición
+exige este pequeño sacrificio.} 9... Nxc3 10. bxc3 Ba5 11. Ba3 {Impidiendo el
+enroque adversario para poder llevar a la práctica un ataque sobre el rey que
+terminará en mate. Otra vez observaremos claramente cómo deben desarrollarse
+las piezas si se desea realizar un ataque. Lo principal es reducir o limitar
+la acción del rey adversario. Este movimiento es no sólo una jugada de
+iniciativa, de ataque, sino que responde a un principio de reducción de
+agilidad del rey adversario, para más tarde iniciar la carga final contra su
+posición.} b6 {Vemos aquí nuevamente una jugada neutra y anodina. El blanco
+está atacando y el negro realiza una pesada maniobra en un flanco para
+desarrollarse. Ante un ataque apremiante como el que se prepara, era necesario
+tratar primordialmente de mejorar la situación del rey. Indudablemente la
+posición es difícil, pero era mejor jugar ..., b5, para seguir luego con ...,
+d6, aún perdiendo un peón. El rey debe cuidarse por sobre todas las cosas.} 12.
+e6 $1 {La jugada clave del ataque. Las blancas tratan de abrir brechas sobre
+el desguarnecido flanco rey. El análisis no es difícil; ni hallar la jugada,
+obra de romanos. Los dos alfiles vulneran la situación actual del rey,
+inmovilizándolo. Si se logra abrir líneas sobre el mismo, el ataque debe
+prosperar dada su escasa movilidad. La jugada del texto especula en que este
+peón no puede ser capturado por el peón dama, a causa de la acción del alfil
+de a4 que impide que este peón se mueva, pues, como hemos dicho, el rey nunca
+puede ponerse en jaque. Puede ser capturado por el peón "f", pero entonces las
+blancas podrían seguir con Dxg7, atacando la torre, que no puede moverse a
+causa de que siempre podría ser tomada con mate.} Qf6 {Las negras impiden la
+captura del peón "g", pero, en cambio, facilitan la realización de un mate,
+especulando en la debilidad, acentuada por la movida de la dama, del peón de
+d7.} 13. Bxd7+ {Aquí también gana exd7+, pues caería el alfil negro de c8,
+pero debe buscarse siempre, de ser posible, alcanzar el fin primordial de la
+lucha que es dar mate, y las blancas luchan en busca de este resultado,
+amparadas en la pobre acción del rey negro, que no puede sustraerse al ataque,
+por la acción poderosa de fiscalización de sus retiradas que ejerce el alfil
+de a3.} Kd8 14. Bc6+ $1 {El círculo se estrecha. El rey ya no tiene ninguna
+movida. Está en posición pura de mate, pero debemos considerar los factores
+ajenos a su propia movilidad que pueden impedir el mate. Si bien no puede
+moverse, puede cubrir el jaque o capturar la pieza que está dando el jaque. Si
+el alfil moviera a d7 seguiría Dxd7++. Debe, pues, desecharse este recurso.
+Queda, pues, ..., Dxd4, eliminando la formidable dama blanca, pero ahora surge
+el detalle importante. Al capturar la dama blanca, las negras deben dejar
+indefensa la casilla e7, que domina con dos piezas Alekhine. Antes las blancas
+pudieron jugar e7+ (en lugar de 14. Ac6+), ganando la dama, pues el único
+recurso de Forester habría sido ..., Dxe7. Ahora, al jugar 14. ..., Dxd4,
+desaparece esa ünica posibilidad y el peón dará mate.} Qxd4 15. e7# 1-0
+
+[Event "Amsterdam m"]
+[Site "?"]
+[Date "1920.??.??"]
+[Round "2"]
+[White "Reti, Richard"]
+[Black "Euwe, Max"]
+[Result "1-0"]
+[ECO "A83"]
+[Annotator "R. Grau"]
+[PlyCount "33"]
+[EventDate "1920.??.??"]
+
+1. d4 f5 2. e4 {El blanco se decide a jugar una partida de ataque; una partida
+de combinación. Esta entrega de peón tiene por objeto ganar algunos tiempos en
+el desarrollo, y originar un juego abierto, en el que es propicio el juego de
+combinación. La partida se orienta, pues, desde sus primeras jugadas, por un
+norte determinado.} fxe4 3. Nc3 Nf6 {El plan es muy racional. El blanco ataca
+el peón central que las negras han ganado. El negro lo defiende, y ambos
+realizan simultáneamente jugadas de desarrollo. El blanco atacará ahora la
+pieza que defiende el peón, y la lucha sigue un ritmo perfectamente lógico.} 4.
+Bg5 g6 5. f3 {Es fácil observar que las blancas podrían haher recuperado el
+peón entregado, mediante Axf6 seguido de Cxe4. Pero es claro también
+comprender que las blancas no han realizado la pequeña combinacion inicial de
+entregar un peón para el mero hecho de recuperarlo, sin pena ni gloria.} exf3
+6. Nxf3 Bg7 7. Bd3 c5 {Las blancas tienen mejor desarollo. Todas sus piezas
+menores actúan con eficacia y la situación amenaza convertirse en muy agresiva.
+El negro, sin embargo, no se ha amilanado y ha tratado de adelantarse a los
+acontecimientos atacando primero, pero incurre en el error de atacar sin tener
+un buen desarrollo. La parte vulnerable del juego blanco es la casilla b2, por
+la acción indirecta que sobre la misma ejerce el alfil rey. La jugada del
+texto responde a ese plan. Se entrega un peón, para abrir aún más la diagonal
+del alfil, y dar paso a la dama sobre los cuadros b6 y a5. A la acción de las
+piezas blancas que actúan en puntos dinámicos y que pueden orientar su acción
+a cualquier sector del tablero, las negras replican con un plan determinado,
+sobre un ala del tablero. Todo esto no tiene en realidad nada que ver
+aparentemente con la combinación en sí, pero estamos en el momento de la
+precombinación y nos interesa orientar al aficionado sobre el desarrollo de
+las operaciones dejando señalado el espíritu de la lucha, para evidenciar la
+lógica que dirige siempre el desarrollo de las partidas de ajedrez.} 8. d5 Qb6
+{Se inicia la combinación negra que las blancas han facilitado con el avance
+realizado en la última jugada, pues han valorizado el alfil. Ahora es cuando
+en realidad la partida adquiere para nosotros, desde el punto de vIsta que
+estamos tratando, su valor fundamental. ¿Qué intenta el negro? Por lo pronto
+analicemos las amenazas directas. ¿Cuáles son? Salta a la vista el ataque
+sobre el peón de b2. ¿Que gravedad tiene esta amenaza? Por lo pronto el blanco
+observa que el negro, al capturar el peón, atacará el caballo de c3, y
+asimismo, luego podrá hacer que el alfil de g7, sacando el caballo que
+restringe su acción (el de f6), actúe sobre el caballo de c3 o en la gran
+diagonal, secundando la acción de la dama. La disyuntiva es ésta: o se entrega
+el peón de b2, o se defiende. Esto es lógico y claro. Comienza ahora el
+razonamiento del jugador. En presencia del dilema, debe escoger, y la lógica,
+que en ajedrez pesa en forma extraordinaria, comienza a fiscalizar e! análisis.
+El blanco tiene todas sus piezas orientadas hacia el ataque; tiene mejor
+desarrollo y no desea resignarse a jugar una partida pasiva. Las defensas que
+aparecen no alcanzan a satisfacer. Primero, se observará que las jugadas de
+apoyo del peón son todas movidas precarias, que desentonan con la agresividad
+y dinamismo de la dama negra, que actúa sobre el peón b2, e indirectamente,
+por ahora, sobre la diagonal a2-g8. Tanto Tb1, como Dc1, y Ac1, representan
+jugadas de corto alcance, y esclavizan una pieza importante para un pobre
+objetivo. Otra jugada posible, como ser Ca4, sería replicada con ..., Da5+, y
+luego con ..., b5. Esto no satisface como programa al blanco, que, además,
+funda sus pretensiones de querer jugar una partida de ataque en el hecho de
+tener sus piezas mejor desarrolladas. Comienza, en mérito de esto, el jugador
+a considerar la otra posibilidad: la entrega del peón vulnerado. La primera
+jugada que considera es, indudablemente, el enroque corto, para replicar a ...,
+Dxb2 con Cb5, amenazando Cc7+ y también Tb1, siempre con gran ataque; pero el
+negro dispone de una réplica que impide esa combinación, que es: a 9. 0-0 c4,
+con jaque descubierto de la dama, ganando el alfil. Este procedimiento no es,
+pues, bueno. El blanco ha visto que a su jugada 0-0, la espuesta adversaria, 9.
+..., c4+, le dejaba sin propia réplica satisfactoria, y busca otro medio para
+llegar al mismo fin. El negro, al tomar el peón "b", atacará al caballo:
+analicemos, pues, una jugada que apoye al caballo para luego atacar la dama y
+poder iniciar el con traataque. La jugada 9. Dd2 llena ese propósito, pero
+tiene un gran peligro. Reti analiza cuidadosamente y observa que dispone en
+todos los casos de una combinación ganadora que no detallamos, por cuanto la
+propia partida es la mejor explicación, y se lanza en la contracombinación.
+Acepta el duelo planteado por el negro, confiado en el hecho fundamental de
+que tiene todas sus piezas en actividad, y su adversario no ha desarrollado
+ninguna de las del ala de la dama.} 9. Qd2 Qxb2 {Euwe acepta el reto. Está
+inferior y confía en el ataque. Ha visto la amenaza de Reti, pero también ha
+entrevisto una jugada que le permitirá, si Reti sigue el plan ideado, ganar
+las dos torres. Esto es verdad, pero entretanto Reti también hace triunfar su
+otro plan que es hacer perder tiempo a la dama adversaria para que no se
+produzca el desarrollo de las piezas del ala de la dama enemiga, un tanto
+difíciles de movilizar. El ataque negro se desarrolla normalmente, y el
+contraataque que el blanco está gestando, también.} 10. Rb1 $1 {El blanco
+rompe a su vez el fuego. Esta jugada parece muy clara, pero no es así. Un
+jugador de mediana fuerza habría replicado ahora con 10. 0-0, pero Reti ha
+visto más lejos y provoca definitivamente una combinación de las negras, que
+ha de significar la ganancia de las dos torres, pero que en cambio ha de
+reportar la desaparición de una de las dos piezas menores negras que actúan
+eficientemente.} Nxd5 {El negro en su proceso analítico de "mi jugada, su
+respuesta, mi propia réplica, etc.", ha visto menos que el blanco, y acepta el
+cebo tendido sin alcanzar a darse cuenta de la verdadera magnitud del ataque
+que Reti prepara. Ganará dos torres el negro, pero alejará definitivamente la
+dama de la acción central; perderá el caballo rey que cooperaba eficazmente en
+la defensa, y así facilitará el contraataque definitivo. Desde un punto de
+vista más simple, Euwe ha analizado de la siguiente manera:} ({Juego} 10...
+Nxd5 {y obligo a Reti a jugar 11. Txb2 o Cxd5. Si juega:} 11. Nxd5 {replico con
+} ({si} 11. Rxb2 {entonces sigo con} Bxc3 {y luego co n ..., Axd2,
+simpIificando el juego y llegando a un final con tres peones de ventaja.})
+11... Qxb1+ {ya que el caballo deja de apoyar la torre, y contra la nueva
+réplica de} 12. Kf2 {sigo dama por la otra torre y he ganado material
+abundante como para triunfar.}) 11. Nxd5 $1 {Reti, más sagaz, al jugar Tb1 ya
+había hecho el siguiente análisis: Si mi adversario juega 10. ..., Cxd5,
+seguiré con 11. Cxd5 entregando las dos torres, para luego continuar con Cc7+
+si es imprescinible, o con una maniobra de ataque sobre el rey enemigo que no
+dispondrá de ninguna pieza menor que lo apoye. En cambio yo lo atacaré con mi
+caballo de d5, con mi alfil de g5, y con mi poderosa dama, que actúa en una
+importante columna central, estando en cambio la de mi adversario en h1, en
+mérito a sus capturas, confinada. Reti ha visto más lejos y por lo tanto
+triunfa.} Qxb1+ 12. Kf2 Qxh1 {Obsérvese ahora la claridad del razonamiento de
+Reti: la falta de acción de las piezas negras así como el dinamismo de las
+piezas blancas. El ataque continuará enérgicamente, antes que las negras se
+desarrollen.} 13. Bxe7 d6 {Dando juego al alfil dama.} ({Si} 13... Nc6 {
+seguiría Ad6, ganando con mayor facilidad que con la movida del texto, por la
+amenaza de De2+, etc. Analicemos la posición y se harán claras la intensidad
+del ataque y la pobreza de acción de las negras. Veamos, pues:} 14. Bd6 {
+¿qué puede hacer el negro? Observemos primero lo que pasaría si tratara de
+sacar al rey de la mala posición actual. Si, por ejemplo,} Kd8 {entonces} ({si
+} 14... Kf7 {seguiría entre otras} 15. Qf4+ {(también ganaría Cg5+)} Kg8 16.
+Ne7+ Nxe7 17. Bc4+ Nd5 18. Bxd5#) ({Si el negro deja, pues, el rey quieto y
+juega} 14... Bd4+ {seguiría} 15. Nxd4 Nxd4 16. Qg5 {(si De3+, seguiría ...,
+Ce6, con mayor resistencia)} Nc6 {(para evitar mate en e7, ya que si 16. ...,
+Rf7, las blancas darían mate en dos, por medio de Df6+ y Ce7 o De7++, según
+los casos, y si en cambio 16. ..., Tf8+, seguiría 17. Axf8, con la misma
+amenaza, y si entonces 17. ..., Rxf8, 18. Df6+, seguido de mate.)} 17. Qf6 {
+con mate inevitable.}) 15. Qg5+ Ke8 16. Bxg6+ hxg6 17. Qxg6+ Kd8 18. Bc7#) 14.
+Bxd6 Nc6 {Hemos llegado a la misma posición analizada antes, pero ahora las
+negras han dado agilidad a su alfil dama. Sin embargo, esto, con ser plausible,
+no alcanza a evitar el mate que Reti ha previsto.} 15. Bb5 $1 {Una jugada de
+gran lógica. Reti ha hecho, sin duda, la siguiente reflexión: La única pieza
+que no desempeña un rol de gran importancia en los mates posibles es mi alfil
+de d3. En cambio, el caballo negro defiende la casilla vital de e7, que
+vulnera mi agresivo alfil de d6. ¿Qué mejor entonces que anular la acción de
+esa pieza eficaz en la defensa, con mi alfil, ineficaz para el ataque? El mate
+en pocas jugadas es ahora inevitable.} Bd7 16. Bxc6 bxc6 ({Si} 16... Bxc6 {
+el procedimiento ganador es aún más rápido. Veamos:} 17. Qe3+ Kf7 ({si} 17...
+Kd7 18. Qe7+ {seguido de Dc7++.}) 18. Ng5+ Kg8 19. Qe6#) 17. Qe2+ $1 (17. Qe2+
+{si} Kf7 {seguiría} 18. Ne5+ Kg8 19. Ne7+ Kf8 20. N7xg6+ Kg8 21. Qc4+ Be6 22.
+Qxe6#) (17. Qe2+ {si} Kd8 {seguiría en cambio este otro bonito mate:} 18. Bc7+
+Kc8 19. Qa6#) 1-0
+
+[Event "Portsmouth Southsea"]
+[Site "?"]
+[Date "1923.??.??"]
+[Round "10"]
+[White "Alekhine, Alexander"]
+[Black "Drewitt, John Arthur"]
+[Result "1-0"]
+[ECO "A00"]
+[Annotator "R. Grau"]
+[PlyCount "47"]
+[EventDate "1923.??.??"]
+
+1. Nf3 d5 2. b4 e6 3. Bb2 Nf6 4. a3 c5 5. bxc5 Bxc5 6. e3 O-O 7. c4 Nc6 8. d4
+Bb6 9. Nbd2 Qe7 10. Bd3 Rd8 {Todas estas movidas son previas a la rotura de
+las hostilidades. Observe el aficionado estudioso que ambos jugadores están
+realizando movimientos preparatorios de un plan de acción, y que no ponen las
+piezas de sus respectivos bandos en contacto directo con las del adversario.
+¿Qué está intentando el blanco? Alekhine busca ubicar una pieza en e5 y
+tratará de abrir las líneas sobre el rey enemigo a sus alfiles, para
+justificar la acción de los mismos. ¿Qué pretende hacer el negro? El negro
+está proyectando un plan a base de emplazar sus piezas en el ala de la dama,
+ya que abrir líneas en el centro favorecería las amenazas enemigas. Conocemos
+el deseo de ambos adversarios. Veamos ahora cómo se ingenia cada cual para el
+logro de sus objetivos.} 11. O-O Bd7 12. Ne5 $1 {Se inicia la ofensiva. Es
+ésta la primera pieza blanca que busca el contacto con las piezas negras. El
+combate principia recién. Hasta ahora sólo hemos observado los preparativos de
+cada bando, para encontrarse en este momento en las mejores condiciones
+estratégicas. ¿Qué conseguiría el blanco si el negro jugara ..., Cxe5?
+Observaremos más adelante una serie de partidas que aclararán todas nuestras
+dudas. Se verá en el transcurso de las mismas que de la oportuna eliminación
+del caballo de f6 depende el éxito de muchos ataques sobre el flanco rey. El
+blanco tiene una posición de ataque, ya que sus alfiles apuntan sobre el
+flanco del rey adversario.} (12. Ne5 {Si} Nxe5 {seguirla} 13. dxe5 {y el
+caballo no tendría otra retirada que a e8. En ese caso el punto h7 negro
+quedaría muy débil, ya que el caballo habría dejado de prestarle su apoyo y
+podría sobrevenir una maniobra a base de f4-Tf3-Th3 y Dh5 y quizá, entremedio
+de ese plan, podría aparecer una posición de sacrificio previo del alfil en h7.
+}) {Es decir, con la movida del texto, Alekhine inicia su combinación de
+debilitamiento del flanco rey enemigo, para realizar más tarde la gran
+combinación que tendremos la fortuna de analizar.} 12... Be8 {El negro se
+retira. Ha efectuado el análisis y ha visto sus riesgos. Trata pues de
+conservar su valioso caballo en f6, que le pone a cubierto de los peligros
+inmediatos de una ofensiva enemiga.} 13. f4 {Sigue el blanco preparando el
+ataque ganador. Alekhine ha razonado con una lógica formidable. Ha pensado sin
+duda así: mi jugada (f4) apoya al caballo de e5 ¿cuál es la respuesta de mi
+enemigo? Si ..., Cxe5, seguiría fxe5 y el ataque antes enunciado tendría aún
+más fuerza. Ha considerado, pues, la respuesta y su propia contestación.
+Asimismo, esta jugada da paso a la torre rey para que coopere en el ataque que
+se proyecta sobre el ala del rey. La jugada está animada del factor ya más
+complejo y básico, que luego explicaremos detalladamente: tiene otro plan, ya
+que entraña una nueva amenaza para el adversario.} Rac8 {Sigue el negro
+acumulando fuerzas en el ala de la dama, ya que en el centro se encuentra el
+incómodo caballo que inmoviliza la situación, y en el ala del rey, las piezas
+blancas dominan.} 14. Rc1 {Esta jugada, ¿con qué propósiro puede ser
+efectuada? No concuerda aparentemente con las otras, ya que el ataque se
+prepara sobre el flanco rey, pero por algo debe haber sido ejecutada. Como el
+ataque es muy sólido en el ala del rey, el blanco primero elimina todas las
+posibilidades del negro del flanco dama. Es una jugada que podremos llamar de
+neutralización de amenazas enemigas.} Nd7 {La situación del caballo de e5
+molesta a las negras y algo intentan con este retroceso, al sacar
+voluntariamente un caballo tan bien ubicado como el de f6. ¿Qué intenta, pues,
+el negro? Salta a la vista una jugada que eliminara el caballo de e5, que es
+f6, dando asimismo juego al alfil de e8. ¿Qué contesta Alekhine?} 15. Nxc6 {
+Es esta una jugada excelente. Como no puede evitar la eliminación del caballo
+de su casilla anterior, Alekhine lo cambia por uno adversario y prepara una
+combinación, especulando con la situación trabada de las piezas enemigas.
+Alekhine ha considerado las dos únicas réplicas adversarias, que son: ...,
+Txc6 o ..., bxc6.} (15. Nxc6 {Pues bien, contra} Rxc6 {ha observado que podría
+seguir con} 16. c5 {atacando al alfil. Esta pieza debe moverse, ya a} Bc7 {
+a lo que podría seguir} ({o bien continuar con} 16... Ba5 {a lo que podría
+seguirse con} 17. Nb3 {atacando nuevamente el indefenso alfil de a5 que si se
+retira a c7 llevaría a la misma posición de antes, y si es apoyado por medio de
+} b6 {con} 18. Bb5 {seguido de Cxa5, se llegaría a una posición muy buena de
+ataque, ganándose por lo menos un peón.}) 17. Bb5 {ganando calidad. Vemos,
+pues, cómo se ha desarrollado el proceso analítico del jugador que conduce las
+blancas.}) (15. Nxc6 {Ahora, si en lugar de 15. ..., Txc6, siguiera} bxc6 {
+hay un nuevo análisis a efectuar. Igualmente surge la jugada} 16. c5 {atacando
+el alfil. Si esta pieza se retira a} Bc7 {seguiría} ({si el alfil va a la otra
+casilla de que dispone} 16... Ba5 {podría continuarse con} 17. Nb3 {atacándolo
+nuevamente. A esto no habría otra jugada para el negro que replegarse a} Bc7 {
+y entonces no es claro ver cuál es la ventaja material que podría reportar la
+variante. Sin embargo, profundizando un poco, el analista observa que los
+peones de c6 y de a7 del enemigo están muy débiles y puede preparar una
+incursión sobre los mismos, por medio de Ac3, para seguir con Ca5 y luego Da4.
+Al llegar a esta posición, el analista cree que su posición en este caso sería
+satisfactoria, como es verdad, y debido a esto ha ejecutado la combinación
+antes comentada.}) 17. Qa4 {atacando el peón de c6 y del cuadro a7.}) 15...
+Rxc6 {El negro también ha visto lo mismo que el blanco, y opta por realizar
+una contracombinación que no es buena. Se decide a entregar una pieza por tres
+peones, consecuente en su empeño de atacar en el flanco dama y de abrir líneas
+en el mismo.} 16. c5 Nxc5 {Los análisis progresivos de "mi jugada, su
+respuesta, mi propia réplica", han llevado a Drewitt a la conclusión de que
+sólo esta maniobra de sacrifIcio le puede dar chances de continuar la partida.
+Con esta movida, ha calculado lo siguiente: he comido un peón y al retomar con
+el alfil, atacaré simultáneamente dos nuevos peones enemigos, asegurándome,
+pues, la captura de uno más. En síntesis, que ha cambiado tres peones por una
+pieza, y como sabe que la técnica fría del valor de las piezas dice que tres
+peones equivalen a un caballo, cree haber realizado un cambio bueno, ya que
+por lo pronto ha desbaratado las amenazas adversarias antes enunciadas. En
+cualquier caso, es evidente que ésta es la mejor perspectiva para Drewitt.} 17.
+dxc5 Bxc5 18. Rf3 $1 {Alekhine, más observador que su adversario, ha
+entrevisto un detalle que en el calor del análisis escapó al negro. Atacados
+los peones de e3 y de a3, defiende el primero mediante una jugada de doble
+intención. La torre desde f3 apoya al peón y asimismo amenaza cooperar en una
+combinación que el blanco ha previsto. Al comentar en la jugada 10 la partida
+y esbozar los planes, dijimos que al blanco le convenía abrir brechas a sus
+filas sobre el rey enemigo. El negro, al efectuar su combinación que creyó
+salvadora, o por lo menos la mejor, se ha visto en la necesidad de eliminar el
+peón que estaba en d4 de las blancas y en esa forma el alfil de b2 también
+coopera decididamente en la ofensiva sobre el rey enemigo. Las líneas se han
+abierto, y el ataque de sacrificio no tardará en producirse.} Bxa3 19. Rxc6 $1
+{¿Por qué, preguntará el aficionado, este signo de admiración a una jugada que
+nada hace directamente en favor del ataque que todos sabemos ha de cristalizar
+pronto? Simplemente por cuanto para poder efectuarlo, esta jugada es
+indispensable, ya que el blanco proyecta un doble sacrifIcio de alfiles para
+abrir totalmente la posición del rey enemigo, y entrar luego con la dama y la
+torre y dar mate al desmantelado monarca. Uno de estos sacrificios es sin
+jaque, como se verá, y de estar la torre donde estaba recién, el negro podría,
+mediante ..., Txc1, fijar la dama blanca y anular el ataque. Este cambio es,
+pues, sólo un paréntesis necesario a la gran ofensiva que sobre el
+desguarnecido y atacado flanco rey negro se cierne.} Bxc6 20. Bxh7+ $1 {
+Se inició la combinación final. Las blancas han capturado un peón y el negro
+puede comer el alfil. El negro, que no desea quedar con inferioridad material
+y siempre estar bajo los fuegos del mismo ataque, opta por comerse la pieza.}
+Kxh7 21. Rh3+ Kg8 {Única.} ({Si} 21... Kg6 {seguiría} 22. Qh5#) 22. Bxg7 $3 {
+La clave de la combinación. Este segundo sacrificio del alfil es formidable y
+quita todas las esperanzas de una huída por vía f8 y e8 al rey negro. Esta
+forma de abrir las columnas "h" y "g" cuando el adversario está enrocado, es
+típica de los ataques contra el enroque corto, siendo sin duda una de las más
+espectaculares. En una partida jugada entre Lasker y Baller en el torneo de
+Amsterdam de 1889, y en el de San Petersburgo de 1914 entre Nimzovich y
+Tarrasch, se produjo un sacrificio similar en su base medular al de la presen
+te partida. Observemos que para la realización de la combinación el blanco ha
+considerado primero la eliminación del caballo de f6 adversario, luego la
+apertura de diagonales para los alfiles, y más tarde, la rotura del frente de
+peones del enroque para abrir las columnas de "h" y "'g".} Kxg7 23. Qg4+ Kf6 ({
+Si} 23... Kf8 24. Rh8#) 24. Qg5# 1-0
+
+[Event "Karlsbad"]
+[Site "?"]
+[Date "1929.??.??"]
+[Round "?"]
+[White "Nimzowitsch, Aaron"]
+[Black "Euwe, Max"]
+[Result "1-0"]
+[ECO "A02"]
+[Annotator "R. Grau"]
+[PlyCount "53"]
+[EventDate "1929.??.??"]
+
+1. e3 Nf6 2. b3 g6 3. Bb2 Bg7 4. f4 d6 {La apertura efectuada por el blanco
+responde a un principio estratégico que no detallaremos mayormente por escapar
+al objeto de este capítulo y no querer sembrar confusiones en el espíritu de
+los aficionados. No obstante, señalaremos que por transposición de jugadas se
+ha llegado a una apertura Bird que crea siempre una dificultad: el desarrollo
+del caballo dama. Esta pieza no puede ir a a3, porque su radio de acción es
+pequeño, ya que sólo vulnera el cuadro c4, desde donde no puede retirarse a
+ninguna de las casillas centrales por estar todas ocupadas por peones. En c3,
+su casilla lógica, anula la fuerza ofensiva de su alfil, en benefIcio de la
+del alfil adversario de g7, y si se juega d3, para luego ubicar el caballo en
+d2, se debilita un tanto la configuración de peones centrales, y se bloquea al
+alfil rey. Explicamos esto por cuanto la partida nos probará lo mismo y porque
+toda ella gira al rededor de la falta de acción de este caballo, que en cierto
+momento el blanco entrega tendiendo una magnífica celada.} 5. Qc1 {Prestando
+apoyo al alfil, detalle imprescindible en algunas variantes posibles. Si por
+ejemplo las blancas quisieran realizar una maniobra agresiva mediante:} (5. e4
+{habría seguido} e5 6. fxe5 Ng4 {y ahora se ve que el alfil de b2 necesita
+estar apoyado, para poder seguir con exd6 sin los riesgos de perder una pieza,
+pues el alfil negro domina indirectamente al alfil blanco.}) ({Igualmente,
+contra} 5. Be2 {las negras podrían liberar su juego con} e5 {ya que contra} 6.
+fxe5 {seguiría} Ng4 $1 7. Nf3 ({no} 7. Bxg4 {por} Qh4+ {seguido de ..., Dxg4.})
+7... Nc6 {y siempre las negras podrían explotar la situación del alfil de b2
+adversario, realizando combinaciones con esa base.}) {Por ese motivo,
+Nimzovich, que en sus análisis ha visto que la situación sin apoyo de su alfIl
+dama era base de varias combinaciones del enemigo, en el deseo de restar esas
+posibilidades, consolida la situación del alfil.} 5... O-O 6. Nf3 Bg4 7. Be2
+Nc6 8. O-O e5 9. fxe5 Nxe5 10. d3 {En este momento el blanco debió jugar Cc3.
+No es posible demorar tantas jugadas el desarrollo de una pieza, no sólo por
+lo que significa su falta de cooperación en la lucha general, sino por cuanto
+traba la acción de otras, también valiosas. Veremos cómo explota Euwe esa
+deficiencia. El razonamiento de Euwe es muy claro y lógico: "Mi adversario, al
+avanzar el peón dama, ha dejado sin el apoyo de un peón el de e3. Esto es una
+debilidad. Ahora bien, si mi adversario logra jugar e4, este peón débil se
+convertirá en una cadena de peones muy sólidamente apoyada entre sí. ¿Cómo
+hacer para evitar este avance? Es evidente que la jugada ..., d5 impide el
+avance, ya que, de hacerlo, el blanco perdería un peón". Indudablemente, si
+esto impide un mal debe hacerse, pero ahora surge la otra parte del
+razonamiento. Euwe ha visto la jugada ..., d5 y la haría inmediatamente, a no
+surgir los factores negativos de la jugada. ¿Cuáles son? El caballo e5 está
+apoyado por el peón que avanza a d5, y si se juega ..., d5, esta pieza queda
+perdida. Euwe ha visto su jugada y la formidable réplica de su adversario.
+¿Qué consecuencia saca de todo esto ? Pues muy simple; piénsela el aficionado
+sin seguir más adelante y por lógica la encontrará. Para avanzar el peón es
+preciso sacar el caballo, ya que si se pierde un tiempo, Nimzovich jugará e4,
+y el plan de continuar con ..., d5 habrá fracasado. Si es posible capturar una
+pieza enemiga con nuestro caballo de e5, luego podremos continuar en seguida
+con ..., d5. Salta a la vista entonces la jugada ..., Cxf3+, que además tiene
+la ventaja de ser con jaque, lo que obliga a la inmediata captura de la pieza.
+El proceso analítico del negro se ha extendido. Ha debido ver la jugada, la
+respuesta, y la réplica nuestra, salvando en ese análisis un accidente táctico
+que impedía la realización de un plan. Juega, pues, Euwe:} Nxf3+ $1 11. Bxf3
+Bxf3 {Una jugada intermedia que favorece el plan general.} 12. Rxf3 d5 $1 13.
+Qf1 Ng4 14. Bxg7 Kxg7 15. h3 Ne5 16. Rg3 f5 {Una nueva pieza se opone al
+avance del peón rey blanco, y las negras han logrado crear, mediante el
+proceso analítico que antes describimos, una definitiva preocupación para las
+blancas en el peón de e3. Como también escapa al objeto de este capítulo el
+estudio de las debilidades estratégicas, sólo esbozamos el problema de la
+debilidad para que cuando volvamos sobre él, el aficionado que haya seguido
+este curso de enseñanza, conozca su existencia.} 17. Qf4 Qf6 $3 {Euwe sigue
+razonando lógicamente. Pongámonos en la situación de él, e intentemos imaginar
+ese razonamiento. "El caballo dama de Nimzovich no ha salido de su casilla de
+origen. La diagonal central está abierta y la dama, desde f6, ataca
+indirectamente esa torre, pues el caballo de e5, que restringe su accción,
+puede de un solo salto ubicarse en f3 dando jaque, y si bien el blanco puede
+capturarlo, yo replico con ..., Dxa1, ganando calidad y amenazando seriamente
+el caballo inmóvil de las blancas".} 18. d4 {Anulando todas las amenazas del
+negro, pero se continúa beneficiando el plan de Euwe de la jugada 10. Al
+avanzar el peón dama, el peón rey queda para siempre confinado en e3, ya que
+ha perdido el punto de apoyo para avanzar eventualmente a e4. Ahora sería
+fácil para el negro acumular en un final, sobre él, las piezas ofensivas.} Nf7
+19. Qxc7 {Nimzovich ha caído en una celada estratégica, pero bien es cierto
+que no tenía nada mejor que hacer. En un final estaría perdido, y arriesga el
+todo por el todo. Euwe ha jugado toda la partida sin perder de vista la falla
+original del planteo adversario, que ya indicamos: la falta de acción del
+caballo de dama enemigo. Ha visto que una vez avanzado el peón dama, esta
+pieza podría entrar en acción por vía c3 o d2, y entonces ha comprendido que
+era necesaria la cooperación de alguna otra de sus piezas para impedirlo, o
+sacar provecho de esa deficiencia. Si fuera posible ubicar una torre en c8 sin
+estar el peón negro de c7, el plan sería realizable, y en mérito a este
+análísis profundo -que no detallamos antes al jugar 17. ..., Df6!!, para no
+confundir al lector principiante- Euwe realizó esa jugada que coronamos con
+dos signos de admiración, por sus múltiples objetivos: aparentemente ataca la
+torre enemiga, pero en realidad invita al adversario a realizar una maniobra
+ganándole un peón, pero que le permitiá abrir la columna "c", estratégicamente
+valiosa en esta posición.} Rac8 20. Qxb7 Qh4 {Esta jugada es buena, pero aún
+había otra mejor para explotar la famosa deficiencia estratégica de la
+posición blanca: el caballo dama. Euwe pudo jugar:} (20... Qd6 {atacando
+igualmente la torre, pero con mayores amenazas. Si a esto hubiera seguido} 21.
+Rf3 Rxc2 {y las blancas no podrían continuar con Ca3, atacando la torre, por
+la acción de la dama de d6 que toma ese cuadro. Era, pues, más consecuente que
+la del texro con el plan de anular definitivamente la acción del caballo. Las
+blancas habrían seguido entonces con} 22. Rf2 {a lo que las negras ganarían
+mediante} Rc1+ 23. Rf1 {única} Qe6 $1 {amenazando ..., Dxe3 que no puede ser
+evitado. Si} 24. Rxc1 Qxe3+ 25. Kh2 Qxc1 {seguido de ..., Db2, ganando;
+siempre en mérito a la mala situación del caballo.}) 21. Kh2 f4 {Es ésta una
+partida típica de combinación, como las anteriormente descritas, pero que
+termina en una celada magistral, con la que el blanco se salva de una
+situación desesperada.} 22. Rf3 fxe3 23. Nc3 $5 {El golpe de ingenio; la
+celada magnífica. Esta jugada no salva la partida, pero ofrece una
+irresistible tentación para el negro, que deja de ganar el encuentro,
+consecuente con su plan de capturar el caballo adversario, que ahora
+generosamente se ofrece a su voracidad.} Rxc3 $2 {El error. La excesiva gula
+de los ajedrecistas es la causa del éxito de innumerables celadas. Contribuye
+al éxito de las mismas, en muchas ocasiones, otro factor poderoso, que es la
+falta de tiempo para meditar las réplicas de que se dispone en los torneos. En
+éstos, el ajedrez tiene una cortapisa, que es el límite del tiempo para pensar,
+lo que justifica muchos de los errores que en algunas partidas observan y
+observarán los aficionados principiantes. Ya veremos por qué causas pierde
+esta jugada. Lo que interesa ahora es saber cómo podía ganar el negro, y lo
+mostraremos: en lugar de ..., Txc3, debió jugar:} (23... Qxd4 {atacando el
+caballo. Si} 24. Rxf7+ ({si} 24. Raf1 Qe5+ 25. Kh1 Rc7 26. Rxe3 Qxc3 $1 27.
+Rxc3 Rxb7 {ganando la pieza sin los riesgos de la variante del texto.}) 24...
+Rxf7 25. Qxc8 Qe5+ {(las negras, para ganar, deben, como se ve, entregar una
+pieza en lugar de capturar la que se le ofreció espontáneamente.)} 26. Kg1 e2
+27. Re1 Rf1+ $1 28. Rxf1 Qe3+ 29. Rf2 e1=Q+ {ganando fácilmente.}) {Como se ve,
+la celada no es elemental, ni mucho menos. Hemos buscado expresamente una
+celada de este tipo para comentar, ya que damos en otra parte de este mismo
+volumen diagramas con celadas elementales. A menudo, la celada es tan profunda
+que se confunde con la combinación, pero existe la variación fundamental de
+que la celada siempre tiene una falla, que puede ocasionar la derrota.
+Nimzovich, que se ha visto perdido, apeló al mejor de los recursos. Ha debido
+hacer un doble razonamiento. Primero, el de índole psicológica: sabe que su
+adversario tiene la vista fija en el caballo dama inmovilizado, y que ha
+orientado toda su combinación alrededor de esa pieza. La ofrece, seguro de que
+aquél no se resignará fácilmente a dejar de capturar la pieza por la que
+tantas maniobras complejas ha venido realizando. El otro aspecto es el de la
+dificultad de las variantes del plan ganador. Las hemos detallado ya, y habrá
+observado el aficionado que encierra sutilezas que bien pueden escapar al
+análisis mental del más acabado de los maestros, y en vista de ello, se decide
+a ensayar el recurso salvador. El plan de Nimzovich es jugar rápidamente Taf1,
+para especular sobre la situación del caballo de f7 del enemigo. Otro jugador
+menos hábil habría tratado de explotar esto sin sacrificar el caballo, jugando,
+por ejemplo, Ca3, lo que habría casi obligado al negro a replicar ..., Dxd4, o
+también ..., e2, que son variantes ganadoras. Al ubicar el caballo en c3
+tienta al rival, y asimismo resta algo de vigor a la jugada ..., Dxd4, que ya
+deja de atacar la torre de a1, y toma el cuadro e2, impidiendo el avance del
+peón. Es, pues, mejor y crea mayor número de perspectivas.} 24. Raf1 e2 {
+El peón en que confía Euwe para ganar a pesar de todo.} 25. Rxf7+ Rxf7 26.
+Qxf7+ {La jugada ganadora. Mala habría sido la aparente jugada:} (26. Rxf7+ {
+a causa de} Kg8 $1 27. Rg7+ Kh8 {ganando, por la amenaza de ..., Dg3+ seguido
+de e1=D++.}) {La jugada del texto, en cambio, permite al blanco realizar una
+instructiva maniobra que conduce al negro a una posición de mate inevitable, a
+pesar del famoso peón de e2 y la amenaza tardía de ..., Dg3+.} 26... Kh6 ({Si} 
+26... Kh8 27. Qf8#) 27. Qf8+ {Euwe abandonó por la siguiente amenaza:} (27.
+Qf8+ {Si} Kg5 {seguiría} 28. Qf6+ Kh5 29. g4+ Qxg4 30. hxg4+ Kxg4 31. Rf4+ {
+y luego Th4++.}) (27. Qf8+ {Si} Kh5 {el plan sería el mismo, pero con una
+trasposición de jugadas: primero} 28. g4+ Qxg4 ({si} 28... Kg5 29. Qf4#) 29.
+hxg4+ Kxg4 (29... Kh4 30. Qh6+ Kxg4 31. Rf4#) 30. Qf4+ Kh5 31. Rg1 {con mate
+inevitable. Si} h6 {para evitar Dg5++, seguiría} 32. Qg4# {pues el peón habría
+quitado al rey la casilla de escape de h6.}) 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "XX, 3."]
+[Black "NN, 3."]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "4k2r/1p1bb2p/p3pp2/3p4/2r2P2/2N3Pq/PPP1QB1P/R3R1K1 b k - 0 1"]
+[PlyCount "6"]
+[EventDate "1891.??.??"]
+
+{Aquí el negro considera una jugada que le parece muy fuerte: 1. ..., Txf4!, y
+si 2. gxf4 Tg8+, 3. Ag3 (única) Ac5+, 4. Rh1 Txg3!, con magnífico juego.
+Efectúa, pues:} 1... Rxf4 {En su análisis, el negro omitió considerar que a su
+sacrifIcio podía seguir otro sacrificio. Ahora el juego se presenta muy
+distinto a lo esperado.} 2. Nxd5 (2. gxf4 Rg8+ 3. Bg3 Bc5+ 4. Kh1 Rxg3) 2...
+Rxf2 3. Qxf2 exd5 4. Qxf6 {y gana el blanco.} 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "XX, 4."]
+[Black "NN, 4."]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "r1b2k1r/ppq2p2/2nb3p/2pn4/3P1p2/2PB1N2/PP1QN1PP/R1B1R1K1 w - - 0 1"]
+[PlyCount "9"]
+[EventDate "1891.??.??"]
+
+{En esta posición es posible que el blanco considere que debe operar para
+eliminar el peón negro de f4, que inmoviliza sus piezas; para ello pensará
+acaso jugar 1. Tf1. La maniobra Cg3, y luego Ce4 o Cf5, le resultará
+impracticable, porque el peón de f4 impide Cg3. Sin embargo, en esta posición
+el blanco jugó:} 1. Ng3 {Y la partida siguió así:} fxg3 2. Qxh6+ {(la jugada
+omitida en el análisis)} Rxh6 3. Bxh6+ Kg8 4. Re8+ Bf8 5. Rxf8# {Si el blanco
+no hubiese visto esa combinación, hubiese debido jugar una laboriosa partida
+inferior, cuyo resultado era bien dudoso.} 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Fernandez Coria, Valentin"]
+[Black "Grau, Roberto"]
+[Result "*"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "4r1k1/p1p3p1/1qpprp1p/6n1/1P2P3/2N2P2/P1PQ2PP/3RR2K w - - 0 21"]
+[PlyCount "2"]
+[EventDate "1891.??.??"]
+
+{Esta es la posición a que llegó, en un determinado momento, una partida que
+jugué con las negras, contra Fernández Coria, que llevaba las blancas. Estoy
+atacando el peón b4, y Fernández Coria, para defenderlo, jugó:} 21. Ne2 $6 {
+tratando de llevar su caballo a f5, posición muy fuerte, pues no puede ser
+desalojado mediante g6, porque quedaría perdido o muy débil el peón h6. A ese
+plan posicional repliqué desarrollando un plan de juego que meditaba al llevar
+el caballo a g5, y que consiste en ponerlo en e5. Jugué, por consiguiente:} Nf7
+$6 {Tanto la jugada de Coria como la mía fueron erróneas, pues ambos dejamos
+de considerar la siguiente maniobra:} (21... Rxe4 $1 {y si} 22. fxe4 Nxe4 23.
+Qd4 ({si} 23. Nf4 Nxd2 24. Rxe8+ Kh7 $1 {(no ..., Rf7 por Tde1!)} 25. Rxd2 Qxb4
+{etc.}) 23... Nf2+ 24. Kg1 Nxd1 {Siempre con gran ventaja. He aquí un doble
+error muy típico. Ambos jugando para conseguir simples ventajas posicionales,
+lo que se llama juego de posición, hemos dejado de ver jugadas muy sencillas,
+pero que no son propias de este juego. Suele pasar lo mismo a la inversa.
+Jugando para el ataque violento hay veces que lo más eficaz es efectuar una
+jugada pasiva, o de carácter puramente posicional, y se deja de ver, porque el
+cerebro trabaja en un tren de jugadas violentas, y las jugadas ajenas a la
+violencia resultan de más difícil concepción.}) *
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Meler, J."]
+[Black "NN"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "4r2k/1pp3p1/2bp3p/8/1PQ1P3/2N1q2P/P5P1/5R1K w - - 0 1"]
+[PlyCount "7"]
+[EventDate "1891.??.??"]
+
+{En esta posición, el blanco jugó:} 1. Nd5 {y el negro piensa que} Qxe4 $2 {
+es una réplica ganadora, porque amenaza ..., Axd5, y el caballo no puede
+retirarse, pues en tal caso ..., Dxg2++. Luego, el blanco deberá contestar
+-piensa el negro- Dxe4, y entonces, jugando 2. ..., Txe4, nos aseguramos
+ventajas. Este análisis no aprecia el valor agresivo del juego blanco. La
+partida siguió así:} 2. Rf8+ $1 {(la primera sorpresa)} Kh7 ({No} 2... Rxf8 {
+por} 3. Qxe4) 3. Nf6+ $1 {(la segunda sorpresa)} gxf6 4. Qf7# {La disyuntiva
+era, para el negro, perder la dama, como consecuencia de sus errores de visión
+del juego.} 1-0
+
+[Event "DSB-07.Kongress"]
+[Site "?"]
+[Date "1892.??.02"]
+[Round "?"]
+[White "Blackburne, Joseph Henry"]
+[Black "Winawer, Szymon"]
+[Result "1/2-1/2"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "4kb2/8/1p1p4/1P1Pp3/4P1np/2rB2q1/2Q5/5R1K w - - 0 2"]
+[PlyCount "6"]
+
+{Vemos una de las posiciones en que "cualquier jugada gana", según opina el
+jugador negro, que acaba de jugar 1. ..., Tc3, atacando la dama. Si 2. Dxc3
+Dh2++. Sin embargo, el blanco ensaya un último recurso, y juega:} 2. Qd2 {
+El negro replica} Rxd3 {Esta jugada no ha requerido mayor análisis, pues la
+posición está, según el negro, tan ganada, que es innecesario mayor análisis.
+Las blancas no comparten, sin embargo, esta opinión, y juegan} 3. Rxf8+ {
+(primera sorpresa)} Kxf8 4. Qh6+ {(segunda sorpresa)} Nxh6 {y la partida es
+tablas por ahogado; y si las negras hubiesen rechazado las entregas efectuadas,
+habría sido igualmente tablas por jaque perpetuo. Si las negras no hubiesen
+tenido ese exceso de seguridad, habrían ganado la partida, pues viendo la
+amenaza blanca, habrían jugado 2. ..., Dxd3, ganando. El exceso de confianza
+inhibe absolutamente la visión del juego.} 1/2-1/2
+
+[Event "Havana m"]
+[Site "?"]
+[Date "1890.??.??"]
+[Round "?"]
+[White "Chigorin, Mikhail"]
+[Black "Gunsberg, Isidor"]
+[Result "*"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "r1bq3r/ppp1n1pp/1b6/4P2Q/3k4/6P1/P4P1P/R3R1K1 w - - 0 1"]
+[PlyCount "5"]
+
+{Es evidente que el negro está perdido. El rey negro está a merced de las
+piezas blancas y esa situación debe terminar en mate. Así debió ser, pero
+Chigorin, influido por la excesiva confianza, jugó débil (empezando por Dd1+)
+y perdió la partida, que en la posición señalada estaba fácilmente ganada así:
+} 1. Rac1 Bf5 ({Si} 1... Kd5 2. e6+ {y mate a la siguiente. [*Nota a pie de
+página: *De hecho 2. ..., Cf5 prolonga la lucha; en cambio 2. Df7+ Ae6, 3.
+Df3+ Rd4, 4. De4++.]}) 2. Qh4+ Kd5 3. Qc4# *
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "NN, 5."]
+[Black "XX, 5."]
+[Result "0-1"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "3r2k1/p4ppp/5P2/qp2b3/2pr4/P1N2B2/1PQ2PPP/5RK1 w - - 0 1"]
+[PlyCount "4"]
+[EventDate "1891.??.??"]
+
+{En esta posición, el blanco se decide a llevar un ataque, y juega:} 1. Qf5 {
+pero no ha contado con la defensa indirecta} b4 $1 {la partida fue así:} 2. Ne4
+Bxh2+ {ganando la dama.} 0-1
+
+[Event "Carrasco"]
+[Site "?"]
+[Date "1921.??.??"]
+[Round "2"]
+[White "Grau, Roberto"]
+[Black "Loedel, Juan"]
+[Result "1-0"]
+[ECO "D40"]
+[Annotator "R. Grau"]
+[PlyCount "49"]
+[EventDate "1921.??.??"]
+
+1. d4 d5 2. Nf3 Nf6 3. c4 e6 4. Nc3 c5 5. e3 b6 6. cxd5 exd5 7. Ne5 Be6 8. Bb5+
+Bd7 9. Nxd7 Nbxd7 10. dxc5 Bxc5 11. Nxd5 O-O 12. O-O Ne5 13. Nxf6+ Qxf6 14. Bd2
+Rfd8 15. Qe2 Qg6 16. Bc3 Nc6 17. Rfd1 a5 18. Qf3 Ne7 19. Rd7 Rac8 20. Rad1 Rxd7
+21. Rxd7 Qb1+ 22. Rd1 {Jugada obligada, pues hay que cubrir el jaque. Como
+consecuencia de ello el negro puede ganar el peón "a", y lo hace, sin suponer
+que con ello cae en una instructiva celada que tendió el blanco al permitir ...
+, Db1+. La jugada Td1 no es puramente defensiva, tiene dos intenciones y el
+negro sólo ha visto una. La partida siguió así:} Qxa2 23. Qg4 $1 g6 24. Bc4 Qa4
+{única} 25. Bxf7+ {ganado la dama.} 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Amelung, Friedrich Ludwig"]
+[Black "?"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "4K3/8/5k1P/b7/R7/1n6/8/n7 w - - 0 1"]
+[PlyCount "11"]
+[EventDate "1891.??.??"]
+
+{1.- En esta posición no se alcanza a ver cómo podrán las blancas ganar. El
+negro tiene tres piezas menores, contra una torre y un peón, con el agravante
+de que el peón blanco está bajo los fuegos del rey negro, que en un solo salto
+lo atacará. Si se siguiera con 1. Th4, el negro movería al rey, y después de ..
+., Ac3, entregaría el alfil por el peón y quedaría con dos caballos contra
+torre, lo que es tablas. Pero el blanco ha visto que podrá entregar el peón
+poniendo en posición de mate al adversario, para explotar luego la situación
+apartada de las piezas negras, y juega:} 1. h7 Kg7 2. h8=Q+ $1 {(para colocar
+al rey en la banda)} Kxh8 3. Kf7 $1 {(un fino detalle de ejecución, pues el
+rey desde f7 puede ir rápidamente a g6, desde donde se amenazará mate con Ta8.)
+} Bd8 {(impidiendo Th4++.)} 4. Ra2 {(amenazando Th2++.)} Bc7 5. Kg6 $1 Ba5 {
+(interrumpiendo la acción de la torre)} 6. Re2 {y mate inevitable en e8.} 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Minckwitz, Johannes"]
+[Black "?"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "8/7p/2k3pP/5pP1/4pP2/6P1/8/4K3 w - - 0 1"]
+[PlyCount "7"]
+[EventDate "1891.??.??"]
+
+{2.- Ambos bandos tienen igualdad de peones, pero el blanco puede explotar la
+situación avanzada de su peón "h", tratando de quebrar la cadena de peones
+enemiga. A tal fin no titubea en sacrificar material, ya que el coronar un
+peón en dama es un fin promisorio. Es necesario apresurarse, por cuanto si el
+rey negro se acerca un paso, podrá apoyar el peón "f" cuando el de "g" lo
+provoque, y por eso gana mediante:} 1. g4 $1 fxg4 2. f5 {(quebrando la cadena
+para avanzar finalmente el peón torre)} g3 3. Kf1 $1 ({Si} 3. fxg6 $1 {seguiría
+} e3 {obligando igualmente a} 4. Kf1 {por la amenaza de ..., g2.}) 3... e3 4.
+fxg6 {ganando.} 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Troitzky, Alexey Alexeevich"]
+[Black "?"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "5k2/8/6K1/1Q6/7p/1Bq5/8/8 w - - 0 1"]
+[PlyCount "9"]
+[EventDate "1891.??.??"]
+
+{3.- La posición es de un final compuesto: dama y alfil contra dama. En este
+tipo de posiciones casi siempre es tablas por la dificultad de evitar el
+empate por jaque perpetuo. Además hay un peón bastante agresivo en la columna
+"h". El procedimiento para ganar es muy ingenioso; veamos:} 1. Qd7 {
+(amenazando Dd8++ y Df7++)} Qg3+ {(sacando al rey adversario de su agresiva
+situación)} 2. Kh7 $1 Qxb3 {(no es posible en otra forma evitar los dos mates
+antes enunciados)} 3. Qd8+ Kf7 4. Qg8+ {ganando la dama.} Kf6 5. Qxb3 {Vemos
+aquí al blanco entregando una pieza, para ubicar a la dama adversaria en una
+diagonal desde donde pueda permitir una combinación ganadora.} 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Kaminer, S. M.."]
+[Black "?"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "2q5/8/6p1/B6p/7k/7P/R5PK/8 w - - 0 1"]
+[PlyCount "11"]
+[EventDate "1891.??.??"]
+
+{4.- Vemos al negro con una posición aparentemente favorable, ya que tiene una
+dama contra torre y alfil. No es fácil ver cómo pueda ganar el blanco, pero la
+posición del rey negro en una diagonal negra, y en situación típica de mate,
+permite al blanco idear una combinación. Hemos dicho que la posición era
+típica de mate. Es decir, si no mediara la acción de la dama, que toma la
+casilla d8, y el peón de g6 que puede cubrir el jaque del alfil, habría mate.
+¿Cómo pueden eliminarse esos obstáculos una vez conocido el esquema de la
+posición de mate?} 1. Rc2 $1 Qxc2 ({Si} 1... Qb8+ 2. Bc7 Qf8 {(evitando Af4,
+seguido de g3 ++)} 3. Rc5 {(amenazando Ag3++)} Qxc5 4. Bd8+ g5 5. g3#) 2. Bd8+
+g5 {(ahora no es posible g3++, pero el blanco dispone de un recurso
+extraordinario)} 3. Ba5 $1 {(amenazando Ae1++, y si ..., g4, siempre A8++)} Qf2
+4. Bc7 Qf4+ ({Si} 4... Qe1 5. g3+ {y mate a la siguiente.}) 5. g3+ Qxg3+ 6.
+Bxg3# 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Barbier/Saavedra"]
+[Black "?"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "8/8/1KP5/3r4/8/8/8/k7 w - - 0 1"]
+[PlyCount "13"]
+[EventDate "1891.??.??"]
+
+{5.- Es éste un final que encierra varias dificultades, a pesar de su aparente
+sencillez. Las blancas amenazan entrar a dama y deben tratar que la torre no
+pueda comer el peón, ya que esto daría margen a un empate automático, por
+quedar en el tablero dos reyes solos. La primera jugada es evidente:} 1. c7 {
+a esto, las negras deben continuar con} Rd6+ {Las blancas deben jugar, contra
+toda la lógica} 2. Kb5 {ya que si jugaran:} (2. Kb7 {seguiría} Rd7 {fijando el
+peón, para luego capturarlo.}) ({Si} 2. Ka5 {seguiría} Rc6 {comiendo el peón y
+ganando el negro.}) {El final sigue así:} 2... Rd5+ 3. Kb4 Rd4+ 4. Kb3 Rd3+ 5.
+Kc2 {(recién ahora puede pasar a la columna "c", por cuanto si lo hubiera
+hecho una jugada antes seguiría ..., Td1 y al entrar el blanco a dama, ...,
+Tc1+, etc. ). Ahora parece que las negras están perdidas, pero disponen de un
+recurso extraordinario, en que si el blanco no estuviera prevenido contra el
+mismo, caería; juega:} Rd4 $1 6. c8=R $3 {El recurso ingenioso y la réplica
+exacta. Si las blancas hubieran entrado a dama:} (6. c8=Q {seguiría} Rc4+ {
+y contra} 7. Qxc4 {las negras quedarían con el rey ahogado, y sería tablas.}) {
+El resto es simple y bonito:} 6... Ra4 {(para evitar Ta8++)} 7. Kb3 $1 {
+amenazando la torre y Tc1++, y las blancas ganan.} 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "De Labourdonnais, Louis Charles Mahe "]
+[Black "?"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "8/2P1k3/8/5Q2/8/3pp3/4rp2/3K4 w - - 0 1"]
+[PlyCount "11"]
+[EventDate "1891.??.??"]
+
+{6.- En esta posición las blancas, aparentemente, sólo pueden aspirar a un
+empate por jaque perpetuo, ya que el negro amenaza ..., Te1++, y si éste se
+evitara con Da5, entonces ..., f1=D+ y mate. El secreto de la victoria sería
+obligar a que el rey negro fuera a la banda del tablero, mediante jaques de
+dama, y esto es imposible, pero el blanco dispone de un recurso notable que le
+hará ganar. Juega:} 1. c8=N+ $1 {(ünico para ganar)} Ke8 ({Si} 1... Kd8 {
+seguiría} 2. Qxd3+ {y luego Dxe2 ganando.}) 2. Qg6+ Kf8 ({No} 2... Kd8 {por} 3.
+Qxd3+ {con la variante antes mencionada.}) 3. Qf6+ Kg8 ({Si} 3... Ke8 4. Qe7#)
+4. Ne7+ Kh7 5. Qg6+ Kh8 6. Qh6# ({o} 6. Qg8# {Como se ve, a no mediar el
+recurso de coronar el peón en una pieza menor las blancas no habrían podido
+ganar.}) 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Behting, Karl"]
+[Black "?"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "8/1p6/p5b1/8/3N4/r7/p4PnR/k1K2B2 w - - 0 1"]
+[PlyCount "7"]
+
+{7.- En esta posición las blancas parecen estar absolutamente perdidas. El
+negro tiene gran ventaja en material, y amenaza ..., Tc3+, seguido de ..., Rb2
+y coronar un peón. Pero ya hemos dicho que en ajedrez no siempre se está tan
+perdido como parece. Este ejemplo es, a ese respecto, luminoso. El blanco
+tiene al rey adversario en posición de mate, mediante Cb3 y Cc2. Ambas
+casillas están tomadas por piezas enemigas, pero ya este hecho puede engendrar
+un plan tendiente a explotar rápidamente esa amenaza. El procedimiento es el
+siguiente:} 1. Rh3 $3 {(evitando ..., Tc3 y además, sacando la torre del ala
+del rey, para preparar la genial maniobra de obstrucción.)} Rxh3 2. f3 $1 {
+(imprescindible para evitar un eventual jaque en la primera línea, en el
+momento crítico)} Rxf3 3. Bd3 $3 {(la clave de la victoria). Una jugada de
+problema, (si la torre no estuviera en la columna "f", habría un jaque
+salvador en h1). Si el alfil es capturado con la torre:} Rxd3 {queda obstruida
+la acción del alfil negro sobre el punto c2,} ({y si se captura con el alfil,
+la de la torre sobre el punto b3, y en ambos casos, mate.} 3... Bxd3 4. Nb3#)
+4. Nc2# 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Junker-Soest, K.."]
+[Black "?"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "7k/8/P3PpK1/6p1/3b4/7r/8/4B3 w - - 0 1"]
+[PlyCount "5"]
+
+{8.- En esta posición, las blancas están, en cuanto a material, perdidas. El
+alfil detiene al peón libre de la columna "a", y la torre puede detener al de
+la columna "e", apenas éste avance. Si e7, seguiría ..., Te3, seguido de ...,
+Txe7 y las blancas no tendrían la menor chance de victoria. Es ésta otra
+posición de obstrucción, similar a alguna de las que ya hemos considerado. Si
+se lograra que, al detener un peón, la pieza que lo detiene obstruyera la
+acción de la otra, el final se podría ganar coronando un peón en dama. La
+solución es de encantadora elegancia, y simple:} 1. Bf2 {(entregando el alfil
+para crear la posición de auto-obstrucción)} Bxf2 2. e7 Re3 {(única para
+evitar la coronación del peón)} 3. a7 {y la torre, al detener el peón "e", ha
+obstruido la acción del alfil, ganando las blancas, por cuanto coronan un peón,
+dando mate.} 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "009"]
+[Black "?"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "k1r5/2B5/pQpK4/1bP5/8/8/5p2/8 w - - 0 1"]
+[PlyCount "9"]
+[EventDate "1891.??.??"]
+
+{9.- Es éste un final notablemente instrucrivo. Las blancas tienen una dama y
+un alfil, pero totalmente anulados para impedir la coronación del peón "f". El
+rey negro está en posición de mate, pero aparentemente muy bien defendido por
+las piezas que lo circundan. Sin embargo, hay un procedimiento para ganar, y
+para llegar a la victoria es necesario entregar el alfil y la dama ¡para dar
+mate con el peón de c5! Veamos:} 1. Bb8 {(como la posición es apremiante, las
+blancas entregan sus piezas para eliminar la poderosa torre que tanto defiende)
+} Rxb8 {(única para evitar Da7++)} 2. Kc7 {(amenazando Dxb8++)} Rxb6 {(forzada)
+} 3. cxb6 f1=Q 4. b7+ Ka7 5. b8=Q# 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "0010"]
+[Black "?"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "k5r1/8/pp4q1/2p5/2P4p/1P4BP/PQ6/5RK1 w - - 0 1"]
+[PlyCount "7"]
+[EventDate "1891.??.??"]
+
+{10.- Este es un notable ejemplo de recurso extraordinario, pero sumamente
+instructivo, ya que es una de las grandes sorpresas que a menudo depara el
+ajedrez. Las negras tienen una pieza menos, pero han fijado el alfil de g3,
+que aparentemente no tiene salvación, ya que está vulnerado por la poderosa
+acción coordinada de la dama y una torre. Sin embargo, existe una defensa
+ganadora en virtud de las posibilidades que ofrece la sitación del rey negro
+bajo los eventuales fuegos de jaque en la diagonal. La maniobra es así:} 1.
+Qg2+ Ka7 2. Bb8+ $1 Kxb8 ({Si} 2... Rxb8 {seguiría} 3. Qxg6) 3. Rf8+ Ka7 ({Si} 
+3... Rxf8 4. Qxg6) 4. Rxg8 {ganando.} 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Moller"]
+[Black "?"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "8/8/7p/ppPR4/kr6/1p5P/1P4PK/8 w - - 0 1"]
+[PlyCount "7"]
+[EventDate "1891.??.??"]
+
+{11.- Esta posición es también muy confusa para afirmar que el blanco puede
+ganar, y, menos, rápidamente. Hay un peón pasado en c5, pero la torre negra,
+ubicada en c4, impedirá el avance del mismo y luego los peones del ala de la
+dama se tornarían muy peligrosos para el blanco. En definitiva, para pretender
+ganar, las blancas debieran anular la torre enemiga, y el blanco encuentra un
+procedimiento aleccionador, entregando la torre, para luego copar la del
+adversario y ganar con el peón pasado.} 1. Rh5 Rc4 2. Rh4 $1 Rxh4 ({Si} 2...
+Kb4 3. Rxc4+ {seguido de c6.}) 3. g4 {(encerrando la torre)} h5 {(para liberar
+la torre)} 4. Kg3 {y el peón de c5 se corona en forma inevitable.} 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "0012"]
+[Black "?"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "7k/8/P2P4/8/8/KNN1r3/8/5bb1 w - - 0 1"]
+[PlyCount "7"]
+[EventDate "1891.??.??"]
+
+{12.- La posición del diagrama es también instructiva y muestra otra
+interesante posición. El negro tiene ventaja material, pero en cierto momento
+las piezas han de verse anuladas en su acción mediante sucesivas entregas de
+los caballos. Veamos la solución:} 1. d7 Rd3 2. Nd4 $1 Rxd4 3. a7 {(al
+ubicarse la torre en d4 se ha anulado la acción del alfil que corre por las
+diagonales negras)} Bg2 {(impidiendo la coronación del peón "a", pero las
+blancas disponen de un nuevo recurso)} 4. Nd5 {y ya no es posible evitar que
+se corone uno de los dos peones, y luego haya que entregar una pieza por el
+otro.} 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Kubbel"]
+[Black "?"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "8/4q3/8/8/bk6/1n6/1Q6/1K2N3 w - - 0 1"]
+[PlyCount "3"]
+[EventDate "1891.??.??"]
+
+{13.- Otro ejemplo bonito. Las blancas tienen una pieza menos y el rey no está
+en posición de mate, que aparentemente puede ser explotada sin embargo la dama
+está en la misma diagonal que el rey, y esto unido a una probable posición de
+mate con el caballo, engendra la siguiente maniobra ganadora:} 1. Qa3+ $3 {
+(sencillo, pero de una elegancia extraordinaria)} Kxa3 {(si el rey se moviera
+seguiría Dxe7)} 2. Nc2# {Las piezas negras le quitan al rey negro dos casillas,
+y la única válvula de escape (b4) está tomada por el caballo que da el jaque.}
+1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Amelung, Friedrich Ludwig"]
+[Black "?"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "qNR5/4B1p1/8/3p4/8/8/p7/k1K2b2 w - - 0 1"]
+[PlyCount "7"]
+[EventDate "1891.??.??"]
+
+{14.- Otro interesante ejemplo de recurso extraordinario para vencer. El
+blanco gana especulando en la posición de mate del rey negro. Para lograrlo,
+debe realizar una serie de sacrificios que, al impedir algunos jaques,
+faciliten que el mate sea dado por el caballo en c2 o b3!.} 1. Bb4 {
+(amenazando Ac3++)} d4 {(única para impedirlo)} 2. Nc6 $3 {(iniciando la
+maniobra ganadora)} Qxc8 ({Si} 2... Qa6 {o ..., Da4 seguiría} 3. Nxd4 {ganando.
+}) 3. Bc3+ $1 {(el segundo sacrificio para que el peón negro, al obstruir la
+acción de la dama, permita que el caballo amenace mate inevitable)} dxc3 4. Nd4
+{y el mate mediante Cc2 o Cb3, es inevitable.} 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rinck, Henri"]
+[Black "?"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "8/1qr5/8/2p1R3/3k4/8/4K2Q/8 w - - 0 1"]
+[PlyCount "11"]
+[EventDate "1891.??.??"]
+
+{15.- Los finales de dama y torre son siempre muy difíciles. En la posición
+del diagrama hay evidentemente la posibilidad de dar jaques. Esto, unido a la
+situación de la dama negra, facilita una combinación muy agradable e
+instructiva. Para ganar debe colocarse mediante jaques el rey en la columna
+"b" o la diagonal h1-a8, para, al dar jaque al rey, ganar la dama. Para
+lograrlo, primero es imprescindible sacar la torre de la defensa de la dama y
+el procedimiento es instructivo.} 1. Qf4+ Kc3 2. Rxc5+ $1 Rxc5 3. Qc1+ Kd4 4.
+Qe3+ Kc4 ({Si} 4... Kd5 {seguiría} 5. Qf3+ {ganando la dama.}) 5. Qd3+ Kb4 6.
+Qb1+ {Y se gana la dama.} 1-0
+
+[Event "Ostende"]
+[Site "?"]
+[Date "1905.??.??"]
+[Round "25"]
+[White "Wolf, Heinrich"]
+[Black "Blackburne, Joseph Henry"]
+[Result "1-0"]
+[ECO "B22"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "3b2k1/pp2nppp/8/1B2PP2/8/6BP/P3K1P1/8 w - - 0 24"]
+[PlyCount "11"]
+[EventDate "1905.??.??"]
+
+{16.- Es otro tipo de posición. Las blancas ven que tienen un peón atacado y
+de difícil defensa, ya que si f6, seguiría ..., gxf6 y luego ..., Cd5,
+ganándolo. Wolf tiende una especie de celada, que es todo un brillante recurso.
+Juega:} 24. Bh4 {(provocando la captura del peón por la amenaza ulterior de un
+jaque doble en d4)} Nxf5 $2 25. Bxd8 Nd4+ 26. Kd3 Nxb5 {y las negras han
+ganado el peón. Sin embargo, el caballo de b5, aparentemente tan ágil, está
+absolutamente perdido mediante la mamiobra que sigue:} 27. a4 Na3 {única} 28.
+Be7 Nb1 29. Kc2 $18 {copando el caballo.} 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "0017"]
+[Black "?"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "8/pp6/5R2/1k6/5P1P/8/pP6/2K5 w - - 0 1"]
+[PlyCount "15"]
+[EventDate "1891.??.??"]
+
+{17.- Sumamente instructivo es el recurso ganador que brinda el diagrama. Las
+negras amenazan coronar el peón en dama y aparentemente no hay forma de
+evitarlo. Las blancas especulan sobre un eventual jaque con el peón "b" para
+luego, ganando un tiempo, ubicarse con el rey en b2 y ganar con el peón "h".
+Veamos:} 1. Rf5+ Kb4 2. Ra5 $1 Kxa5 3. b4+ $1 {(con gran sencillez. mediante
+un ingenioso recurso de sacrificio, el blanco ha eliminado la fuerza agresiva
+del peón avanzado)} Kxb4 4. Kb2 Kc4 5. h5 Kd5 6. h6 Ke6 7. h7 Kf7 8. h8=Q {
+ganando.} 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Darmenón"]
+[Black "?"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "3r1rk1/ppq2ppp/4b3/4pN2/6P1/2P2P2/1PQ5/R4RK1 w - - 0 1"]
+[PlyCount "9"]
+
+{18.- Este ejemplo se aparta un poco de los que hemos venido estudiando, ya
+que la posición es favorable para el negro, y el blanco no gana
+matemáticamente, sino por med io de una celada. No obstante, es un recurso
+extraordinario y muy instructivo. Se llega a una posición típica de mate
+mediante una jugada de doble intención aparentemente errónea. Las blancas
+juegan:} 1. Rxa7 {y las negras replican} Qb6+ {(lo justo era previamente ...,
+Axf5)} 2. Kg2 Qxa7 {(el exceso de gula y el no tener en cuenta las amenazas
+adversarias ocasionan la pérdida del juego; aún ahora era bueno ..., Axf5. El
+mate, es en este momento, inevitable, por medio de un procedimiento que ya
+conocemos)} 3. Ne7+ Kh8 4. Qxh7+ $1 Kxh7 5. Rh1# 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Kubbel, Karl Artur Leonid"]
+[Black "?"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "b1k5/1q6/8/8/3p4/6p1/RQ6/6K1 w - - 0 1"]
+[PlyCount "9"]
+
+{19.- El sacrificio inesperado es uno de los recursos más espectaculares y
+habituales para decidir partidas aparentemente perdidas. La posición es muy
+instructiva. Las negras están amenazando ..., Dh1++. Para evitarlo, una vista
+poco afinada sólo recurriría a entregar la torre por el alfil, llegando a un
+final con dos peones menos, que podría ser tablas. Pero el blanco tiene la
+partida ganada, mediante un sorprendente método, que prueba que nunca hay que
+supervalorar en ajedrez la gravedad de las amenazas, y que siempre debe
+confiarse en los recursos de la propia posición. La solución es así:} 1. Qc2+
+Kd8 ({Si} 1... Kd7 {seguiría otro notable sacrificio:} 2. Ra7 $1 Qxa7 3. Qh7+ {
+ganando la dama.} Ke6 4. Qxa7) 2. Qh7 $3 {(magnífica jugada, que significa la
+entrega de la dama; las blancas amenazan Txa8+, seguido de Dh8+, o simplemente
+Dh8+, seguido de Dxa8)} Qxh7 3. Rxa8+ Ke7 4. Ra7+ Ke6 5. Rxh7 {ganando la dama.
+} 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Troitzky, Alexey Alexeevich"]
+[Black "20"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "8/7k/n2P4/6K1/5N2/2r2p2/8/6B1 w - - 0 1"]
+[PlyCount "7"]
+
+{20.- Notable final compuesto, original del famoso compositor A. Troitzky. Las
+blancas amenazan coronar un peón en dama en dos jugadas, y, para un aficionado
+de escasa experiencia, las negras están absolutamente perdidas. Sin embargo,
+hay un recurso magnífico para hacer tablas, que encontrará un jugador de
+regular valía, y un fuerte aficionado demostrará cómo, a pesar de este recurso
+de ahogado, las negras pierden mediante una maniobra excepcional, que pone en
+evidencia la notable variación de recursos del ajedrez. Veamos la solución:} 1.
+d7 {(amenazando entrar a dama. No hay cómo evitarlo, pero el negro, que
+entiende de recursos extraordinarios, busca un notable empate por ahogado)} f2
+$1 2. Bxf2 Rg3+ $1 {(entregando la torre para explotar una probable variante
+de ahogado del mismo tipo de las que observamos en los diagramas del 295 al
+315, pero ahora veremos cómo esa esperanza se desvanece)} 3. Bxg3 {(única para
+ganar. Si el rey se mueve, seguiría ..., Tg8)} Nc5 $1 {(el secreto del
+supuesto empate)} 4. d8=B $3 {y las blancas ganan teóricamente.} ({Si en lugar
+de pedir alfil las blancas pidieran dama o torre} 4. d8=Q {seguiría} Ne6+ {y si
+} 5. Nxe6 {ahogado.}) ({Si en lugar de dama, torre o alfil el blanco pidiese
+caballo} 4. d8=N {seguiría} Ne4+ {y luego de ..., Cxg3, igualmente tablas, por
+cuanto dos caballos y rey, contra rey, nunca dan mate.}) 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Troitzky, Alexey Alexeevich"]
+[Black "21"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "1N3k2/8/p1P5/pP6/8/8/5r2/3K1b2 w - - 0 1"]
+[PlyCount "13"]
+
+{21.- El final de Troitzky es igualmente aleccionador y muestra una nueva
+variación de la obstrucción como base de recursos excepcionales para ganar
+partidas aparentemente perdidas. En esta posición parece que la torre y el
+alfil, que tan ágiles son, bastan para detener los peones blancos, pero se
+verá otra vez cómo se construye una posición geométricamente similar a muchas
+de las anteriores:} 1. c7 Bh3 2. bxa6 Bg4+ {(única maniobra para evitar la
+coronación del peón "a", sin permitir la coronación directa del peón "c")} 3.
+Kc1 ({Si} 3. Ke1 {seguiría} Re2+ {y luego ..., Te8.}) 3... Bf5 4. a7 Rc2+ 5.
+Kd1 Be4 6. Nc6 $3 {(la jugada de obstrucción que hace inevitable la coronación
+de un peón). Se observará que en todos los casos la pieza, para obstruir, se
+coloca en el punto de coincidencia geométrica de las piezas enemigas.} Rxc6 7.
+a8=Q+ 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Kubbel, Karl Artur Leonid"]
+[Black "?"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "5K2/1P1p4/3p4/p7/B7/8/7p/5kN1 w - - 0 1"]
+[PlyCount "9"]
+
+{22.- Este es un final muy instructivo. Las negras amenazan coronar un peón, y
+no es fácil ver cómo puede ser esto evitado. Las blancas a su vez pueden
+entrar a dama, pero como las negras capturan el caballo, el final de alfil y
+dama contra dama y peones es absolutamente tablas. El recurso aquí empleado
+para vencer es otro tipo de obstrucción. Se trata de ubicar el rey en la
+diagonal o línea donde se corone la dama adversaria, para luego, mediante un
+jaque, ganarla. La idea es muy usual, pero el procedimiento es muy cómplejo y
+obliga a apelar al excepcional recurso del sacrificio total de las piezas
+ahora vivas, para vencer. Veamos:} 1. Ne2 {(amenazando Cg3+)} Kxe2 2. Bd1+ Kf2
+{(o ..., Re3)} ({Si} 2... Kxd1 {igualmente se entraría a dama.} 3. b8=Q h1=Q {
+y luego seguiría} 4. Qb1+ {etc.}) 3. Bf3 $1 {(provocando la ubicación del rey
+en la diagonal geométricamente peligrosa)} Kxf3 4. b8=Q h1=Q 5. Qb7+ {ganando
+la dama.} 1-0
+
+[Event "Karlsbad"]
+[Site "?"]
+[Date "1911.??.??"]
+[Round "?"]
+[White "Duras, Oldrich"]
+[Black "Cohn, Erich"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "2R5/2R4p/5p1k/6n1/8/1P2QPPq/r7/6K1 w - - 0 1"]
+[PlyCount "11"]
+
+{23.- Las negras amenazan ..., Dg2++ y ..., Dxg3+, en ambos casos con serias
+dificultades para hallar el blanco una defensa satisfactoria. Duras busca y
+encuentra un recurso magnífico, que le permitirá ganar la dama adversaria.
+Para ello, sabe que debe ubicar al rey en la columna o diagonal
+geométricamente coincidente con la dama, como hemos visto en otros ejemplos, y
+juega:} 1. Rxh7+ $1 Kxh7 2. Qe7+ Kg6 ({Si} 2... Kh6 3. Rh8+ {gana la dama.}) 3.
+Rg8+ Kf5 {(y ahora se ha logrado la posición buscada, pero surge el obstáculo
+de que, contra Dd7+ seguiría ..., Ce6, y esto ocasiona un nuevo y elegante
+sacrificio ganador)} 4. Rxg5+ Kxg5 ({Si} 4... fxg5 5. Qd7+ {etc.}) 5. Qg7+ {
+(obligando al rey a ubicarse en la diagonal, o columna fatal, ganando la dama
+en ambos casos)} Kh5 (5... Kf5 6. Qd7+) 6. Qh7+ 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Oppen"]
+[Black "NN"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "r4r1k/ppR4p/1qp2p2/6p1/1PPn4/P3N3/6PP/3QR2K w - - 0 1"]
+[PlyCount "7"]
+
+{24.- Esta es también una posición de una partida jugada, que enseña como la
+rapidez en la ejecución permite decidir partidas aparentemente laboriosas. Las
+negras atacan la torre agresiva de c7. De no ser así, las blancas podrían
+jugar Dh5, con mate inevitable. Este plan ganador, aparentemente tronchado,
+permite a las blancas idear la siguiente combinación para decidir la partída
+mediante un mate instructivo y típico:} 1. Nd5 $1 {(la jugada clave)} cxd5 2.
+Rxh7+ Kxh7 3. Qh5+ Kg8 4. Re7 {y el mate es ahora inevitable. Es de mencionar
+la rapidez en la ejecución de la maniobra que ha proporcionado la victoria al
+blanco.} 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Caldas Vianna"]
+[Black "Silvestre"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "3r2kr/pQp3pp/1q6/b4Rp1/3pN3/2P5/P5PP/4R1K1 w - - 0 1"]
+[PlyCount "19"]
+
+{25 Y ÚLTIMO.- Este ejemplo es también instructivo. Servirá para que el
+aficionado estudioso observe cuántos y cuán variados son los tipos de recursos
+excepcionales que ofrece el ajedrez en posiciones aparentemente peligrosas, y
+para que el jugador se familiarice con la parte ingeniosa del juego. Las
+negras tienen aparentemente una sólida posición y sin embargo están perdidas,
+mediante una jugada espectacular, de problema:} 1. Nd6 $3 {Defendiendo la dama
+y entregando el caballo en tres formas distintas, pero no puede ser capturado:}
+(1. Nd6 {si} cxd6 {seguiría} 2. Qf7#) (1. Nd6 {si} Qxd6 2. Qb3+ {y mate en dos.
+}) (1. Nd6 {si} Rxd6 2. Re8#) 1... dxc3+ 2. Kh1 h6 ({Si} 2... Qxb7 3. Nxb7 c2
+4. Nxa5 Rd1 5. Rff1 {etc.}) 3. Qd5+ Kh7 4. Qe4 {(amenazando sacar la torre de
+f5, con un descubierto ganador)} Kg8 5. Qe6+ Kh7 6. Rf6 $1 {(amenazando Txh6+
+y Df7++)} Rhf8 7. Qf5+ Kg8 8. Rxf8+ Rxf8 9. Qxf8+ {(rematando mediante un
+nuevo y definitivo sacrificio el encuentro)} Kxf8 10. Re8# {por la acción del
+caballo de d6!} 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Dorash, C.."]
+[Black "?"]
+[Result "0-1"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "r2b2k1/1p3ppp/P2P1n2/3p4/8/2R5/2P1R1PP/7K w - - 0 1"]
+[PlyCount "6"]
+
+{Es ésta una posición sumamente instructiva que podría servir de ejemplo a
+varios temas distintos. El blanco tiene dos torres, contra una torre, un
+caballo y un alfil. Existe una amenaza de mate en e8 que el caballo de f6
+anula. Asimismo, el blanco conoce algunos detalles característicos de
+ganancias de material de los que hablaremos más adelante, y desea explotar la
+situación avanzada de sus peones de d6 y a6, ya que en un final estaría
+perdido. No es posible jugar axb7 por la amenaza de ..., Ta1++. Entonces el
+blanco analiza la siguiente combinación:(**)} 1. Re8+ $2 ({(**)} 1. Rc8 $1 Rxc8
+2. Re8+ $1 {(magnífico segundo sacrificio hecho con el propósito de efectuar
+más tarde d7 atacando simultáneamente la torre y el caballo, ganando)} Nxe8 3.
+d7 $1 Nd6 4. dxc8=Q Nxc8 5. axb7 $18 {atacando el caballo y para seguir con
+b8=D en caso que éste se mueva.}) {El raciocinio del jugador blanco es de
+notable exactitud y la combinación hermosa y tentadora. La idea medular de la
+misma es entregar ambas torres en e8 y c8 para obligar a ubicar las piezas
+adversarias en situación de ser atacadas simultáneamente con el peón "d" y
+valorizar esos peones, a primera vista poco eficaces. En el análisis que el
+blanco efectúa ante la evidencia de la victoria, el jugador cree que para
+poner las piezas indicadas en la posición requerida es indistinto el orden de
+las jugadas intermedias de la maniobra que va a efectuar, y juega 1. Te8+, por
+cuanto a primera vista es aún más inmediata, ya que da jaque al rey adversario.
+Sin embargo, esta jugada no sólo no es igual, sino que pierde la partida
+después de:} 1... Nxe8 2. Rc8 Rxa6 $1 3. Kg1 {(para evitar el mate en a1)} Rxd6
+{defendiendo el alfil atacado, ganando.} 0-1
+
+[Event "Karlsbad"]
+[Site "?"]
+[Date "1929.??.??"]
+[Round "?"]
+[White "Saemisch, Fritz"]
+[Black "Capablanca, Jose Raul"]
+[Result "1-0"]
+[ECO "E24"]
+[Annotator "R. Grau"]
+[PlyCount "123"]
+[EventDate "1929.??.??"]
+
+1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. a3 Bxc3+ 5. bxc3 d6 6. f3 e5 7. e4 Nc6 8. Be3
+b6 9. Bd3 {El plan, en este momento, para el negro, es jugar ..., 0-0; para
+más tarde continuar con ..., Aa6 y ..., Ca5, atacando el peón doblado de las
+blancas de c4. Capablanca creyó haber ya efectuado la primera de estas jugadas,
+y jugó:} Ba6 $4 {a lo que Saemisch siguió con} 10. Qa4 {atacando
+simultáneamente el alfil de a6 y el caballo de c6. No es posible a esto
+continuar con ..., Ca5, por cuanto al haber omitido el enroque, que es la
+jugada previa del plan, el caballo está "clavado" por la situación del rey. Es
+por lo tanto obligarorio jugar} Bb7 {como jugó Capablanca, pero a esto siguió}
+11. d5 {ganado el caballo. Es éste un error mecánico. Muchas veces se realizan
+en la apertura jugadas partiendo de la base errónea de que se han ejecutado
+otras movidas previas. En todo momento, y con mayor intensidad en las
+posiciones muy familiares, el jugador debe proceder con la máxima atención, y
+no confiar en la memoria, o en la primera impresión.} Qd7 12. dxc6 Bxc6 13. Qc2
+O-O-O 14. Ne2 Qe6 15. Bg5 h6 16. Bxf6 Qxf6 17. O-O h5 18. f4 Qh6 19. Rae1 Rhe8
+20. f5 Qe3+ 21. Kh1 Qc5 22. Qc1 f6 23. Rf3 Rh8 24. Qb2 a5 25. Rb1 h4 26. Nd4
+Bd7 27. Nb3 Qc6 28. Nxa5 Qa8 29. Nb3 h3 30. g3 g6 31. fxg6 f5 32. Qc2 Rhg8 33.
+Nd2 f4 34. gxf4 Rxg6 35. f5 Rg2 36. Rg1 Rdg8 37. Rxg2 hxg2+ 38. Kg1 Qxa3 39.
+Rg3 Rxg3 40. hxg3 Ba4 41. Qb1 Qxc3 42. Nf3 Bb3 43. Kxg2 Bxc4 44. Bxc4 Qxc4 45.
+Kf2 d5 46. exd5 e4 47. Nd2 Qxd5 48. Ke2 Qxf5 49. Qxe4 Qb5+ 50. Kf3 Qa5 51. Nc4
+Qa1 52. g4 Qf1+ 53. Kg3 Qg1+ 54. Kh4 Qh2+ 55. Kg5 Kb8 56. Kg6 Ka7 57. g5 b5 58.
+Ne5 c5 59. Qd5 Qc2+ 60. Kf6 b4 61. g6 b3 62. g7 1-0
+
+[Event "NLD-ch Nijmegen"]
+[Site "?"]
+[Date "1921.??.??"]
+[Round "5"]
+[White "Te Kolste, Jan Willem"]
+[Black "Loman, Rudolf"]
+[Result "0-1"]
+[ECO "C89"]
+[Annotator "R. Grau"]
+[PlyCount "36"]
+[EventDate "1921.??.??"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3
+d5 9. exd5 Nxd5 10. Nxe5 Nxe5 11. Rxe5 Nf6 12. h3 Bd6 13. Re1 Ng4 14. d4 Nxf2
+15. Qf3 Qh4 16. Qxf2 (16. Qxf2 {Esta es una posición típica de una variante de
+la apertura Ruy López. El negro acaba de entregar un caballo en f2, que las
+blancas han capturado con la dama, provocando la amenaza de ..., Ag3, pues
+confían en una bonita combinación de mate. Veamos:} Bg3 17. Qxf7+ Rxf7 18. Re8#
+{Tres son las piezas que, armonizando su acción, engendran esa amenaza: la
+dama, la torre de e1 y el alfil de b3. A esto se agrega la situación del alfil
+dama negro, que al interrumpir la acción de las torres facilita la intromisión
+de la torre en e8.}) {Bien; las negras jugaron en este momento:} 16... Bh2+ {
+con doble intención. Las blancas creyeron que sólo entrañaba el infantil lance
+de capturar la dama si seguía Rxh2, y jugaron eludiendo la pérdida de la dama
+con} 17. Kf1 {aparentemente con la misma amenaza anterior. Ahora las negras
+entraron en la aparente celada del blanco, y jugaron} Bg3 {Éste, que ha visto
+que fundamentalmente la posición básica de sus piezas agresivas no ha variado,
+jugó inmediatamente} 18. Qxf7+ $2 {a lo que el negro continuó con} Rxf7+ {
+poniendo en evidencia su segunda intención al jugar ..., Ah2+. Este error,
+grosero aparentemente, es bastante común. Muchos jugadores no reparan en las
+amenazas del adversario ni en las pequeñas variaciones de la posición, que a
+menudo suelen ser -como en el presente caso- fundamentales. Una simple
+alteración de jugadas de apariencia intrascendente puede variar totalmente el
+curso de una partida. A todas las jugadas del adversario hay que buscarles o
+atribuirles más de una intención. Hay que desconfiar permanentemente de las
+amenazas muy aparentes, y reanalizarlas después de cada jugada.} 0-1
+
+[Event "Wch01 USA"]
+[Site "?"]
+[Date "1886.??.??"]
+[Round "4"]
+[White "Steinitz, William"]
+[Black "Zukertort, Johannes Hermann"]
+[Result "0-1"]
+[ECO "C67"]
+[Annotator "R. Grau"]
+[PlyCount "78"]
+[EventDate "1886.??.??"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. Re1 Nd6 6. Nxe5 Nxe5 7. Rxe5+ Be7
+8. Bf1 O-O 9. d4 Bf6 10. Re1 Re8 11. c3 Rxe1 12. Qxe1 Nf5 13. Bf4 d6 14. Nd2
+Be6 15. Bd3 Nh4 16. Ne4 Ng6 17. Bd2 d5 18. Nc5 Bc8 19. Qe3 b6 20. Nb3 Qd6 21.
+Qe8+ Nf8 22. Re1 Bb7 23. Qe3 Ne6 24. Qf3 Rd8 25. Qf5 Nf8 26. Bf4 Qc6 27. Nd2
+Bc8 28. Qh5 g6 29. Qe2 Ne6 30. Bg3 Qb7 31. Nf3 c5 32. dxc5 bxc5 33. Ne5 c4 34.
+Bb1 Bg7 35. Rd1 Bd7 36. Qf3 Be8 {Las blancas están especulando con la posición
+de la dama negra bajo los fuegos indirectos de la dama blanca. Hay un peón
+entremedio, pero ese peón defiende a otro, detalle importante, pues las
+blancas, capturando este peón lo ganan, ya que no es posible, aparentemente,
+si Cxc4 dxc4, a causa de Dxb7. Sólo un inconveniente tiene este plan para eI
+análisis defectuoso de Steinitz: la amenaza de ..., Txd1++, después de Dxb7, y
+entonces piensa que bien puede cambiar primero las torres, y juega así:} 37.
+Nxc4 $2 dxc4 38. Rxd8 Nxd8 ({Si} 38... Qxf3 39. Rxe8+ {y luego gxf3, etc.}) 39.
+Qe2 ({Ahora si} 39. Qxb7 Nxb7 {El error es a primera vista muy grueso, pero se
+justifica. Steinitz ha especulado sobre la situación indefensa de la dama
+adversaria y no se ha dado cuenta de que al cambiar las torres, el caballo
+pasaba a defender la dama. No se ha preocupado de las variaciones que los
+cambios introdujeron en la acción de las piezas.}) 39... Ne6 0-1
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Holst, V.."]
+[Black "Krejcik, J.."]
+[Result "0-1"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "3r1rk1/pb3ppp/1p6/2pNp1P1/2P1Q3/5R2/1q5P/6RK w - - 0 1"]
+[PlyCount "4"]
+
+{El blanco, que tiene en su subconciencia fijas estas posiciones
+características, idea un mate con esa base sin dar importancia al alfil
+adversario de b7, por cuanto hay varias piezas que obstruyen su acción y,
+teniendo la posición actual en la mente, no alcanza a ver que, una vez
+realizada la combinación, el alfil le impedirá realizar la jugada final, por
+la posición del rey en la misma diagonal. Hay tres mates distintos que
+resultan imposibles. Veamos:} {Primero:} 1. Ne7+ ({Segundo: Vuelve a ensayar
+otro de los tentadores mates, y juega:} 1. Qxh7+ Kxh7 2. Rh3+ Kg6 {y ahora 3.
+Ce6 sería mate, pero no es posible jugar esto, por la situación del rey bajo
+los fuegos del alfil.}) ({El tercer mate es el de las dos torres, que hemos
+visto en otros ejemplos; se inicia así:} 1. Nf6+ gxf6 2. gxf6+ Kh8 3. Qxh7+
+Kxh7 {y ahora el mate final con la torre es imposible, por la misma acción del
+alfil.}) 1... Kh8 2. Qxh7+ Kxh7 {y ahora al intentar jugar Th3++, el blanco
+observa que esta pieza está "clavada" por el alfil adversario.} 0-1
+
+[Event "exhibición"]
+[Site "Buenos Aires"]
+[Date "1914.08.19"]
+[Round "?"]
+[White "Capablanca, Jose Raul"]
+[Black "Villegas, Benito"]
+[Result "1-0"]
+[ECO "D11"]
+[Annotator "R. Grau"]
+[PlyCount "65"]
+[EventDate "1914.08.19"]
+[EventType "game"]
+[EventCountry "ARG"]
+
+1. d4 d5 2. Nf3 Nf6 3. e3 c6 4. Bd3 Bg4 5. c4 e6 6. Nbd2 Nbd7 7. O-O Be7 8. Qc2
+Bh5 9. b3 Bg6 10. Bb2 Bxd3 11. Qxd3 O-O 12. Rae1 Qc7 13. e4 dxe4 14. Nxe4 Nxe4
+15. Rxe4 Bf6 16. Qe3 c5 17. Ne5 cxd4 {Villegas acaba de jugar ..., cxd4
+atacando la dama, para obligar aparentemente a responder con Axd4, apoyando el
+caballo de e5 y permitiendo una simplificación completa de las piezas menores.
+Capablanca idea una combinación de ganancia de material, fácil de apreciar
+para quien conozca el valor de las piezas que antes hemos detallado. Especula
+en una posición de mate del adversario (base de innumerables maniobras de
+ganancia de piezas) y, producida una gran simplificación, quedará con un saldo
+de material muy favorable. Veamos:} 18. Nxd7 $1 Qxd7 $1 {Así jugó Villegas y
+logró evitar la pérdida de material que nos interesa detallar, y que era la
+siguiente:} (18... dxe3 19. Nxf6+ Kh8 ({si} 19... gxf6 {seguiría} 20. Rg4+ Kh8
+21. Bxf6#) 20. Rh4 $1 {(el secreto de la combinación radica en esta amenaza de
+mate que debe obligar a realizar una mala jugada, permitiendo la realización
+de un jaque doble recuperando la dama con un buen saldo de material favorable)}
+h6 {única} 21. Rxh6+ $1 gxh6 22. Ne8+ Kh7 23. Nxc7 {Súmense ahora las fuerzas
+restantes de cada bando y se observará que las blancas tienen una apreciable
+ventaja material, ya que habrían capturado un caballo, un alfil, un peón y la
+dama, sucesivamente, a cambio de un peón, una torre y la dama. Súmese el valor
+de estas piezas y se verá que las blancas han capturado piezas por valor de 17
+y 1/2 contra 16 y 1/2 que han perdido. Por lo tanto, de acuerdo con lo que
+hemos visto, quedarían con una ventaja equivalente a un peón, que debería
+darles la victoria.}) 19. Bxd4 Bxd4 20. Rxd4 Qc7 21. Rfd1 Rfd8 22. b4 Rxd4 23.
+Qxd4 b6 24. g3 Rc8 25. Rc1 Rd8 26. Qe3 Kf8 27. c5 bxc5 28. Qe4 Rd5 29. bxc5 g6
+30. c6 Kg7 31. a4 Rd6 32. Qe5+ Kf8 33. Qxd6+ 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "NN, 6."]
+[Black "XX, 6."]
+[Result "*"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "1kr1q1n1/pppb1r1p/2npp1p1/1B3p2/1b3B2/2NPPPNP/PPPQ2P1/1KR1R3 w - - 0 1"]
+[PlyCount "9"]
+
+{En esta posición juegan las blancas y optan por realizar una serie de cambios
+de piezas especulando en un detalle primordial para ello. Las blancas realizan
+la primera captura y siempre llevan una captura de ventaja. Sólo deben tratar
+de evitar que el negro capture en ese ínterin una pieza de mayor valor que
+ellas, para tener la seguridad de que por lo menos no han de perder material
+en estos cambios. Veamos:} 1. Bxc6 Bxc3 $2 {El error. Las negras debieron
+rechazar la propuesta de las blancas y seguir con:} (1... Bxc6 {parando el
+cambio de piezas en la primera jugada.}) {Ahora se ven lanzadas en un
+torbellino de simplificación que ha de barrer con todas las piezas y dejar al
+blanco con una de ventaja.} 2. Bxd7 ({No} 2. Qxc3 {a causa de} Bxc6 {lo que
+dejaría todo reducido a un simple cambio.}) 2... Bxd2 3. Bxe8 Bxe1 {(para
+tener la posibilidad de sacar el alfil de la línea extrema, tomando el caballo)
+} 4. Bxf7 Bxg3 5. Bxg3 {(ésta fue la jugada que no previeron las negras, y
+realmente la más simple) . Ellas supusieron que en la fiebre de los cambios,
+el blanco continuaría con:} (5. Bxg8 {a lo que seguiría} Bxf4 6. Bxe6 Bxe3 7.
+Bxc8 ({si} 7. Re1 Bf2 8. Re2 Re8 {etc.}) 7... Bxc1 8. Bxb7 Bxb2 9. Kxb2 {
+llegando a una liquidación total de piezas mayores y menores y quedando en un
+final de peones con exacta proporción de material cada uno.}) *
+
+[Event "Rosario"]
+[Site "?"]
+[Date "1929.??.??"]
+[Round "?"]
+[White "Garcia Vera, Oscar"]
+[Black "Grau, Roberto"]
+[Result "0-1"]
+[ECO "A46"]
+[Annotator "R. Grau"]
+[PlyCount "38"]
+[EventDate "1929.??.??"]
+
+1. d4 Nf6 2. Nf3 c5 3. Bf4 {En esta posición las negras jugaron} cxd4 {y las
+blancas continuaron con} 4. Nxd4 {que es un grave error, pues permite la
+realización de una fourchette muy típica, ya que el peón está apoyado
+indirectamente por un eventual jaque de la dama en a5. La partida siguió:} e5 (
+{No} 4... Qa5+ {a causa de} 5. Bd2 {saliendo de la posición típica.}) 5. Be3 ({
+Si} 5. Bxe5 Qa5+ {ganando la pieza.}) 5... exd4 6. Bxd4 Nc6 7. e3 Be7 8. Nd2
+Nxd4 9. exd4 O-O 10. Bd3 d5 11. O-O Bd6 12. h3 Qb6 13. Nf3 Bd7 14. b3 Rae8 15.
+c4 Bb8 16. g4 Qd6 17. Kg2 Qf4 18. Rh1 Ne4 19. Qf1 f5 0-1
+
+[Event "Karlsbad"]
+[Site "?"]
+[Date "1929.??.??"]
+[Round "?"]
+[White "Canal, Esteban"]
+[Black "Becker, Albert"]
+[Result "1-0"]
+[ECO "C50"]
+[Annotator "R. Grau"]
+[PlyCount "85"]
+[EventDate "1929.??.??"]
+
+1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bc4 Bc5 5. d3 d6 6. Bg5 h6 7. Bxf6 Qxf6 8.
+Nd5 Qd8 9. c3 Be6 10. d4 exd4 11. cxd4 {En esta posición las negras tienen
+amenazada una pieza y jugaron ..., Ab6? lo que originó pérdida de material.
+Becker ha visto una combinación y no ha calculado que, si bien se libraba
+mediante ella de la fourchette, se bloqueaba una pieza propia, que más tarde
+caería por medio de una simple agresión. Veamos:} Bb6 $2 ({Era indudablemente
+mejor para Becker haber jugado} 11... Bb4+ {pero igualmente las blancas
+hubieran logrado ganar material mediante} 12. Nxb4 Bxc4 ({no} 12... Nxb4 {
+a causa de} 13. Qa4+ {seguido de Dxb4 defendiendo el alfil, o de d5 si el
+caballo se retira repitiendo la fourchette.}) 13. Nxc6 bxc6 14. Qc2 d5 ({si} 
+14... Bb5 15. a4 {ganando el alfil, ya que si} Ba6 {seguiría} 16. Qxc6+ {
+y luego Dxa6.}) 15. b3 dxe4 16. Qxe4+ Be6 17. Qxc6+ {lo que llevaría a la
+ganancia de un peón.}) 12. Nxb6 axb6 ({Si} 12... Bxc4 13. Nxc4 {ganando la
+pieza sin complicaciones.}) 13. d5 {(la fourchette)} Na5 {(ensayando uno de
+los sistemas de defensa contra las agresiones: el contraataque)} 14. Bd3 {
+la jugada justa.} ({Si} 14. dxe6 Nxc4 15. exf7+ Kf8 ({ya que si} 15... Kxf7 {
+seguiría} 16. Qd5+ {ganando la pieza por jaque doble.})) 14... Bg4 {(sacando
+la otra pieza agredida)} 15. b4 {efectuando una agresión simple al caballo,
+que no tiene retirada.} Qf6 16. O-O {Si ahora las blancas se engolosinaran
+inmediatamente con el caballo:} (16. bxa5 {seguiría} Qc3+ {haciéndoles perder
+el enroque.}) {Pero como la posición del caballo no ha variado con esta
+agresión (lo mejor es evitar dicho contraataque), y en esta posición es
+imposible evitar la pérdida de la pieza.} 16... g5 17. bxa5 {La fourchette,
+derivada en copada de la pieza, ha dado sus frutos.} Rxa5 18. Be2 Ra3 19. Qd4
+Qxd4 20. Nxd4 Bxe2 21. Nxe2 Kd7 22. Rfc1 Rha8 23. Nc3 R8a5 24. Rab1 Rc5 25. Rb3
+Ra4 26. Re1 Rac4 27. Re3 f5 28. f3 f4 29. Rd3 b5 30. a3 Ke7 31. Kf2 Kd7 32. Ke2
+c6 33. Kd2 Kc7 34. Rb1 Kd7 35. h4 Ke7 36. hxg5 hxg5 37. e5 cxd5 38. exd6+ Kd7
+39. Rh1 d4 40. Rh7+ Kc6 41. Ne4 Rc2+ 42. Ke1 Rc1+ 43. Rd1 1-0
+
+[Event "Círculo"]
+[Site "Buenos Aires"]
+[Date "1925.??.??"]
+[Round "?"]
+[White "Fernandez Coria, Valentin"]
+[Black "Grau, Roberto"]
+[Result "0-1"]
+[ECO "D30"]
+[Annotator "R. Grau"]
+[PlyCount "66"]
+[EventDate "1925.??.??"]
+
+1. d4 d5 2. Nf3 Nf6 3. c4 e6 4. Bg5 Nbd7 5. e3 c6 6. Nbd2 Qa5 7. Bxf6 Nxf6 8.
+Bd3 dxc4 9. Bxc4 Bd6 10. O-O e5 11. Qb3 O-O {La idea para proyectar la
+combinación surge por la posición provocada por el negro con su jugada ..., e5.
+Las blancas, para hacer efectiva la amenaza sobre ese peón, deben desalojar la
+dama, que es la pieza que coopera con el alfil en su apoyo. Si fuera posible
+jugar Cc4 inmediatamente, se ganaría, pero el alfil está ocupando el cuadro
+fuerte de la posición. Las blancas, con esta base, idean la combinación. Ven
+la posibilidad de sacar el alfil mediante una jugada agresiva, entregándolo a
+cambio de un peón observando que luego podrán recuperar la pieza manteniendo
+ventaja material a su favor y juegan:} 12. Bxf7+ Rxf7 13. Nc4 $1 {La inversión
+de jugadas no sería tan feliz ya que si primero:} (13. dxe5 {seguiría} Bxe5 14.
+Nc4 Bxh2+ 15. Nxh2 ({si} 15. Kxh2 Qc7+) 15... Qc7) 13... Qc7 14. Nxd6 Qxd6 15.
+dxe5 {(la famosa fourchette)} Qe7 16. exf6 Qxf6 17. Qc3 {con un peón de más.}
+Qh6 18. Rad1 Rxf3 19. gxf3 Bh3 20. Kh1 Bxf1 21. Rxf1 Qh3 22. Qb3+ Kh8 23. Qd1
+Rf8 24. f4 Qe6 25. Qb3 Qh3 26. Qd1 Qe6 27. Qd4 Qxa2 28. Rg1 Qf7 29. Rg5 Qf6 30.
+Re5 Rd8 31. Qd7 h6 32. Qxb7 Qg6 33. Qb3 Qg4 0-1
+
+[Event "Mayor"]
+[Site "Buenos Aires"]
+[Date "1923.??.??"]
+[Round "2"]
+[White "Grau, Roberto"]
+[Black "Subira y del Rio, Mariano"]
+[Result "1-0"]
+[ECO "B16"]
+[Annotator "R. Grau"]
+[PlyCount "45"]
+[EventDate "1923.??.??"]
+
+1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ gxf6 6. Bc4 Bf5 7. c3 e6 8.
+Bf4 Nd7 9. Nf3 Nb6 10. Bb3 Nd5 11. Bg3 Bg4 12. Qd3 Ne7 13. Nd2 Nf5 14. Bf4 Bd6
+{En la posición que sigue nada permitiría suponer que las negras tienen una
+pieza matemáticamente perdida. Han provocado al alfIl blanco mediante ..., Ad6
+y las blancas idean una combinación que ha de reportarles la ganancia de una
+pieza. Parecerá a primera vista difícil hallar esto; pero no lo es tanto
+teniendo la idea de la fourchette perfectamente arraigada. Supongamos que no
+existiera la amenaza de ..., Axf4 de parte de las negras y pronto veríamos que
+mediante h3 se obligaría al alfil a retirarse a h5 poniéndose en la posición
+típica para la fourchette: dos piezas en la misma línea, separadas entre sí
+por una columna, y esto permitiría jugar g4 ganando la pieza. Si se jugara Ag3
+las negras mediante ..., Cxg3 se zafarían de todos los riesgos, y esto sugiere
+a las blancas la jugada:} 15. Qe4 $1 {que apoya al alfil y acentúa las
+amenazas, ya que el alfil de g4 queda bajo los fuegos de la dama enemiga.
+Veamos la continuación:} Bxf4 ({Si} 15... Ng7 16. Bxd6 Bf5 17. Qf4 Nh5 18. Qh4
+{ganando.}) ({Si} 15... Bh5 16. g4 $1 {el ataque de fourchette.}) 16. Qxf4 Rg8
+17. h3 Bh5 18. g4 Nh4 {(un último recurso: sacar el caballo de la posición
+mala mediante una jugada de contraataque)} 19. Qh6 Ng2+ 20. Kf1 Bxg4 21. hxg4
+Rxg4 22. Rh2 Rg6 23. Qxh7 {etc.} 1-0
+
+[Event "Círculo"]
+[Site "Buenos Aires"]
+[Date "1926.??.??"]
+[Round "?"]
+[White "Nogues Acuna, Alejandro"]
+[Black "Grau, Roberto"]
+[Result "0-1"]
+[ECO "E07"]
+[Annotator "R. Grau"]
+[PlyCount "112"]
+[EventDate "1926.??.??"]
+
+1. Nf3 d5 2. c4 e6 3. b3 Nf6 4. Bb2 c6 5. g3 Be7 6. Bg2 O-O 7. O-O Nbd7 8. d4
+b5 9. Nbd2 Qa5 10. Qc2 bxc4 11. bxc4 Ba6 12. Bc3 Bb4 13. Bxb4 Qxb4 14. Rfb1 Qa5
+15. Rb2 Rab8 16. Rab1 Rxb2 17. Rxb2 h6 18. e4 dxc4 19. e5 Nd5 20. Nxc4 Bxc4 21.
+Qxc4 Rb8 22. Rxb8+ Nxb8 23. Qb3 Qb6 24. Nd2 Nd7 25. Qa4 {Defendiendo el peón
+atacado de d4, sin observar que por medio de una maniobra de jaque doble con
+el caballo, adornada por un fácil y claro sacrificio transitorio de dama,
+pierden el peón central. Veamos:} Nc3 {atacando la dama y amenazando ..., Ce2+
+ganando el peón con el caballo.} (25... Nc3 {Si} 26. Qxc6 {seguiría} Qxd4 {
+y luego ..., Cxe5.}) {El blanco decide jugar:} 26. Qc4 {evitando ..., Ce2+ y
+continuando en la defensa del peón, sin advertir que mediante una inversión de
+la maniobra sobre el peón débil, las negras lo ganan. El partido siguió con:}
+Qxd4 {y contra} 27. Qxd4 {las negras con} Ne2+ {ganaron el peón. Este es un
+ejemplo simple de ganancia de material, pero hemos querido darlo para preparar
+al aficionado para otros de mayor enjundia.} 28. Kf1 Nxd4 29. f4 Nb6 30. Ne4
+Nd5 31. Ke1 Kf8 32. Nd6 Nb5 33. Nc8 Ke8 34. a4 Nbc3 35. Nd6+ Ke7 36. a5 Nb5 37.
+Nc4 Kd7 38. Kd2 Nd4 39. Kd3 c5 40. Nd6 Nc6 41. Nxf7 c4+ 42. Kd2 c3+ 43. Kc1
+Nxa5 44. Be4 Ne3 45. Bc2 Nb7 46. h3 a5 47. g4 Ke7 48. Nh8 Nc5 49. Ng6+ Kf7 50.
+f5 a4 51. Nh8+ Kg8 52. fxe6 Nxe6 53. Ng6 Nc5 54. Kb1 a3 55. Bf5 Nxf5 56. gxf5
+Nd3 0-1
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "NN"]
+[Black "Gutmayer, F."]
+[Result "0-1"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "r5k1/p5p1/1p5p/3q4/1P2n3/1N1Q3P/P3r1P1/R2R2K1 b - - 0 1"]
+[PlyCount "5"]
+
+{Las negras tienen una amenaza aparente de ..., Txg2 seguido de ..., Cc5 con
+jaque descubierto, pero las blancas pueden evitar la agresión doble cubriendo
+el jaque con la pieza agredida (Df3) o mejor aún Dxd5!. Visto esto las negras
+comienzan a especular en la posición de la torre inmovilizada en el apoyo a la
+dama, lo que hace que virtualmente la octava línea esté indefensa y juegan:} 
+1... Re1+ 2. Kh2 {(única para no perder la dama). Parece que esta jugada haya
+anulado la acción agresiva de la torre, pero ahora aparece el doble en la
+característica casilla f2, como elemento continuador de la maniobra ganadora
+de material. Las negras siguieron con} Rh1+ {entregando la torre, siempre
+especulando en que la torre no puede ser capturada por su situación de pieza
+sostén de una fuerza más valiosa que la entregada, y que por ello el jaque
+doble con el caballo es inevitable. Debe continuarse con} 3. Kxh1 {y} Nf2+ {
+gana la dama. Este ejemplo nos muestra cómo se provoca una posición de
+ganancia de material mediante un doble de caballo, y lo valioso que es este
+recurso como elemento tendiente a desnivelar las posiciones.} 0-1
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Zabowe"]
+[Black "?"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "r5k1/3q2Pp/p7/1p5Q/8/7P/1P4P1/5RK1 w - - 0 1"]
+[PlyCount "5"]
+
+{Observese que ahora hay igualdad absoluta de piezas mayores y que las blancas
+sólo tienen un peón más. Esto es interesante para observar luego cuál ha sido
+el beneficio derivado del cambio. La maniobra es así:} 1. Rf8+ Rxf8 ({Si} 1...
+Kxg7 {seguiría} 2. Rxa8) 2. Qxh7+ $3 {Sacrificio indispensable para poner al
+rey y a la dama en la posición característica para recibir un jaque doble de
+caballo dentro de la circunferencia de su radio de acción.} Kxh7 3. gxf8=N+ $1
+{dando doble y ganando.} 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Troitzky, Alexey Alexeevich"]
+[Black "B"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "2B5/7N/1q4P1/1pk5/8/2P3P1/P1P5/1K6 w - - 0 1"]
+[PlyCount "11"]
+
+{La solución del final es difícil, pero todo gira en la serie de jaques dobles
+que el caballo blanco puede dar, para ir protegiendo, mediante este notable
+recurso, el avance de su peón de g6. La primera jugada es:} 1. g7 {amenazando
+coronar el peón. Las negras deben replicar} Qg6 {ya que sí:} (1... Qd8 {
+seguiría} 2. Nf8 {y contra} Qd5 3. Be6) 2. Nf8 {defendiendo el peón
+indirectamente por el jaque doble del caballo, y además, atacando la dama} Qxg3
+3. Bg4 $3 {el recurso de notable ingenio para colocar a la dama en una
+posición donde el jaque doble o la coronación del peón sea inevitable} Qxg4 4.
+Nd7+ Kd6 {(única para evitar un doble directo)} 5. Nf6 $1 {atacando la dama y
+amenazando g8=D, etc.} Qxg7 6. Ne8+ {doble.} 1-0
+
+[Event "Great Britain"]
+[Site "?"]
+[Date "1860.??.??"]
+[Round "?"]
+[White "Kolisch, Ignatz"]
+[Black "Harrwitz, Daniel"]
+[Result "1-0"]
+[ECO "C44"]
+[Annotator "R. Grau"]
+[PlyCount "77"]
+[EventDate "1860.??.??"]
+
+1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Bc4 Bc5 5. O-O d6 6. c3 dxc3 7. Qb3 Na5 8.
+Bxf7+ Kf8 9. Qxc3 Kxf7 10. Qxa5 Nf6 11. e5 Ne4 12. b4 Bxf2+ 13. Rxf2 Nxf2 14.
+Kxf2 Rf8 15. Bg5 Qd7 16. Qd5+ Kg6 17. Kg1 Rxf3 18. gxf3 c6 19. Qd2 Qf5 20. f4
+dxe5 21. Qd6+ Be6 22. Nd2 h6 23. Bh4 exf4 24. Nf3 Kh7 25. Re1 Re8 26. Kf2 Qg4
+27. Re4 Bd5 28. Rxf4 Qh5 29. Bg3 Re6 30. Qd8 Qg6 31. Nd4 Re8 32. Qd7 Re5 33.
+Qg4 Qb1 34. Ne2 h5 35. Qh3 Qxa2 36. Qf1 Qd2 37. Qb1+ Kh6 {En esta posición las
+blancas tienen un caballo a cambio de tres peones y una equivalencia absoluta
+de las otras fuerzas. Esto lleva al convencimiento de que materialmente la
+posición es equivalente pero ambos adversarios tienen amenazas distintas y
+comienza a desnivelarse la posición. Las negras están amenazando ..., Dxe2+ o .
+.., Txe2+, especulando en la abierta situación del rey blanco. El blanco debe,
+pues, buscar una agresiva y apremiante jugada de contraataque o apoyar
+penosamente el caballo atacado. Entre los dos planes conviene siempre buscar
+el que involucre iniciativa y signifique una agresión al bando enemigo.
+Observe el lector que la dama y el rey negros están en una misma diagonal y
+que existe el alfil blanco que actúa en ella. Inmediatamente, de acuerdo con
+nuestras indicaciones anteriores, debe buscarse de sacar provecho de dicha
+situación y surge el inconveniente primero, que es la ubicación de la torre
+propia que impide la colocación del alfil en f4, lo que significaría un jaque
+doble de alfil. El razonamiento es pues, ahora muy lógico: debe sacarse la
+torre pero no es posible realizar una jugada pasiva con esa pieza por el
+apremio de la amenaza negra de ..., Dxe2+ o ..., Txe2+, y sólo un jaque con
+esa pieza podría paralizar transitoriamente la amenaza de las negras y quizá
+dar pie al jaque doble de alfil. Inmediatamente el aficionado ve, razonando en
+esta forma clara y simple, que Tf6+ reúne todas las ventajas, pues a la vez de
+dar juego al alfil obliga a las negras a demorar su plan agresivo. El final se
+gana, pues, así:} 38. Rf6+ gxf6 39. Bf4+ {doble ganando la dama por torre y
+alfil, lo que significa, sin considerar la ventaja estratégica, 10 contra 8,5.}
+1-0
+
+[Event "Breslau"]
+[Site "?"]
+[Date "1846.??.??"]
+[Round "3"]
+[White "Von der Lasa, Tassilo"]
+[Black "Anderssen, Adolf"]
+[Result "0-1"]
+[ECO "B44"]
+[Annotator "R. Grau"]
+[PlyCount "43"]
+[EventDate "1846.??.??"]
+
+1. e4 c5 2. d4 cxd4 3. Nf3 Nc6 4. Bc4 e6 5. Nxd4 Bc5 6. Nf3 Nge7 7. Nc3 O-O 8.
+a3 Ng6 9. O-O f5 10. exf5 Rxf5 11. Bd3 Rh5 12. g4 Rh3 13. Kg2 Rxf3 14. Kxf3 Qh4
+15. Kg2 Nce5 16. h3 b6 17. Bxg6 hxg6 18. Bf4 Bb7+ 19. f3 {El ex campeón
+mundial está un tanto mejor por la preponderante acción de su alfil en la gran
+diagonal y proyecta una combinación especulando en la acción de dicha pieza
+sobre el punto f3, ideando una combinación de sacrificio que ha de terminar en
+un jaque doble de alfil. La torre defiende ese peón, como asimismo está
+evitando la jugada ..., Df2. La movida ..., Cxf3 obligará a jugar Txf3 para no
+perder marerial sin compensación, y en ese caso la torre quedará clavada,
+dando lugar al jaque ganador en f2 combinado con el doble en f3, y la partida,
+una vez proyectado el plan, siguió así:} Nxf3 20. Rxf3 Qf2+ 21. Kh1 Bxf3+ {
+obligando a} 22. Qxf3 {que pierde en seguida.} 0-1
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Kubbel, Karl Artur Leonid"]
+[Black "3"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "4krN1/4p3/5P2/5p2/5P2/7R/7p/7K w - - 0 1"]
+[PlyCount "15"]
+
+{La primera movida de las blancas es Th7, para evitar ..., Txg8, jugada que
+dejaría a las negras con las mejores chances de victoria. La base de esta
+jugada de sacrificio finca en la amenaza de fourchette contra ..., Txg8 por
+f7+. La solución es así:} 1. Rh7 exf6 2. Re7+ {(la jugada clave de las
+amenazas de jaque doble con la torre, que son más usuales en la octava y
+séptima línea)} Kd8 3. Ra7 $1 Ke8 ({Si} 3... Rxg8 {habría seguido} 4. Ra8+ {
+con jaque doble y ganando la torre.}) 4. Nh6 Kd8 {(no es posible mover la
+torre por la amenaza de Ta8+)} 5. Nf7+ Ke8 6. Nh8 $1 {(maniobra finísima para
+buscar una conjunción de las amenazas de jaques dobles de la torre y el
+caballo)} Kd8 7. Ra8+ Ke7 8. Ng6+ $1 {rematando el juego con un doble de
+caballo.} 1-0
+
+[Event "London"]
+[Site "?"]
+[Date "1883.??.??"]
+[Round "?"]
+[White "Zukertort, Johannes"]
+[Black "Blackburne, Joseph Henry"]
+[Result "1-0"]
+[ECO "A13"]
+[Annotator "R. Grau"]
+[PlyCount "63"]
+[EventDate "1883.??.??"]
+
+1. c4 e6 2. e3 Nf6 3. Nf3 b6 4. Be2 Bb7 5. O-O d5 6. d4 Bd6 7. Nc3 O-O 8. b3
+Nbd7 9. Bb2 Qe7 10. Nb5 Ne4 11. Nxd6 cxd6 12. Nd2 Ndf6 13. f3 Nxd2 14. Qxd2
+dxc4 15. Bxc4 d5 16. Bd3 Rfc8 17. Rae1 Rc7 18. e4 Rac8 19. e5 Ne8 20. f4 g6 21.
+Re3 f5 22. exf6 Nxf6 23. f5 Ne4 24. Bxe4 dxe4 25. fxg6 {En esta posición las
+negras amenazan ..., Tc2 dando un doble con la torre a la dama y al alfil. Es
+éste uno de los tipos de dobles amenazas en la séptima línea, más corrientes.
+Veremos ahora que el gran Zukertort permitió dar este doble para realizar una
+combinación de notable profundidad. Las negras jugaron:} Rc2 {y se inició la
+magnífica serie de jugadas previstas por el blanco} 26. gxh7+ Kh8 ({Si} 26...
+Kxh7 {seguiría} 27. Rh3+ {y luego Dh6, sacando la dama atacada mediante un
+agresivo contraataque.}) 27. d5+ e5 28. Qb4 $3 {La clave de la combinación.
+Esta entrega de dama transforma una posición aparentemente perdida en una
+brillante victoria.} R8c5 ({Si} 28... Qxb4 {seguiría mate en siete jugadas
+mediante:} 29. Bxe5+ Kxh7 30. Rh3+ Kg6 31. Rf6+ Kg5 ({si} 31... Kg7 32. Rg3+
+Kh7 33. Rf7+ Kh6 34. Bf4+ Kh5 35. Rh7#) 32. Rg3+ Kh5 33. Rf5+ Kh6 34. Bf4+ Kh7
+35. Rh5#) 29. Rf8+ $1 {Otro sacrificio excelente que tiene por objeto, como el
+anterior de la dama, sacar la dama negra de la defensa del peón de e5 para
+ubicar el alfil que será el eje de la victoria.} Kxh7 ({Si} 29... Qxf8 30.
+Bxe5+ Kxh7 31. Qxe4+ {etc.}) 30. Qxe4+ Kg7 31. Bxe5+ $1 {Nuevo brillante
+sacrificio con el que el blanco remata su magnífica maniobra de contraataque
+contra la amenaza primera de pérdida de material.} Kxf8 32. Bg7+ $1 {Y las
+negras abandonaron,} (32. Bg7+ {por cuanto contra} Kxg7 {perderían la dama.} ({
+y contra} 32... Qxg7 {seguiría} 33. Qe8#)) 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "Diagrama 463"]
+[Result "*"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "r1bq1rk1/pp1n1ppp/2n1p3/2p5/2NP4/2NBP3/PP3PPP/2RQ1RK1 w - - 0 1"]
+[PlyCount "7"]
+
+{Se juega:} 1. dxc5 ({Si primero las blancas jugaran:} 1. Qh5 {amenazando
+Dxh7++ y dxc5 seguiría} h6 {y contra} 2. dxc5 Nxc5 3. Qxc5 Qxd3 {y no habrían
+ganado material, pero mediante la trasposición de jugadas, que constituye uno
+de los sistemas típicos de lograr este objetivo, se soluciona el inconveniente.
+}) 1... Nxc5 2. Bxh7+ Kxh7 3. Qh5+ Kg8 4. Qxc5 {ganando el peón.} *
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Gambito de Rey"]
+[Black "?"]
+[Result "*"]
+[ECO "C25"]
+[Annotator "R. Grau"]
+[PlyCount "17"]
+
+1. e4 e5 2. f4 Bc5 3. Nc3 Bxg1 4. Rxg1 exf4 5. d4 Qh4+ {Se observará que las
+blancas permiten a las negras la ganancia de un peón con tal de poner a la
+dama adversaria en una posición característica de bloqueo.} 6. g3 fxg3 7. Rxg3
+Qxh2 8. Qf3 {Ahora la dama está muy comprometida.} Qxc2 ({Si} 8... Qh4 {
+seguiría} 9. Bg5 {atacándola y capturándola, ya que no tiene donde huir sin
+caer; y asimismo no existe, por la mala acción de las piezas de su propio
+bando, ninguna jugada de contraataque.}) 9. Bd3 {y la dama está copada.} *
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Similar"]
+[Black "383"]
+[Result "*"]
+[ECO "C30"]
+[Annotator "R. Grau"]
+[PlyCount "23"]
+
+1. e4 e5 2. f4 Bc5 3. Nf3 Nc6 4. fxe5 Nxe5 {Las negras inician una combinación
+para ganar material que se ajusta al tema que estamos tratando. Entregan un
+caballo por un peón, para luego realizar un maniobra que les permita capturar
+la torre enemiga.} 5. Nxe5 Qh4+ 6. g3 Qxe4+ 7. Qe2 Qxh1 {Es ésta una posición
+instructiva. El aficionado que grabe bien en su mente la posición típica de
+bloqueo de dama del diagrama 383, encontrará fácilmente la jugada de bloqueo
+que le permita encerrar la dama adversaria.} 8. Nf3+ $1 {La jugada justa. La
+mayoría de los jugadores se conformarían en este momento con la magnífica
+jugada de descubierto:} (8. Ng6+ {Y contra} Ne7 9. Nxh8 {pero el caballo
+blanco quedaría sin retirada en h8 y las negras, mediante una maniobra con el
+rey, lo capturarían.}) {Con la jugada del texto se produce el descubierto, y
+se prepara la maniobra de encerrada de la dama negra. La partida podría
+seguirse con:} 8... Ne7 9. d4 {atacando el alfil.} Bb6 10. Be3 d6 11. Nbd2 Bg4
+{(o ..., Ah3)} 12. O-O-O {y la maniobra de encerrada de la dama se ha coronado
+con el éxito. Ahora después de jugar Ah3 o Df2-Ag2, las blancas ganan la dama.}
+*
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Posición"]
+[Black "peón dama"]
+[Result "*"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "r1b1r1k1/pp1n1ppp/2p2n2/q2p2B1/1b1P4/2NBPN2/PPQ2PPP/2R2RK1 b - - 0 1"]
+[PlyCount "4"]
+
+{Las negras juegan} 1... Bxc3 {y las blancas, no conociendo la posición
+característica de la ganancia de dama por medio del bloqueo de sus retiradas,
+jugarían bxc3. Sin embargo, el peón de a2 puede ser defendido indirectamente
+por la amenaza de encerrar la dama jugando} 2. Qxc3 {y contra} Qxa2 3. Ra1 {
+gana la dama. Vemos, en este caso tan simple, cómo la amenaza de ganar la dama
+defiende indirectamente una pieza aparentement e abandonada. Es decir, que son
+recursos defensivos dignos de ser conocidos, no tanto para ganar material, que
+a veces es difícil, sino para acrecentar el número de posibilidades defensivas
+en una posición.} *
+
+[Event "Carrasco"]
+[Site "?"]
+[Date "1921.??.??"]
+[Round "1"]
+[White "De Freitas, Jose"]
+[Black "Grau, Roberto"]
+[Result "0-1"]
+[ECO "C01"]
+[Annotator "R. Grau"]
+[PlyCount "82"]
+[EventDate "1921.??.??"]
+
+1. e4 e6 2. d4 d5 3. exd5 exd5 4. Bd3 Bd6 5. Nf3 Nf6 6. O-O O-O 7. Nc3 c6 8.
+Bg5 Bg4 9. h3 Bh5 10. Bf5 Bg6 11. Qd3 Nbd7 12. Rae1 Qc7 13. Bxg6 hxg6 14. Bxf6
+gxf6 15. Re3 {En esta posición , las negras tratan de provocar una situación
+en la que sea posible la encerrada de la torre blanca. Observaremos cómo se
+provoca una posición de ganancia de pieza, fácil de descubrir y llevar a feliz
+término para quien conozca estas posiciones típicas.} Bf4 {sacando la torre de
+e3 e invitando a que se ubique en e7, para realizar la maniobra de copada de
+la torre.} 16. Re7 {una jugada que se hace sola en casi todas esas posiciones,
+y que el blanco ha efectuado rápidamente sin meditar en las intenciones del
+negro.} Qd6 {atacando la torre para provocar la jugada:} 17. Rfe1 {que se
+efectúa rutinariamente en estas posiciones, y poder realizar la simple jugada
+de obstrucción que copará la torre blanca:} Ne5 $1 {y la torre queda atacada
+por la dama mediante una jugada que ofende simultáneamente a la dama enemiga.}
+18. Nxe5 ({Debe seguirse con} 18. dxe5 {y las negras con} Qxe7 {quedan con
+calidad de ventaja.}) 18... Qxe7 19. Nf3 Qd6 20. g3 Bxg3 21. fxg3 Qxg3+ 22. Kh1
+Qxh3+ 23. Nh2 Qh4 24. Re3 Rae8 25. Rh3 Qf2 26. Rf3 Re1+ 27. Nf1 Qh4+ 28. Kg2
+Rfe8 29. Nd1 Qe4 30. Nf2 Re2 31. Nd2 Qxd3 32. Rxd3 Kg7 33. Kf3 f5 34. Nd1 g5
+35. Ne3 R8xe3+ 36. Rxe3 Rxd2 37. Re7 Rxc2 38. Rxb7 Kg6 39. a4 a5 40. Rb6 f6 41.
+b4 axb4 0-1
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "467"]
+[Black "diagrama"]
+[Result "*"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "8/1p4pk/7p/B6R/2r4n/7P/PP4PK/8 w - - 0 1"]
+[PlyCount "5"]
+
+{En la posición del diagrama las fuerzas son similares y parece que la partida
+puede terminar empatada. Las negras están amenazando, sin embargo ..., g5,
+encerrando la torre en una de las situaciones características que hemos
+mostrado. La torre debe salir de esa amenaza, pero surge ahora la jugada de
+sacrificio para provocar una situacion a la inversa. La amenaza del negro
+sugiere al blanco una maniobra similar y juega:} 1. Rxh4 Rxh4 2. g4 {la jugada
+de copada. Hemos visto que en ambos casos las torres están en quinta y el peón
+avanza dos pasos. No podría acontecer esto estando el peón en tres, por cuanto
+desde la misma casilla tomaría la torre adversaria.} h5 {para liberar la torre}
+3. Be1 {(o Ad8) atacando la torre y ganándola.} *
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "468"]
+[Black "diagrama"]
+[Result "*"]
+[Annotator "R . Grau"]
+[SetUp "1"]
+[FEN "5rk1/ppp2pbp/2n3p1/8/8/6NP/PPP2PP1/R4NK1 b - - 0 1"]
+[PlyCount "5"]
+
+{En la posición del diagrama las negras pueden tomar el peón "b", pero corren
+el riesgo de que el blanco, mediante Tb1 recupere el peón y coloque una torre
+en séptima. Sin embargo, existe la posibilidad de crear una posición de
+encerrada con los dos peones de a7 y c7 y el alfil, dejando a la torre sin
+movimiento entre los mismos para luego atacarla y capturarla. Juegan, pues:} 
+1... Bxb2 2. Rb1 Bd4 $1 3. Rxb7 Bb6 {y ya se ha creado la posición
+característica de la torre encerrada que más tarde será atacada por caballo
+desde a5, y capturada, ganando por lo menos calidad.} *
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Ruy lopez "]
+[Black "trampa Tarrasch"]
+[Result "*"]
+[ECO "C87"]
+[Annotator "R. Grau"]
+[PlyCount "20"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O d6 6. Re1 Be7 7. d4 b5 8. Bb3
+Nxd4 9. Nxd4 exd4 10. Qxd4 {Esta es una posición característica de encerrada
+del alfil. Dicha pieza está bloqueada en sus retiradas por sus propias piezas 
+(los peones de a2 y c2) y puede ser atacada económicamente por el peón "c"
+adversario (la jugada de doble intención), especulando en la ganancia de
+tiempo que significa la situación de la dama enemiga, que puede ser atacada
+por el peón, que agredirá y cerrará el camino al alfil de b3.} c5 {seguido de .
+.., c4.} *
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "471"]
+[Black "diagrama"]
+[Result "*"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "2bk4/pp3ppp/2p1p3/8/3P4/4P3/PPB1KPPP/8 w - - 0 1"]
+[PlyCount "8"]
+
+{Las blancas observan un peón indefenso en h7 y lo capturan, creyendo que no
+ha de poder ser copado el alfil y que, de serlo, el peón "h" llegaría a tiempo
+para libertarlo. Así:} 1. Bxh7 {y las negras, mediante} g6 {bloquean al
+temerario alfil. En busca del natural desahogo, el blanco juega} 2. h4 {
+a lo que sigue} Ke7 3. h5 Kf6 4. hxg6 fxg6 {y el alfil está perdido. Esta
+misma encerrada del alfil no sería posible si el rey negro hubiera estado, por
+ejemplo, en c7 en lugar de d8, o más lejos del peón perdido, ya que no sería
+posible evitar que, mediante la devolución del peón capturado, el blanco
+libertase su alfil y lo librase de la posición de bloqueo.} *
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "472"]
+[Black "diagrama"]
+[Result "*"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "r2qk2r/ppp1bppp/2np1n2/4p3/3PP1b1/1QP2N2/PP2BPPP/RNB2RK1 b kq - 0 1"]
+[PlyCount "4"]
+
+{En esta posición las blancas acaban de jugar Db3 amenazando el peón de b7.
+Para defenderlo las negras tienen para escoger varias movidas, pero optan
+equivocadamente por} 1... Na5 {atacando a la vez la dama. Contra esto las
+blancas responden con} 2. Qa4+ {dando jaque doble, a lo que las negras,
+mediante ..., Cc6 o ..., c6 obstruyen la acción de la dama sobre el rey y a la
+vez salvan la pieza. El primero de estos procedimientos es malo:} Nc6 ({
+Y contra el segundo} 2... c6 {las blancas ganarían igualmente la pieza mediante
+} 3. b4 {ya que, alavanzar el peón "c", el negro habría restado la única
+retirada posible a su caballo, puesto que las otras casillas están tomadas por
+las piezas blancas.}) {Pues con:} 3. d5 {se atacaría el caballo, que no podría
+retirarse por estar clavado. El diagrama 331 del presente libro muestra un
+recurso ganador en una posición aparenemente igual, en la que se llega a una
+bonita posición de caballo bloqueado. Reprodúzcase el diagrama y la solución
+comentada que lo acompaña, y se observará la profundidad de la maniobra
+prevista por las blancas, y cuyo éxito finca en la encerrada del caballo.} *
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Defensa Petroff"]
+[Black "?"]
+[Result "*"]
+[ECO "C42"]
+[Annotator "R. Grau"]
+[PlyCount "11"]
+
+1. e4 e5 2. Nf3 Nf6 {(esta jugada es la que da origen a la defensa precitada)}
+3. Nxe5 Nxe4 4. Qe2 d5 {esta jugada es un error que cuesta una pieza, o por lo
+menos un peón; lo mejor es también:} (4... Qe7 {para seguir contra} 5. Qxe4 {
+con} d6) 5. d3 Nf6 ({Si} 5... Qe7 {seguiría} 6. dxe4 Qxe5 7. exd5 {ganando un
+peón.}) 6. Nc6+ {descubierto, ganando la dama.} *
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Defensa Francesa"]
+[Black "?"]
+[Result "*"]
+[ECO "C10"]
+[Annotator "R. Grau"]
+[PlyCount "11"]
+
+1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bd3 dxe4 5. Nxe4 {no es posible jugar} Qxd4 {
+a causa de} 6. Bb5+ {con jaque descubierto, ya que la dama queda atacando a la
+dama enemiga y la gana.} *
+
+[Event "Moscow"]
+[Site "?"]
+[Date "1925.??.??"]
+[Round "?"]
+[White "Torre Repetto, Carlos"]
+[Black "Lasker, Emanuel"]
+[Result "1-0"]
+[ECO "A46"]
+[Annotator "R. Grau"]
+[PlyCount "85"]
+[EventDate "1925.??.??"]
+
+1. d4 Nf6 2. Nf3 e6 3. Bg5 c5 4. e3 cxd4 5. exd4 Be7 6. Nbd2 d6 7. c3 Nbd7 8.
+Bd3 b6 9. Nc4 Bb7 10. Qe2 Qc7 11. O-O O-O 12. Rfe1 Rfe8 13. Rad1 Nf8 14. Bc1
+Nd5 15. Ng5 b5 16. Na3 b4 17. cxb4 Nxb4 18. Qh5 Bxg5 19. Bxg5 Nxd3 20. Rxd3 Qa5
+21. b4 Qf5 22. Rg3 h6 23. Nc4 Qd5 24. Ne3 Qb5 {Ahora, especulando en una
+posición típica de jaque descubierto y con tal de conseguirla, sacrifica la
+propia dama y se asegura ganancia de material. Veamos:} 25. Bf6 $1 Qxh5 {
+única para no perder la dama. Torre había colocado la dama adversaria en esta
+posición falta de apoyo, para hacer forzosa esta jugada y poder llevar a
+término su maniobra ganadora} 26. Rxg7+ Kh8 27. Rxf7+ Kg8 28. Rg7+ Kh8 29.
+Rxb7+ Kg8 30. Rg7+ Kh8 31. Rg5+ Kh7 32. Rxh5 Kg6 33. Rh3 Kxf6 34. Rxh6+ Kg5 35.
+Rh3 {y la partida fue ganada por las blancas en la jugada 43. La ventaja de
+material es clara, y ha sido conquistada mediante sucesivos jaques
+descubiertos. Las blancas entregaron la dama y el alfil, para ganar a su vez
+una dama, un alfil y tres peones.} Reb8 36. Rg3+ Kf6 37. Rf3+ Kg6 38. a3 a5 39.
+bxa5 Rxa5 40. Nc4 Rd5 41. Rf4 Nd7 42. Rxe6+ Kg5 43. g3 1-0
+
+[Event "Berlin"]
+[Site "?"]
+[Date "1848.??.??"]
+[Round "?"]
+[White "Dufresne, Jean"]
+[Black "Harrwitz, Daniel"]
+[Result "1-0"]
+[ECO "C51"]
+[Annotator "R. Grau"]
+[PlyCount "59"]
+[EventDate "1848.??.??"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Bc5 6. O-O d6 7. d4 exd4 8.
+cxd4 Bb6 9. Bb2 Nf6 10. Qc2 O-O 11. e5 dxe5 12. dxe5 Nd5 13. Rd1 Be6 14. Bxd5
+Bxd5 15. Nc3 Ne7 16. Ng5 Ng6 17. Nxh7 Kxh7 18. Nxd5 Qg5 19. Rd3 c6 20. Rh3+ Kg8
+21. Rg3 Qh4 22. Nf6+ gxf6 23. Rxg6+ fxg6 24. Qxg6+ Kh8 25. exf6 Rf7 26. Qxf7
+Rg8 27. Kh1 Qg4 28. Rg1 Bxf2 {La posición es apremiante. Se observará que las
+negras están amenazando ..., Axg1 seguido de ..., Dxg2++, y que las defensas
+directas de estas amenazas no son fáciles. Contra la agresión directa a la
+torre de parte del alfil no queda el siempre cómodo recurso de la retirada,
+por cuanto la torre defiende el mate en g2. No es posible dejarla sin perder
+calidad. Debe, por lo tanto, buscarse una maniobra a base de contraataque, y
+esto hace que la idea de la combinación aparezca en el cerebro de cualquier
+ajedrecista que comprenda algo del juego y que haya observado las
+características de la posición blanca. Dos son los planes a desarrollar. Uno
+pasivo, a base de h3 para contraatacar una pieza de mayor valor, tratando de
+sacarla de su posición, desde la cual amenaza el mate que hemos visto y evita
+un posible jaque de la dama blanca en h5. A esto seguiría ..., Dg5 y las
+blancas podrían proseguir con Ac1 para forzar casi materialmente el cambio de
+damas, lo que originaría un final laborioso, si bien la ventaja seguiría
+perteneciendo a las blancas, ya que al cambiar las damas, por ejemplo en g6,
+habría desaparecido la posición característica de mate, y la torre atacada,
+por medio del procedimiento indirecto que hemos detallado, habría sido salvada.
+Pero como en todas las ocasiones el jugador debe considerar primero las
+amenazas enemigas y después las propias posibilidades, el blanco debe haber
+observado un detalle interesante. Existe una posición probable de jaque
+descubierto, ya que el rey negro y el alfil blanco están en una misma diagonal
+y sólo hay un peón blanco entremedio. Depende, pues, sólo de la voluntad del
+blanco hacer que ese peón (que no está contenido por una pieza enemiga) se
+mueva, dando lugar al jaque descubierto, que sabemos tan terrible, pero existe
+el eventual obstáculo de una pieza del propio bando, la dama, que impide el
+avance. Surge entonces la necesidad de sacar la dama para hacer posible la
+meditada maniobra formidable del descubierto, y el problema es saber dónde
+debe colocarse la dama. La jugada sería Dxg8+ si las negras no dispusieran del
+recurso de retomar con el rey, y entonces convendría poner la dama en un
+cuadro que luego permitiera avanzar el peón atacando la torre, y amenazando
+coronarse. Hay una razón y es tratar de evitar que, por ejemplo, para realizar
+una jugada apremiante, contra Dxb7, las negras sigan con ..., Ad4 anulando la
+acción indirecta del alfil mediante la interposición de una pieza que tiene
+función coincidente. Quizá ganara también ese procedimiento, pero siempre el
+jugador debe estar desconforme con lo que ve, y tratar, en lo posible, de
+buscar algo más enérgico. Clara aparece entonces la jugada} 29. Qe8 $1 {
+entregando la dama para luego avanzar el peón con jaque, ganar la torre y
+acrecer nuevamente el materal mediante la coronación del peón en dama.} Kh7 ({
+Si} 29... Rxe8 30. f7+ {descubierto.} Kh7 31. fxe8=Q {y las blancas no sólo
+han ganado una torre a cambio de un peón, sino que amenazan Dh8+ ganando
+rápidamente.}) 30. f7 1-0
+
+[Event "Buenos Aires"]
+[Site "?"]
+[Date "1924.??.??"]
+[Round "9"]
+[White "Reti, Richard"]
+[Black "Villegas, Benito"]
+[Result "1-0"]
+[ECO "A12"]
+[Annotator "R. Grau"]
+[PlyCount "52"]
+[EventDate "1924.??.??"]
+
+1. c4 Nf6 2. g3 c6 3. Bg2 d5 4. Nf3 Bf5 5. b3 e6 6. O-O Bd6 7. Bb2 O-O 8. d3
+Nbd7 9. Nc3 Qe7 10. Re1 Bg6 11. e4 dxe4 12. dxe4 Bb4 13. Qc2 h6 14. a3 Ba5 15.
+b4 Bc7 16. Nd4 Rfe8 17. Rad1 Rad8 18. Qc1 e5 19. Nf5 Qe6 20. Ne3 Nb6 21. c5 Nc4
+{Las blancas, especulando en la posible obstrucción de la acción defensiva de
+la dama negra sobre el caballo de c4 y a la vez atacando directamente el alfil
+enemigo, jugaron:} 22. Ncd5 $1 {El ejemplo es interesante por cuanto combina
+la amenaza de descubierto sin jaque con la obstrucción, tema que trataremos
+más tarde y que consiste en anular la acción de una pieza sobre otra. La
+partida siguió así:} Nxe3 ({Mejor que la simplificación buscada por las negras
+era, simplemente} 22... cxd5 {pero las blancas, después de} 23. exd5 {y cuando
+la dama negra se retirara, quedarían con un peón de ventaja, jugando Dxc4.})
+23. Nxc7 {y Villegas optó por entregar la dama por dos piezas menores,
+produciéndose la siguiente simplificación, que dio ventaja de material para el
+blanco:} Rxd1 24. Rxd1 Nxd1 25. Nxe6 Nxb2 26. Qxb2 Rxe6 {y las blancas han
+perdido 17,5 (un caballo 3, dos torres 11 y un alfil 3,5) contra 19 de las
+negras (a saber, una dama 10, una torre 5,5 y un alfil 3,5).} 1-0
+
+[Event "Hanover"]
+[Site "?"]
+[Date "1902.??.??"]
+[Round "14"]
+[White "Atkins, Henry Ernst"]
+[Black "Gunsberg, Isidor"]
+[Result "1-0"]
+[ECO "D21"]
+[Annotator "R. Grau"]
+[PlyCount "17"]
+[EventDate "1902.??.??"]
+
+1. d4 d5 2. c4 dxc4 3. Nf3 c5 4. e3 Bg4 5. Bxc4 e6 {En el diagrama no existe
+la posición de clavada, pero la situación característica del ala de la dama
+sin el natural apoyo del alfil sugiere al blanco el plan que ha de llevar
+rápidamente a la ganancia de material. La diagonal a4-e8 es la base de la
+clavada, y se observa que dando un jaque, el negro debe cubrir, quedando
+automáticamente clavada la pieza que cubre. El mencionado jaque puede darse
+con la dama o con el alfil, y para un principiante será indistinto; pero el
+que medite observará rápidamente un detalle que le inclinará a dar el jaque
+con la dama. Este detalle radica en el hecho de que el caballo blanco de f3
+está también clavado, y que para cooperar en la acción que sobre algunas
+casillas de esta diagonal (c6 y d7) se va a realizar, es indudablemente
+indispensable la acción del caballo. Juega, pues:} 6. Qa4+ {para clavar una
+pieza enemiga y desclavando a su vez una pieza propia.} Nd7 ({El negro no
+puede jugar} 6... Qd7 {a causa de} 7. Bb5 {seguido, si} Nc6 {de} 8. Ne5 {
+atacando a la dama y el alfil, manteniendo la formidable presión sobre la
+pieza clavada.}) 7. Ne5 Bf5 8. Nxd7 Qxd7 9. Bb5 {clavando la dama y ganándola
+a cambio del alfil.} 1-0
+
+[Event "Torneo Mayor"]
+[Site "Buenos Aires"]
+[Date "1924.??.??"]
+[Round "?"]
+[White "Grau, Roberto"]
+[Black "Fernandez Coria, Valentin"]
+[Result "0-1"]
+[ECO "C28"]
+[Annotator "R. Grau"]
+[PlyCount "54"]
+[EventDate "1924.??.??"]
+
+1. e4 e5 2. Nc3 Bc5 3. Bc4 Nf6 4. d3 Nc6 5. Be3 Bb6 6. Qd2 d6 7. Nge2 Be6 8.
+Ng3 d5 9. exd5 Nxd5 10. Bxd5 Bxd5 11. Nh5 Rg8 12. Bh6 gxh6 13. Nxd5 Rg6 14.
+Nxb6 axb6 15. Ng3 Qd5 16. O-O O-O-O 17. f4 e4 18. f5 Rg4 19. Qxh6 exd3 20. cxd3
+Qd4+ 21. Kh1 Rh4 22. Qg5 f6 23. Qd2 Ne5 24. Ne2 Qg4 25. Rf4 Qg5 26. g3 {
+En esta posición las blancas están peor por la situación de la torre clavada
+en f4, ya que si se retira se perdería la dama de d2. Especulando en la
+posición de la torre clavada, las negras idean una combinación simple y bonita
+jugando:} Rxh2+ 27. Kxh2 Nf3+ {dando jaque doble, ya que el caballo no puede
+ser capturado por estar clavada la pieza que podría hacerlo.} 0-1
+
+[Event "Montevideo"]
+[Site "?"]
+[Date "1925.??.??"]
+[Round "?"]
+[White "Trompowsky, Octavio"]
+[Black "Rivas Costa, Santiago"]
+[Result "1-0"]
+[ECO "E78"]
+[Annotator "R. Grau"]
+[PlyCount "75"]
+[EventDate "1925.??.??"]
+
+1. d4 Nf6 2. c4 d6 3. Nc3 g6 4. e4 Bg7 5. f4 O-O 6. Nf3 c5 7. d5 Bg4 8. Be2
+Nbd7 9. O-O Ne8 10. Qc2 Nb6 11. h3 Bxf3 12. Rxf3 Nc7 13. Be3 e6 14. f5 exd5 15.
+exd5 Nd7 16. Raf1 Ne5 17. R3f2 Ne8 {Las blancas tienen sus dos torres actuando
+en la columna "f", esto les sugiere la combinación que sigue, ya que a ello se
+une la acción del alfil dama que actúa sobre los cuadros negros del flanco rey
+enemigo, un tanto debilitado. El blanco jugó:} 18. f6 {entregando el peón,
+pero explotando la eventual clavada de caballo, que se ubicará en el cuadro f6,
+mediante la acción de un alfil en g5 que indirectamente actuará sobre la dama
+de d8. Las negras siguieron} Bh8 {a lo que el blanco jugó} 19. Bh6 {obligando
+a realizar la jugada que las negras pretendieron evitar al rehusar la oferta
+del peón enemigo. Las negras jugaron} Bxf6 {y las blancas eliminaron el alfIl
+medianre un sacrificio de calidad para colocar una pieza en f6 que pudiera ser
+atacada por el alfil desde g5, por vía incidente, jugando} 20. Rxf6 {siguió}
+Nxf6 21. Bg5 {clavándole el caballo. Ahora se inicia un procedimiento de
+sostén que resulta insuficiente ante la eficacia de la clavada del alfil, que
+obliga a la dama adversaria a permanecer en la posición de clavada para no
+perder inmediatamenre la pieza. Debe defenderse el caballo, y la defensa
+natural y única que se observa es} Ned7 {apoyando la pieza atacada e iniciando
+la maniobra de sostén. Las blancas intensifican la presión sobre la pieza
+clavada jugando} 22. Ne4 {atacando con una tercera pieza al caballo, que sólo
+puede ser defendido con las dos que ahora lo apoyan. La pieza está perdida: la
+partida siguió} Qe7 23. Rxf6 Qe5 ({Si} 23... Nxf6 24. Bxf6 Qe8 25. Qd2 Qxe4 26.
+Qh6 Qd4+ 27. Bxd4 {etc.}) 24. Rxd6 f5 25. Rxd7 fxe4 26. Be3 b6 27. Bg4 g5 28.
+Be6+ Kh8 29. Qc1 h6 30. Bd2 Rf3 31. Bc3 Rxc3 32. Qxc3 Qd4+ 33. Kf1 Rf8+ 34. Rf7
+Rxf7+ 35. Bxf7 Kg7 36. Bh5 Kf6 37. Qxd4+ cxd4 38. Ke2 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Celada"]
+[Black "peón dama"]
+[Result "*"]
+[ECO "D35"]
+[Annotator "R. Grau"]
+[PlyCount "16"]
+
+1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Nbd7 {Esta es una posición muy común. El
+blanco ha clavado el caballo de f6 para vulnerar el peón dama y ahora podría
+capturarlo, pero el negro cuenta con un recurso que también lleva a una
+clavada, con el que gana material . Por ejemplo, si el blanco se encela con la
+debilidad del peón dama, jugando:} 5. cxd5 {seguiría} exd5 6. Nxd5 {
+(especulando en la clavada del caballo)} Nxd5 {(entregando la dama para
+desembarazarse de la clavada y poder realizar una combinación especulando en
+la debilidad de la diagonal a5-e1)} 7. Bxd8 Bb4+ 8. Qd2 {única, lo que provoca
+una situación de pieza clavada a pesar de actuar ambas en forma coincidente
+-se atacan entre si- y por estar el alfil defendido por el caballo se puede
+seguir} Bxd2+ ({o simplemente} 8... Kxd8 {ya que la dama no puede substraerse
+a la amenaza. Este es un caso en que la clavada inicial ha fracasado por otros
+detalles estratégicos importantes, y es toda una advertencia para quienes
+deseen especular con estas posiciones características. Veamos ahora posiciones
+en que el sostén es la base medular del juego.}) *
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "479"]
+[Black "diagrama"]
+[Result "*"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "5rk1/q2r1pbp/p5p1/1n6/1p1P4/1P1Q1P2/3R2PP/B2R2NK b - - 0 1"]
+[PlyCount "6"]
+
+{En los cambios que se produzcan después de C o Axd4, el blanco deberá
+capturar con una pieza de mayor valor que alguna adversaria que lo acecha.} 
+1... Nxd4 2. Bxd4 Bxd4 3. Qxd4 Rxd4 4. Rxd4 {Si la dama hubiera estado atrás
+de las torres, el peón no hubiera podido ser capturado.} *
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "483"]
+[Black "diagrama"]
+[Result "*"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "1q2r2k/pp1nr1pp/2nb4/4pp2/1PP2P2/P1BN1N2/3QR1PP/4R1K1 w - - 0 1"]
+[PlyCount "11"]
+
+{Las negras acaban de jugar ..., e5 confiadas en el sostén suficiente, ya que
+hay seis piezas que apoyan ese avance contra seis piezas que lo evitan. Sin
+embargo, surge ahora una de las complcaciones de sostén de una pieza: la
+posibilidad de atacar una pieza del sostén con otra de menor valor, y
+obligarla a retirarse, o en algunos casos, la de cambiar una pieza del sostén
+por otra del mismo valor que nada tenga que hacer con la acción central de la
+partida. En la posición que comentamos, si las blancas juegan fxe5 se llega a
+una simplificación igual a la comentada anteriormente, y nada se ha ganado,
+pero si el blanco estudia la posición observará algunos detalles muy
+interesantes, que permiten pretender la ganancia de material. Dos de las
+piezas que realizan el sostén, el caballo de c6 y el alfil de d6, pueden ser
+atacadas por peones, y obligadas, por lo tanto, a moverse. Generalmente es
+mejor atacar el caballo, ya que esta pieza no puede moverse nunca manteniendo
+su acción sobre los mismos puntos; en cambio el alfil puede retirarse en forma
+de presionar sobre las mismas casillas en que actuaba antes de la agresión. A
+simple vista esto es lo mejor, y mediante b5, atacando al caballo, las blancas
+pueden ganar un peón. Contra:} 1. b5 {seguiría} Nd4 {(obstruyendo con el
+caballo la acción del alfil)} ({Si} 1... Nd8 {seguiría} 2. fxe5 {ganando el
+peón sin riesgos, por cuanto serían entonces seis las piezas agresoras contra
+cinco defensoras.}) ({Igualmente malo sería} 1... e4 {haciendo la fourchette,
+por} 2. bxc6 {y contra} exf3 3. cxd7 {seguido si} fxe2 {de} 4. dxe8=Q+ {
+ganando una pieza.}) 2. Bxd4 exd4 3. Rxe7 Rxe7 4. Rxe7 Bxe7 5. Nxd4 Bxa3 6.
+Nxf5 {ganando un peón. Sin embargo, hay algo mejor todavía y que hace evidente
+que nunca debe conformarse el jugador con la primera impresión de una posición.
+(Lo vemos en la "siguiente partida".)} *
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "483B"]
+[Black "diagramaB"]
+[Result "*"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "1q2r2k/pp1nr1pp/2nb4/4pp2/1PP2P2/P1BN1N2/3QR1PP/4R1K1 w - - 0 1"]
+[PlyCount "5"]
+
+{Sin embargo, hay algo mejor todavía y que hace evidente que nunca debe
+conformarse el jugador con la primera impresión de una posición. Hemos visto
+que el alfil de d6 ejerce en la combinación anterior un rol muy importante,
+por cuanto, cuando se origina el cambio de torres de la jugada 3, apoya la de
+e7 y evita la pérdida de la misma. Esto permite considerar este plan, pero con
+una jugada intermedia muy importante, jugando primero:} 1. c5 $1 {(desalojando
+el alfil de la defensa de la torre)} Bc7 2. b5 Nd8 {si ahora:} (2... Nd4 {
+se perdería la pieza después de} 3. Bxd4 {ya que si} e4 {seguiría} 4. Nh4) ({
+Y si} 2... e4 {mediante} 3. bxc6 {se ganaría una pieza después de} exf3 4. cxd7
+fxe2 5. dxe8=Q+ {etc.}) 3. Ndxe5 {ganando el peón. Hágase el análisis sacando
+el peón blanco de f4 en esta misma posición, después de 2. ..., Cd8, y se
+observará un detalle aleccionador. Lo vemos en la "siguiente partida".)} *
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "483C"]
+[Black "diagramaC"]
+[Result "1-0"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "1q2r2k/pp1nr1pp/2nb4/4pp2/1PP5/P1BN1N2/3QR1PP/4R1K1 w - - 0 1"]
+[PlyCount "15"]
+
+1. c5 Bc7 2. b5 Nd8 {El negro igualmente perdería el peón por la posición del
+caballo de d8 vulnerado por una pieza blanca que no es necesaria para la
+simplificación central, la dama, y defendido por tres piezas ahora, pero tres
+piezas que son necesarias para defender el peón central. Seguiría en este caso:
+} 3. Nfxe5 Nxe5 4. Nxe5 Bxe5 5. Bxe5 Rxe5 6. Rxe5 Rxe5 7. Rxe5 Qxe5 {y ahora
+el caballo está indefenso y seguiría} 8. Qxd8+ {Vemos aquí un detalle
+interesante que permite establecer un nuevo principio general complementario
+del anterior. Las piezas que actúan en una posición de sostén no deben a la
+vez ejercer acción defensiva con respecto a otra pieza que puede ser vulnerada
+por el adversario, sin restar fuerzas a su agresión al punto sostenido. Una
+pieza que ejerce ese doble rol debe considerarse al hacer la suma de valores
+defensivos, pues llegará un momento en que inevitablemente deberá renunciar a
+uno de sus dos roles.} 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "484"]
+[Black "diagrama"]
+[Result "*"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "4r1k1/2p1r1pp/1p1n1p2/8/4P3/2P3N1/PPB3PP/3R1K2 b - - 0 1"]
+[PlyCount "5"]
+
+{Se muestra una posición de peón atacado por tres piezas y defendido por dos,
+que no puede ser capturado por no ajustarse la posición al principio general
+antes establecido. Las piezas que atacan son de mayor valor que las que
+defienden, y para tomar el peón las negras deberán perder calidad, por ejemplo:
+} 1... Nxe4 2. Nxe4 Rxe4 3. Bxe4 Rxe4 {y se ha perdido calidad. Repetimos,
+pues, que en todos los momentos de los cambios la pieza que captura debe ser
+de menor valor o de igual valor que la adversaria que la acecha. Por ejemplo,
+un peón defendido por otro peón está perfectamente defendido contra cualquier
+ataque de las piezas enemigas, aun cuando éstas sean las siete que pueden
+hacerlo, ya que tomarlo implicaría un sacrificio. Sólo debe temer de la
+agresión de las piezas del mismo valor: los peones.} *
+
+[Event "Buenos Aires"]
+[Site "?"]
+[Date "1924.??.??"]
+[Round "?"]
+[White "Grau, Roberto"]
+[Black "Guerra Boneo, Alejandro"]
+[Result "1-0"]
+[ECO "A57"]
+[Annotator "R. Grau"]
+[PlyCount "69"]
+[EventDate "1924.??.??"]
+
+1. d4 Nf6 2. Nf3 c5 3. d5 b5 4. c4 bxc4 5. Nc3 d6 6. e4 g6 7. Bxc4 Nfd7 8. Bf4
+Bg7 9. Qd2 O-O 10. O-O Nb6 11. Be2 N8d7 12. Bh6 a5 13. Bxg7 Kxg7 14. Rfe1 Qc7
+15. Rac1 Qb8 16. Nd1 Rd8 17. Qc3+ f6 18. Ne3 Nf8 19. Bd1 Rd7 20. Ng5 Rb7 21. f4
+a4 22. Nf3 Nbd7 23. Nc4 Nb6 24. Nxb6 Rxb6 25. e5 Ra7 26. exf6+ exf6 27. Bxa4
+Rb4 28. Bb3 Rxf4 29. Re8 Qb7 30. Rce1 Rb4 {Las blancas inician una combinación
+para ganar la dama mediante una interesante agresión al sostén, con sacrificio,
+muy usual en las posiciones de combinación:} 31. Rxf8 {(para hacer irrupción
+con la dama sobre el punto f6 enemigo. Este sacrificio ya implica una maniobra
+para sacar el sostén del peón que ocupa dicho cuadro)} Kxf8 32. Qxf6+ Qf7 ({Si
+} 32... Kg8 33. Re8#) 33. Qh8+ Qg8 34. Re8+ {(entregando la torre para quitar
+el sostén de la dama)} Kxe8 35. Qxg8+ {etc.} 1-0
+
+[Event "Mayor"]
+[Site "Buenos Aires"]
+[Date "1924.??.??"]
+[Round "8"]
+[White "Reti, Richard"]
+[Black "Grau, Roberto"]
+[Result "1-0"]
+[ECO "A09"]
+[Annotator "R. Grau"]
+[PlyCount "33"]
+[EventDate "1924.??.??"]
+
+1. Nf3 Nf6 2. c4 d5 3. cxd5 Qxd5 4. g3 c6 5. Nc3 Qa5 6. Bg2 Bf5 7. d3 e6 8. O-O
+Nbd7 9. Bd2 Be7 10. Nd4 Bg6 11. Nd5 Qd8 12. Nxe7 Qxe7 13. Qb3 Qc5 14. Be3 Qb6
+15. Qa3 Qc7 16. Rac1 Qe5 {las blancas, especulando en una doble amenaza con el
+caballo, que atacará la dama y amenazará mate, jugaron:} 17. Bxc6 (17. Bxc6 {
+ganando el peón, ya que no es posible continuar con} bxc6 {a causa de} 18. Nxc6
+{atacando la dama y amenazando el mate en e7 con la dama. Vemos aquí una
+amenaza mayor proporcionando la ganancia de material.}) 1-0
+
+[Event "Hastings"]
+[Site "?"]
+[Date "1919.??.??"]
+[Round "?"]
+[White "Capablanca, Jose Raul"]
+[Black "Thomas, George Alan"]
+[Result "1-0"]
+[ECO "C66"]
+[Annotator "R. Grau"]
+[PlyCount "58"]
+[EventDate "1919.??.??"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. Nc3 Nf6 5. d4 Be7 6. O-O Bd7 7. Re1 Nxd4 8.
+Nxd4 exd4 9. Qxd4 Bxb5 10. Nxb5 a6 11. Nc3 O-O 12. Bg5 Nd7 13. Bxe7 Qxe7 14.
+Nd5 Qd8 15. Re3 Ne5 16. Rg3 f6 17. f4 Nc6 18. Qc3 Rf7 19. f5 Qf8 20. Qb3 Kh8
+21. Nf4 Ne5 22. Qxb7 Rb8 23. Qxa6 Rxb2 24. Rb3 Rxc2 25. Rab1 h6 26. Ng6+ Nxg6
+27. fxg6 Re7 28. Rb8 Re8 {En la partida, Capablanca siguió con:} 29. Qa8 {
+que parece ganadora, pero Thomas halló adecuada defensa con la bonita
+respuesta 29. ..., Txa2.} ({Si en lugar de la movida del texto hubiera jugado} 
+29. Rxe8 $1 Qxe8 30. Qa4 $1 {habría ganado una torre, por la amenaza mayor de
+mate. Es evidente que la dama entregada no se puede capturar, y que al tener
+que retirar la dama, ya que la torre no puede moverse defendiéndola, las
+blancas hubieran ganado la torre en mérito a la ineludible amenaza de mate.})
+29... Rxa2 {atacando a su vez a la dama enemiga, que es el sostén de la
+amenaza de Txe8 que proyectaba Capablanca.} 1-0
+
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "NN"]
+[Black "Labraña, M."]
+[Result "0-1"]
+[Annotator "R. Grau"]
+[SetUp "1"]
+[FEN "8/5prk/4p1np/8/P1B1Pq2/1P1Q1P2/5P1P/3R3K b - - 0 1"]
+[PlyCount "10"]
+
+{Las negras están en inferioridad de material, pero mediante una combinación
+obligarán al blanco a entregar una importante fracción de sus fuerzas y
+quedarán con ventaja muy amplia. Jugaron:} 1... Ne5 {atacando la dama. Las
+blancas siguieron con} 2. Qe3 ({Ya que si} 2. Qc3 {seguiría} Nxf3 {amenazando .
+.., Dxh2++.}) {Contra esta movida las negras contaban con un bonito golpe:}
+2... Ng4 $3 {amenazando la dama y defendiendo indirectamente la dama propia,
+por la amenaza de ..., Cxf2++, en caso de Dxf4. Siguió:} 3. fxg4 Qxg4 {y ahora
+las blancas, para evitar ..., Dg2++ y ..., Dxd1++, (una doble amenaza
+formidable), debieron jugar} 4. Qg3 {siguiendo la partida con} Qxd1+ 5. Kg2
+Rxg3+ {quedando con dama contra alfil.} 6. hxg3 0-1
+
+[Event "Círculo de Ajedrez"]
+[Site "Buenos Aires"]
+[Date "1917.09.10"]
+[Round "?"]
+[White "Grau, Roberto"]
+[Black "Palau, Luis Argentino"]
+[Result "1-0"]
+[ECO "C25"]
+[Annotator "R. Grau"]
+[PlyCount "81"]
+[EventDate "1917.??.??"]
+[EventCountry "ARG"]
+
+1. e4 e5 2. Nc3 Bc5 3. Nf3 d6 4. d4 exd4 5. Nxd4 Bxd4 6. Qxd4 Qf6 7. Qe3 Ne7 8.
+Bd3 Ng6 9. Nd5 Qd8 10. h4 c6 11. Nf4 Ne5 12. Nh5 g6 13. Ng3 Be6 14. Bd2 Nbd7
+15. h5 Qf6 16. Bc3 Rg8 17. hxg6 hxg6 18. f3 Qe7 19. O-O-O Nc5 20. Be2 b6 21. f4
+Ng4 22. Qf3 Bd7 23. Rhe1 Nh2 24. Qe3 O-O-O {Veamos:} 25. Rxd6 $3 {(para
+provocar la posición de mate que ha de llevar a la ganancia de material)} Qxd6
+26. Be5 {(atacando la dama y creándole al rey la posición característica de
+mate de dos alfiles, base de innumerables combinaciones)} Qe6 27. Qxc5 $1 {
+(eliminando el caballo que impide el mate de alfil en a6. Ya se ha recuperado
+gran parte del material entregado, por cuanto a cambio de la torre ya se tiene
+un alfil y un peón, pero la amenaza de mate dará para ganar el resto)} Qxa2 {
+(evitando el mate de Ah6)} 28. Qd6 {(amenazando Db8 o Dc7++)} Qa1+ 29. Kd2 Qa5+
+30. b4 Be6 {(planteando una amenaza de doble, clavando la dama y evitando por
+medio de una clavada el mate, de acuerdo con lo que hemos estudiado
+anteriormente)} 31. bxa5 Rxd6+ 32. Bxd6 Rd8 {(clavando el alfil)} 33. e5 {
+(el sostén definitivo) y las blancas, que han calculado bien la combinación ,
+quedan con una pieza ganada por la hábil explotación de una amenaza mayor.} b5
+34. Kc3 Ng4 35. Bf3 Kb7 36. Kb4 Nh6 37. Kc5 Rc8 38. Rh1 Nf5 39. Nxf5 Bxf5 40.
+Rh7 Be6 41. g4 1-0
+
+[Event "London"]
+[Site "?"]
+[Date "1922.??.??"]
+[Round "10"]
+[White "Alekhine, Alexander"]
+[Black "Yates, Frederick"]
+[Result "1-0"]
+[ECO "D64"]
+[Annotator "R. Grau"]
+[PlyCount "75"]
+[EventDate "1922.??.??"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bg5 O-O 6. e3 Nbd7 7. Rc1 c6 8. Qc2
+Re8 9. Bd3 dxc4 10. Bxc4 Nd5 11. Ne4 f5 12. Bxe7 Qxe7 13. Ned2 b5 14. Bxd5 cxd5
+15. O-O a5 16. Nb3 a4 17. Nc5 Nxc5 18. Qxc5 Qxc5 19. Rxc5 b4 20. Rfc1 Ba6 21.
+Ne5 Reb8 22. f3 b3 23. a3 h6 24. Kf2 Kh7 25. h4 Rf8 26. Kg3 Rfb8 27. Rc7 Bb5
+28. R1c5 Ba6 29. R5c6 Re8 30. Kf4 Kg8 31. h5 Bf1 32. g3 Ba6 33. Rf7 Kh7 34.
+Rcc7 Rg8 {Veamos:} 35. Nd7 {(amenazando Cf6+ ganando calidad)} Kh8 36. Nf6 {
+(igualmente puede realizarse esta jugada, ya que si ..., gxf6 seguiría Th7++.)}
+Rgf8 37. Rxg7 {(entregando el caballo para especular con una amenaza mayor que
+permitirá recuperar el material con un buen saldo favorable)} Rxf6 {(única
+para evitar la amenaza mayor de Th7++)} 38. Ke5 $1 {(bonita y elegante jugada
+del rey, que permite ganar ahora la torre, ya que esta pieza no puede
+retirarse a f8, ni ser defendida por la otra torre, por la amenaza mayor de 5.
+Th7+ Rg8, 6. Tcg7++). Las negras deben sacrificar la torre para evitar el mate
+y nuevamente vemos las amenazas mayores, provocadas por medio de hábiles
+sacrificios previos, finalizando en ganancia de material.} 1-0
+
+[Event "Mayor"]
+[Site "Buenos Aires"]
+[Date "1926.??.??"]
+[Round "5"]
+[White "Rivarola, Juan M"]
+[Black "Bauer, Conrado"]
+[Result "1-0"]
+[ECO "E14"]
+[Annotator "R. Grau"]
+[PlyCount "55"]
+[EventDate "1926.??.??"]
+
+1. d4 Nf6 2. Nf3 e6 3. c4 b6 4. Nc3 Bb7 5. e3 Be7 6. Be2 O-O 7. O-O d6 8. Qc2
+Nbd7 9. Rd1 Qc8 10. e4 e5 11. Nd5 Nxd5 12. cxd5 Bf6 13. Be3 Qd8 14. Rac1 Rc8
+15. Bb5 exd4 16. Bxd4 Ne5 17. Bxe5 Bxe5 18. Nxe5 dxe5 19. Qa4 a6 20. Bc6 Ba8
+21. Qxa6 f5 22. Qe2 fxe4 23. Qxe4 Bxc6 24. Rxc6 Rf6 {Las blancas jugaron} 25.
+d6 $1 {las negras replicaron con} Qd7 ({Si hubieran jugado} 25... Rxd6 {
+habría seguido} 26. Rdxd6 {y contra} cxd6 {entonces} 27. Qc4+ {dando jaque,
+apoyando la acción de la torre enemiga, y, de esta manera, ganándola.}) 26.
+Qd5+ Rf7 ({Si} 26... Kf8 27. Rdc1 Rxd6 28. Qxd6+ $1 {ganando inmediatamente
+por la amenaza mayor si} cxd6 {de} 29. Rxc8+ {seguido de Tc7, recuperando la
+dama y quedando con una torre de ventaja.}) 27. Rdc1 Kf8 28. Rxc7 {y las
+negras abandonaron, por cuanto} (28. Rxc7 {si} Rxc7 29. Rxc7 Qe8 {(única para
+evitar la amenaza mayor de Dxf7+)} 30. d7 {y nada mejor queda ante la amenaza
+de la dama de parte del peón -y lo que es más grave, la amenaza de coronarse
+dama el mismo- que jugar} Rxd7 {perdiendo la torre para evitar,
+transitoriamente, un mal mayor, ya que si} (30... Qd8 31. Rc8 Rxd7 32. Rxd8+ {
+ganando la dama.}) 31. Rxd7 {igualmente se ganaría luego la dama, por cuanto
+si la dama se moviera, por ejemplo a} Qg6 32. Qa8+ Qe8 33. Rd8 {ganándola.})
+1-0
+
+[Event "New Orleans (apócrifa)"]
+[Site "New Orleans - (-20480)"]
+[Date "1920.??.??"]
+[Round "?"]
+[White "Adams, E. Z.."]
+[Black "Torre Repetto, Carlos"]
+[Result "1-0"]
+[ECO "C62"]
+[Annotator "R. Grau"]
+[PlyCount "45"]
+[EventDate "1920.??.??"]
+
+1. e4 e5 2. Nf3 d6 3. d4 exd4 4. Qxd4 Nc6 5. Bb5 Bd7 6. Bxc6 Bxc6 7. Nc3 Nf6 8.
+O-O Be7 9. Nd5 Bxd5 10. exd5 O-O 11. Bg5 c6 12. c4 cxd5 13. cxd5 Re8 14. Rfe1
+a5 15. Re2 Rc8 16. Rae1 Qd7 17. Bxf6 Bxf6 {La posición de mate en que se
+encuentra el rey negro permite al blanco idear una combinación muy interesante,
+en base a la explotación de una amenaza mayor, y, lo que es más importante, de
+anular el sostén que tiene la torre negra de e8 mediante la acción de la dama.
+Como esta pieza está esclavizada en la defensa de ese mate, el blanco elude la
+agresión directa del alfil adversario mediante una seguidilla de brillantes
+sacrificios, que van reduciendo la agilidad de la dama enemiga, hasta permitir
+la ganancia de material.} 18. Qg4 $1 {(el primer sacrificio. No es posible
+tomar la dama por la amenaza mayor de Txe8, con mate a la siguiente)} Qb5 {
+(saliendo de la presión y amenazando a la vez ..., Dxe2, para continuar con ...
+, Tc1 y mate)} 19. Qc4 $3 {(un nuevo y espectacular sacrificio de la dama
+obstruyendo las amenazas adversarias y explotando la situación de sostén de
+las dos piezas negras que pueden capturar la dama)} Qd7 20. Qc7 $3 {(nueva
+persecución, y metiéndose en la boca del lobo, que, por cierto, no puede
+morder por la amenaza mayor de Txe8++)} Qb5 {(nuevamente amenazando ..., Dxe2!)
+} 21. a4 $3 {(la jugada magistral. Veremos cómo ahora la posición del negro se
+vuelve completamente artificial, y cómo el blanco ha de explotar la amenaza de
+mate y la posibilidad de una agresión múltiple a todos los sostenes)} Qxa4 22.
+Re4 $1 {(todas las piezas blancas están entregadas y la amenaza mayor de mate
+permite a Adams efectuar esta serie de filigranas tácticas que irán quitándole
+a la dama toda posibilidad de seguir actuando en la diagonal e8-a4, evitando
+Txe8++)} Qb5 ({Si} 22... Qxe4 23. Rxe4 {y subsiste la amenaza de mate en c8 o
+e8, si desaparece cualquiera de los sostenes)}) 23. Qxb7 $3 {(el nuevo y
+brillante sacrificio que gana material, ya que la dama no puede seguir
+evitando el mate en e8.)} (23. Qxb7 {si} Rxe4 {entonces} ({y si} 23... Qxb7 {
+seguiría} 24. Rxe8+ {etc. Para evitar esto habría que entregar la dama.}) 24.
+Qxc8+ {etc. daría igualmente mate.}) 1-0
+

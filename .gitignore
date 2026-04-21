@@ -18,3 +18,5 @@ db/
 # Carpetas de sistema
 .DS_Store
 Thumbs.db
+
+*.md
