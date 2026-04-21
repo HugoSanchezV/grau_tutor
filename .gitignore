@@ -1,0 +1,20 @@
+# Entorno virtual y Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+.env
+
+# Base de Datos y Persistencia (¡Importante!)
+db/
+*.db
+*.sqlite3
+
+# Docker logs
+*.log
+
+# Carpetas de sistema
+.DS_Store
+Thumbs.db

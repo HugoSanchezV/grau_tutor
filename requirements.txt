@@ -1,0 +1,11 @@
+streamlit
+langchain
+langchain-anthropic
+langchain-openai
+langchain-groq
+langgraph
+chromadb
+python-chess
+pydantic-settings
+python-dotenv
+pandas
