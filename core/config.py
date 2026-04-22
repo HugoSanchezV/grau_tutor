@@ -19,6 +19,9 @@ class Settings(BaseSettings):
     # SQLite
     sqlite_db_path: str = Field("db/chess_tutor.db", alias="SQLITE_DB_PATH")
 
+    # BM25 (índice léxico para retrieval híbrido)
+    bm25_index_path: str = Field("db/bm25.pkl", alias="BM25_INDEX_PATH")
+
     # Logging
     log_level: str = Field("INFO", alias="LOG_LEVEL")
 

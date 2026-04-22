@@ -16,7 +16,8 @@ TOMOS: dict[str, tuple[int, str]] = {
     "Grau IV.pgn": (4, "Estrategia Superior"),
 }
 
-MAX_TOKENS_PER_CHUNK = 1800  # ~7200 chars aprox; split si supera esto
+MAX_CHARS_PER_CHUNK = 1800  # ~450 tokens; ventana pensada para análisis pedagógico
+OVERLAP_SENTENCES = 1  # oraciones compartidas entre chunks adyacentes
 
 
 def _extract_comments_from_node(node: chess.pgn.GameNode) -> str:
@@ -74,49 +75,57 @@ def _game_to_text(game: chess.pgn.Game) -> tuple[str, str]:
     return " ".join(moves_parts), " ".join(comments_parts)
 
 
-def _build_texto_completo(game: chess.pgn.Game, jugadas: str, comentarios: str) -> str:
-    headers = game.headers
-    parts = []
+def _build_texto_para_embedding(tomo: int, tema: str, eco: str, analisis_chunk: str) -> str:
+    """Texto que va al embedding: contexto pedagógico mínimo + análisis de Grau.
 
-    event = headers.get("Event", "?")
-    white = headers.get("White", "?")
-    black = headers.get("Black", "?")
-    eco = headers.get("ECO", "")
-    result = headers.get("Result", "*")
-
-    parts.append(f"Partida: {white} vs {black}")
+    Se omite deliberadamente la notación algebraica y los nombres de jugadores:
+    son ruido para búsquedas conceptuales.
+    """
+    parts = [f"Tomo {tomo}: {tema}"]
     if eco:
-        parts.append(f"Apertura ECO: {eco}")
-    parts.append(f"Resultado: {result}")
-    if jugadas:
-        parts.append(f"Jugadas: {jugadas}")
-    if comentarios:
-        parts.append(f"Análisis de Grau: {comentarios}")
-
+        parts.append(f"Apertura: {eco}")
+    parts.append(analisis_chunk)
     return "\n".join(parts)
 
 
-def _split_texto(texto: str, max_chars: int = 7200) -> list[str]:
-    """Divide texto largo en chunks manteniendo párrafos completos."""
-    if len(texto) <= max_chars:
-        return [texto]
+def _chunk_analisis(comentarios: str, max_chars: int, overlap_sentences: int) -> list[str]:
+    """Divide el análisis pedagógico en ventanas por oración con solapamiento."""
+    texto = comentarios.strip()
+    if not texto:
+        return []
 
-    sentences = re.split(r'(?<=[.!?])\s+', texto)
-    chunks, current = [], ""
-    for s in sentences:
-        if len(current) + len(s) + 1 > max_chars and current:
-            chunks.append(current.strip())
-            current = s
-        else:
-            current = (current + " " + s).strip()
+    sentences = [s.strip() for s in re.split(r'(?<=[.!?])\s+', texto) if s.strip()]
+    if not sentences:
+        return []
+
+    # Si el total cabe en un chunk, no dividir
+    total = sum(len(s) + 1 for s in sentences)
+    if total <= max_chars:
+        return [" ".join(sentences)]
+
+    chunks: list[str] = []
+    current: list[str] = []
+    current_len = 0
+
+    for sent in sentences:
+        if current and current_len + len(sent) + 1 > max_chars:
+            chunks.append(" ".join(current))
+            tail = current[-overlap_sentences:] if overlap_sentences > 0 else []
+            current = list(tail)
+            current_len = sum(len(s) + 1 for s in current)
+        current.append(sent)
+        current_len += len(sent) + 1
+
     if current:
-        chunks.append(current.strip())
-    return chunks if chunks else [texto[:max_chars]]
+        chunks.append(" ".join(current))
+
+    return chunks
 
 
 def parse_pgn_file(filepath: str, tomo: int, tema: str) -> Generator[PartidaGrau, None, None]:
     logger.info(f"Parseando {filepath} (Tomo {tomo}: {tema})")
     count = 0
+    skipped_sin_analisis = 0
 
     with open(filepath, encoding="utf-8-sig") as f:
         content = f.read()
@@ -135,12 +144,19 @@ def parse_pgn_file(filepath: str, tomo: int, tema: str) -> Generator[PartidaGrau
 
         headers = game.headers
         fen = headers.get("FEN", "")
+        eco = headers.get("ECO", "")
         jugadas, comentarios = _game_to_text(game)
-        texto = _build_texto_completo(game, jugadas, comentarios)
-        subtextos = _split_texto(texto)
 
-        for chunk_idx, subtexto in enumerate(subtextos):
+        analisis_chunks = _chunk_analisis(comentarios, MAX_CHARS_PER_CHUNK, OVERLAP_SENTENCES)
+
+        if not analisis_chunks:
+            skipped_sin_analisis += 1
+            count += 1
+            continue
+
+        for chunk_idx, analisis in enumerate(analisis_chunks):
             partida_id = f"tomo{tomo}-{count}-chunk{chunk_idx}"
+            texto_embedding = _build_texto_para_embedding(tomo, tema, eco, analisis)
             meta = ChunkMetadata(
                 tomo=tomo,
                 tema=tema,
@@ -148,7 +164,7 @@ def parse_pgn_file(filepath: str, tomo: int, tema: str) -> Generator[PartidaGrau
                 white=headers.get("White", "?"),
                 black=headers.get("Black", "?"),
                 result=headers.get("Result", "*"),
-                eco=headers.get("ECO", ""),
+                eco=eco,
                 annotator=headers.get("Annotator", ""),
                 fen=fen,
                 ply_count=int(headers.get("PlyCount", 0) or 0),
@@ -157,15 +173,18 @@ def parse_pgn_file(filepath: str, tomo: int, tema: str) -> Generator[PartidaGrau
             )
             yield PartidaGrau(
                 partida_id=partida_id,
-                texto_completo=subtexto,
+                texto_completo=texto_embedding,
                 jugadas=jugadas,
-                comentarios=comentarios,
+                comentarios=analisis,
                 metadata=meta,
             )
 
         count += 1
 
-    logger.info(f"Tomo {tomo}: {count} partidas procesadas")
+    logger.info(
+        f"Tomo {tomo}: {count} partidas procesadas "
+        f"({skipped_sin_analisis} descartadas por no tener análisis)"
+    )
 
 
 def ingest_all(data_dir: str) -> list[PartidaGrau]:

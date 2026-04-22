@@ -41,5 +41,6 @@ class PartidaGrau(BaseModel):
                 "fen": self.metadata.fen,
                 "ply_count": self.metadata.ply_count,
                 "partida_id": self.partida_id,
+                "jugadas": self.jugadas,
             },
         }

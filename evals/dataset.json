@@ -1,0 +1,97 @@
+{
+  "version": "1.0",
+  "k": 5,
+  "description": "Eval dataset con criterios verificables externos. 'keyword_any': el doc contiene al menos uno de los términos. 'keyword_all': el doc contiene todos los términos. 'meta_any': se cumple al menos una condición sobre metadata. Comparación case-insensitive, substring match.",
+  "queries": [
+    {
+      "id": "q01",
+      "categoria": "concepto_pedagogico",
+      "query": "¿qué es un peón pasado y por qué es importante?",
+      "criterio": {"tipo": "keyword_any", "any_of": ["peón pasado", "peones pasados"]}
+    },
+    {
+      "id": "q02",
+      "categoria": "concepto_pedagogico",
+      "query": "explícame la clavada en ajedrez",
+      "criterio": {"tipo": "keyword_any", "any_of": ["clavada", "clavar", "clavado"]}
+    },
+    {
+      "id": "q03",
+      "categoria": "final",
+      "query": "cómo se juega la oposición en finales de rey y peón",
+      "criterio": {"tipo": "keyword_any", "any_of": ["oposición"]}
+    },
+    {
+      "id": "q04",
+      "categoria": "tactica",
+      "query": "cómo atacar al rey enrocado",
+      "criterio": {"tipo": "keyword_all", "all_of": ["enroque", "ataque"]}
+    },
+    {
+      "id": "q05",
+      "categoria": "concepto_pedagogico",
+      "query": "qué hacer con un peón aislado",
+      "criterio": {"tipo": "keyword_any", "any_of": ["aislado", "aislados"]}
+    },
+    {
+      "id": "q06",
+      "categoria": "tactica",
+      "query": "ejemplo de sacrificio de calidad",
+      "criterio": {"tipo": "keyword_all", "all_of": ["sacrificio", "calidad"]}
+    },
+    {
+      "id": "q07",
+      "categoria": "concepto_pedagogico",
+      "query": "desventajas de los peones doblados",
+      "criterio": {"tipo": "keyword_any", "any_of": ["doblado", "doblados"]}
+    },
+    {
+      "id": "q08",
+      "categoria": "estrategia",
+      "query": "iniciativa en la apertura",
+      "criterio": {"tipo": "keyword_all", "all_of": ["iniciativa", "apertura"]}
+    },
+    {
+      "id": "q09",
+      "categoria": "jugador_historico",
+      "query": "muestra una partida de Capablanca",
+      "criterio": {
+        "tipo": "meta_any",
+        "any_of": [
+          {"field": "white", "contains": "Capablanca"},
+          {"field": "black", "contains": "Capablanca"}
+        ]
+      }
+    },
+    {
+      "id": "q10",
+      "categoria": "jugador_historico",
+      "query": "partidas con Alekhine",
+      "criterio": {
+        "tipo": "meta_any",
+        "any_of": [
+          {"field": "white", "contains": "Alekhine"},
+          {"field": "black", "contains": "Alekhine"}
+        ]
+      }
+    },
+    {
+      "id": "q11",
+      "categoria": "jugador_historico",
+      "query": "partidas con Lasker",
+      "criterio": {
+        "tipo": "meta_any",
+        "any_of": [
+          {"field": "white", "contains": "Lasker"},
+          {"field": "black", "contains": "Lasker"}
+        ]
+      }
+    },
+    {
+      "id": "q12",
+      "categoria": "tactica",
+      "query": "combinación que termina en mate",
+      "criterio": {"tipo": "keyword_all", "all_of": ["combinación", "mate"]}
+    }
+  ]
+}

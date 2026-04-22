@@ -1,0 +1,550 @@
+{
+  "k": 5,
+  "n_candidates": 20,
+  "results": [
+    {
+      "system": "dense_only",
+      "per_query": [
+        {
+          "id": "q01",
+          "query": "¿qué es un peón pasado y por qué es importante?",
+          "categoria": "concepto_pedagogico",
+          "relevance": [
+            true,
+            true,
+            true,
+            false,
+            false
+          ],
+          "retrieved_ids": [
+            "tomo3-43-chunk2",
+            "tomo3-49-chunk3",
+            "tomo3-50-chunk5",
+            "tomo3-14-chunk1",
+            "tomo3-95-chunk0"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 0.6
+        },
+        {
+          "id": "q02",
+          "query": "explícame la clavada en ajedrez",
+          "categoria": "concepto_pedagogico",
+          "relevance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "retrieved_ids": [
+            "tomo2-212-chunk0",
+            "tomo1-92-chunk0",
+            "tomo2-212-chunk1",
+            "tomo2-226-chunk1",
+            "tomo1-95-chunk0"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 1.0
+        },
+        {
+          "id": "q03",
+          "query": "cómo se juega la oposición en finales de rey y peón",
+          "categoria": "final",
+          "relevance": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "retrieved_ids": [
+            "tomo4-137-chunk1",
+            "tomo3-119-chunk5",
+            "tomo4-133-chunk0",
+            "tomo3-87-chunk0",
+            "tomo3-16-chunk3"
+          ],
+          "hit_rate": 0.0,
+          "mrr": 0.0,
+          "precision": 0.0
+        },
+        {
+          "id": "q04",
+          "query": "cómo atacar al rey enrocado",
+          "categoria": "tactica",
+          "relevance": [
+            false,
+            false,
+            true,
+            false,
+            false
+          ],
+          "retrieved_ids": [
+            "tomo2-242-chunk0",
+            "tomo2-86-chunk0",
+            "tomo1-21-chunk2",
+            "tomo4-7-chunk0",
+            "tomo2-80-chunk0"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 0.3333333333333333,
+          "precision": 0.2
+        },
+        {
+          "id": "q05",
+          "query": "qué hacer con un peón aislado",
+          "categoria": "concepto_pedagogico",
+          "relevance": [
+            false,
+            true,
+            false,
+            false,
+            false
+          ],
+          "retrieved_ids": [
+            "tomo3-14-chunk1",
+            "tomo3-23-chunk0",
+            "tomo3-45-chunk0",
+            "tomo3-50-chunk4",
+            "tomo3-43-chunk2"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 0.5,
+          "precision": 0.2
+        },
+        {
+          "id": "q06",
+          "query": "ejemplo de sacrificio de calidad",
+          "categoria": "tactica",
+          "relevance": [
+            false,
+            true,
+            false,
+            true,
+            false
+          ],
+          "retrieved_ids": [
+            "tomo1-51-chunk0",
+            "tomo2-11-chunk0",
+            "tomo2-122-chunk0",
+            "tomo2-223-chunk0",
+            "tomo2-222-chunk0"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 0.5,
+          "precision": 0.4
+        },
+        {
+          "id": "q07",
+          "query": "desventajas de los peones doblados",
+          "categoria": "concepto_pedagogico",
+          "relevance": [
+            true,
+            true,
+            false,
+            false,
+            true
+          ],
+          "retrieved_ids": [
+            "tomo3-14-chunk1",
+            "tomo3-23-chunk0",
+            "tomo3-50-chunk0",
+            "tomo3-120-chunk0",
+            "tomo3-15-chunk0"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 0.6
+        },
+        {
+          "id": "q08",
+          "query": "iniciativa en la apertura",
+          "categoria": "estrategia",
+          "relevance": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "retrieved_ids": [
+            "tomo1-84-chunk0",
+            "tomo2-175-chunk0",
+            "tomo4-85-chunk0",
+            "tomo2-116-chunk0",
+            "tomo4-49-chunk3"
+          ],
+          "hit_rate": 0.0,
+          "mrr": 0.0,
+          "precision": 0.0
+        },
+        {
+          "id": "q09",
+          "query": "muestra una partida de Capablanca",
+          "categoria": "jugador_historico",
+          "relevance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "retrieved_ids": [
+            "tomo3-123-chunk0",
+            "tomo3-127-chunk2",
+            "tomo3-70-chunk1",
+            "tomo4-69-chunk0",
+            "tomo3-70-chunk0"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 1.0
+        },
+        {
+          "id": "q10",
+          "query": "partidas con Alekhine",
+          "categoria": "jugador_historico",
+          "relevance": [
+            true,
+            true,
+            true,
+            true,
+            false
+          ],
+          "retrieved_ids": [
+            "tomo4-35-chunk1",
+            "tomo4-110-chunk1",
+            "tomo3-11-chunk0",
+            "tomo3-121-chunk3",
+            "tomo3-132-chunk0"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 0.8
+        },
+        {
+          "id": "q11",
+          "query": "partidas con Lasker",
+          "categoria": "jugador_historico",
+          "relevance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "retrieved_ids": [
+            "tomo3-8-chunk0",
+            "tomo4-75-chunk0",
+            "tomo4-130-chunk0",
+            "tomo4-70-chunk2",
+            "tomo4-75-chunk1"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 1.0
+        },
+        {
+          "id": "q12",
+          "query": "combinación que termina en mate",
+          "categoria": "tactica",
+          "relevance": [
+            true,
+            true,
+            true,
+            false,
+            true
+          ],
+          "retrieved_ids": [
+            "tomo2-42-chunk0",
+            "tomo2-22-chunk1",
+            "tomo1-105-chunk0",
+            "tomo2-30-chunk0",
+            "tomo4-17-chunk1"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 0.8
+        }
+      ],
+      "hit_rate": 0.8333333333333334,
+      "mrr": 0.6944444444444444,
+      "precision": 0.55
+    },
+    {
+      "system": "hybrid",
+      "per_query": [
+        {
+          "id": "q01",
+          "query": "¿qué es un peón pasado y por qué es importante?",
+          "categoria": "concepto_pedagogico",
+          "relevance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "retrieved_ids": [
+            "tomo3-45-chunk0",
+            "tomo3-44-chunk0",
+            "tomo3-51-chunk2",
+            "tomo3-43-chunk2",
+            "tomo3-49-chunk3"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 1.0
+        },
+        {
+          "id": "q02",
+          "query": "explícame la clavada en ajedrez",
+          "categoria": "concepto_pedagogico",
+          "relevance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "retrieved_ids": [
+            "tomo1-95-chunk0",
+            "tomo2-212-chunk0",
+            "tomo1-92-chunk0",
+            "tomo2-237-chunk1",
+            "tomo2-212-chunk1"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 1.0
+        },
+        {
+          "id": "q03",
+          "query": "cómo se juega la oposición en finales de rey y peón",
+          "categoria": "final",
+          "relevance": [
+            true,
+            false,
+            false,
+            false,
+            false
+          ],
+          "retrieved_ids": [
+            "tomo4-23-chunk4",
+            "tomo4-133-chunk0",
+            "tomo4-137-chunk1",
+            "tomo4-23-chunk6",
+            "tomo3-119-chunk5"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 0.2
+        },
+        {
+          "id": "q04",
+          "query": "cómo atacar al rey enrocado",
+          "categoria": "tactica",
+          "relevance": [
+            true,
+            false,
+            false,
+            false,
+            false
+          ],
+          "retrieved_ids": [
+            "tomo3-61-chunk2",
+            "tomo4-6-chunk4",
+            "tomo2-242-chunk0",
+            "tomo2-66-chunk0",
+            "tomo2-86-chunk0"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 0.2
+        },
+        {
+          "id": "q05",
+          "query": "qué hacer con un peón aislado",
+          "categoria": "concepto_pedagogico",
+          "relevance": [
+            true,
+            false,
+            true,
+            true,
+            true
+          ],
+          "retrieved_ids": [
+            "tomo3-48-chunk1",
+            "tomo3-14-chunk1",
+            "tomo4-10-chunk0",
+            "tomo3-23-chunk0",
+            "tomo4-5-chunk2"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 0.8
+        },
+        {
+          "id": "q06",
+          "query": "ejemplo de sacrificio de calidad",
+          "categoria": "tactica",
+          "relevance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "retrieved_ids": [
+            "tomo2-223-chunk0",
+            "tomo2-11-chunk0",
+            "tomo3-130-chunk0",
+            "tomo2-5-chunk3",
+            "tomo3-126-chunk0"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 1.0
+        },
+        {
+          "id": "q07",
+          "query": "desventajas de los peones doblados",
+          "categoria": "concepto_pedagogico",
+          "relevance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "retrieved_ids": [
+            "tomo3-14-chunk1",
+            "tomo3-15-chunk0",
+            "tomo3-23-chunk0",
+            "tomo2-212-chunk2",
+            "tomo3-26-chunk0"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 1.0
+        },
+        {
+          "id": "q08",
+          "query": "iniciativa en la apertura",
+          "categoria": "estrategia",
+          "relevance": [
+            false,
+            false,
+            false,
+            false,
+            true
+          ],
+          "retrieved_ids": [
+            "tomo2-175-chunk0",
+            "tomo2-116-chunk0",
+            "tomo1-24-chunk0",
+            "tomo1-84-chunk0",
+            "tomo4-0-chunk0"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 0.2,
+          "precision": 0.2
+        },
+        {
+          "id": "q09",
+          "query": "muestra una partida de Capablanca",
+          "categoria": "jugador_historico",
+          "relevance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "retrieved_ids": [
+            "tomo4-69-chunk0",
+            "tomo3-121-chunk1",
+            "tomo3-123-chunk0",
+            "tomo4-69-chunk1",
+            "tomo4-35-chunk0"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 1.0
+        },
+        {
+          "id": "q10",
+          "query": "partidas con Alekhine",
+          "categoria": "jugador_historico",
+          "relevance": [
+            false,
+            true,
+            true,
+            true,
+            true
+          ],
+          "retrieved_ids": [
+            "tomo3-132-chunk0",
+            "tomo4-35-chunk1",
+            "tomo4-110-chunk0",
+            "tomo4-35-chunk0",
+            "tomo4-110-chunk1"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 0.5,
+          "precision": 0.8
+        },
+        {
+          "id": "q11",
+          "query": "partidas con Lasker",
+          "categoria": "jugador_historico",
+          "relevance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "retrieved_ids": [
+            "tomo4-75-chunk1",
+            "tomo4-75-chunk2",
+            "tomo3-9-chunk0",
+            "tomo3-8-chunk0",
+            "tomo4-70-chunk2"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 1.0
+        },
+        {
+          "id": "q12",
+          "query": "combinación que termina en mate",
+          "categoria": "tactica",
+          "relevance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "retrieved_ids": [
+            "tomo2-42-chunk0",
+            "tomo2-22-chunk1",
+            "tomo2-18-chunk0",
+            "tomo4-17-chunk1",
+            "tomo1-105-chunk0"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 1.0
+        }
+      ],
+      "hit_rate": 1.0,
+      "mrr": 0.8916666666666667,
+      "precision": 0.7666666666666667
+    }
+  ]
+}

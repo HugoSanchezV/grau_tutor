@@ -11,6 +11,7 @@ from core.logging import setup_logging, get_logger
 from rag.ingest import ingest_all
 from rag.embeddings import embed_texts
 from rag.store import get_chroma_client, get_or_create_collection, add_documents, collection_is_empty
+from rag.bm25 import build_bm25_index
 
 setup_logging()
 logger = get_logger(__name__)
@@ -45,6 +46,9 @@ def run_ingestion(force: bool = False) -> None:
 
     logger.info("Cargando en ChromaDB...")
     add_documents(collection, ids, documents, embeddings, metadatas)
+
+    logger.info("Construyendo índice BM25...")
+    build_bm25_index(chunks, settings.bm25_index_path)
 
     logger.info(f"Ingesta completa. Total en ChromaDB: {collection.count()} documentos")
 
