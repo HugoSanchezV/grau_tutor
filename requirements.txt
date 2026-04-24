@@ -2,6 +2,8 @@ streamlit
 langchain
 langchain-anthropic
 langchain-openai
+langchain-groq
+groq
 langgraph
 chromadb
 python-chess

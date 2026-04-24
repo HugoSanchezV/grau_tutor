@@ -124,10 +124,18 @@ class GrauRetriever:
             )
             for id_, doc, meta in zip(extra["ids"], extra["documents"], extra["metadatas"]):
                 by_id[id_] = {"doc": doc, "meta": meta, "distance": None}
+            still_missing = [id_ for id_ in missing if id_ not in by_id]
+            if still_missing:
+                logger.warning(
+                    f"{len(still_missing)} IDs en BM25 no encontrados en ChromaDB (índice desincronizado): "
+                    f"{still_missing[:5]}"
+                )
 
         items = []
         for id_ in fused_ids:
-            data = by_id[id_]
+            data = by_id.get(id_)
+            if data is None:
+                continue
             sim = 1 - data["distance"] if data["distance"] is not None else None
             items.append({
                 "id": id_,

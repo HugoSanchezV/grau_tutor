@@ -4,8 +4,10 @@ from pydantic import Field
 
 class Settings(BaseSettings):
     # LLM
+    llm_provider: str = Field("groq", alias="LLM_PROVIDER")  # groq | anthropic | openai
     anthropic_api_key: str = Field("", alias="ANTHROPIC_API_KEY")
-    llm_model: str = Field("claude-sonnet-4-20250514", alias="LLM_MODEL")
+    groq_api_key: str = Field("", alias="GROQ_API_KEY")
+    llm_model: str = Field("llama-3.3-70b-versatile", alias="LLM_MODEL")
 
     # Embeddings
     openai_api_key: str = Field("", alias="OPENAI_API_KEY")

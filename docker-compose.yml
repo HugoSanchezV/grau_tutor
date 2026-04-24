@@ -8,9 +8,16 @@ services:
       - "8501:8501"
     env_file:
       - .env
+    environment:
+      - PYTHONPATH=/app
+      - CHROMA_HOST=chromadb
     volumes:
       - ./data:/app/data
       - ./db:/app/db  # Persistencia para SQLite
+      - ./app:/app/app
+      - ./agents:/app/agents
+      - ./core:/app/core
+      - ./rag:/app/rag
     depends_on:
       - chromadb
 

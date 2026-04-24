@@ -53,6 +53,56 @@ def run_ingestion(force: bool = False) -> None:
     logger.info(f"Ingesta completa. Total en ChromaDB: {collection.count()} documentos")
 
 
+def rebuild_bm25_from_chroma() -> None:
+    """Rebuild the BM25 index from what's currently in ChromaDB, without re-embedding."""
+    client = get_chroma_client()
+    collection = get_or_create_collection(client)
+    total = collection.count()
+    if total == 0:
+        logger.error("ChromaDB está vacío; ejecuta la ingesta primero.")
+        return
+
+    logger.info(f"Reconstruyendo BM25 desde {total} docs en ChromaDB...")
+    batch_size = 500
+    all_ids: list[str] = []
+    all_texts: list[str] = []
+
+    offset = 0
+    while offset < total:
+        result = collection.get(
+            limit=batch_size,
+            offset=offset,
+            include=["documents", "metadatas"],
+        )
+        for id_, doc, meta in zip(result["ids"], result["documents"], result["metadatas"]):
+            parts = [
+                meta.get("tema", ""),
+                meta.get("eco", ""),
+                meta.get("white", ""),
+                meta.get("black", ""),
+                doc,
+            ]
+            all_ids.append(id_)
+            all_texts.append(" ".join(p for p in parts if p))
+        offset += batch_size
+
+    from rank_bm25 import BM25Okapi
+    from rag.bm25 import _tokenize
+    import pickle, os
+
+    tokenized = [_tokenize(t) for t in all_texts]
+    bm25 = BM25Okapi(tokenized)
+    parent = os.path.dirname(settings.bm25_index_path)
+    if parent:
+        os.makedirs(parent, exist_ok=True)
+    with open(settings.bm25_index_path, "wb") as f:
+        pickle.dump({"ids": all_ids, "bm25": bm25}, f)
+    logger.info(f"Índice BM25 reconstruido: {len(all_ids)} docs → {settings.bm25_index_path}")
+
+
 if __name__ == "__main__":
-    force = "--force" in sys.argv
-    run_ingestion(force=force)
+    if "--rebuild-bm25" in sys.argv:
+        rebuild_bm25_from_chroma()
+    else:
+        force = "--force" in sys.argv
+        run_ingestion(force=force)
