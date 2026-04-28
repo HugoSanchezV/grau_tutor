@@ -1,8 +1,7 @@
 """Agente ReAct: orquesta search_grau + chess_engine + exercise_gen con memoria de conversación.
 
-Usa `langgraph.prebuilt.create_react_agent` como motor ReAct + un `MemorySaver`
-para mantener el hilo de la conversación (incluye el FEN del último ejercicio,
-que el LLM recuerda vía historial).
+Usa `langgraph.prebuilt.create_react_agent` como motor ReAct + un SqliteSaver
+para mantener el hilo de la conversación de forma persistente entre reinicios.
 """
 from __future__ import annotations
 from dataclasses import dataclass, field
@@ -11,12 +10,12 @@ from typing import Any, Iterable, Optional
 from langchain_core.language_models import BaseChatModel
 from langchain_core.messages import AIMessage, HumanMessage, ToolMessage
 from langchain_core.tools import BaseTool
-from langgraph.checkpoint.memory import MemorySaver
 from langgraph.prebuilt import create_react_agent
 
 from agents.tools.chess_engine import build_chess_engine_tools
 from agents.tools.exercise_gen import build_exercise_gen_tools
 from agents.tools.search_grau import build_search_grau_tool
+from core.checkpointer import make_checkpointer
 from core.llm import get_llm
 from core.logging import get_logger
 from rag.retrieval import GrauRetriever
@@ -105,40 +104,84 @@ def _extract_final_reply(messages: list[Any]) -> str:
 
 
 class GrauAgent:
-    """Envuelve el grafo ReAct de LangGraph con memoria por `thread_id`."""
+    """Envuelve el grafo ReAct de LangGraph como agente stateless.
+
+    El estado del agente es administrado por el grafo LangGraph externo;
+    este agente simplemente ejecuta el ReAct sin persistencia propia.
+    """
 
     def __init__(
         self,
         retriever: GrauRetriever,
         llm: Optional[BaseChatModel] = None,
         system_prompt: str = SYSTEM_PROMPT,
+        stateless: bool = True,
     ) -> None:
         self.llm = llm or get_llm()
         self.tools = build_tools(retriever)
-        self.checkpointer = MemorySaver()
+        self.system_prompt = system_prompt
+
+        # Solo crear checkpointer si no es stateless (para uso standalone del agente)
+        checkpointer = None if stateless else make_checkpointer("agent_checkpoints.db")
+
         self.graph = create_react_agent(
             model=self.llm,
             tools=self.tools,
             prompt=system_prompt,
-            checkpointer=self.checkpointer,
+            checkpointer=checkpointer,
         )
 
-    def chat(self, message: str, thread_id: str = "default") -> AgentResponse:
-        config = {"configurable": {"thread_id": thread_id}}
-        state = self.graph.get_state(config)
-        prev_count = len(state.values.get("messages", [])) if state.values else 0
+    def chat(
+        self,
+        message: str,
+        thread_id: str = "default",
+        history: Optional[list[Any]] = None,
+    ) -> AgentResponse:
+        """Invoca el agente ReAct. Si history se proporciona, la usa como contexto previo.
+
+        Cuando se usa en el contexto de un grafo externo (como TutorGraph),
+        pasar history = state["messages"] para que el agente tenga contexto del flujo.
+        """
+        # Si no hay historial explícito y tenemos checkpointer, usar el flujo con thread_id
+        if history is None and self.graph.checkpointer is not None:
+            config = {"configurable": {"thread_id": thread_id}}
+            state = self.graph.get_state(config)
+            prev_count = len(state.values.get("messages", [])) if state.values else 0
+            result = self.graph.invoke(
+                {"messages": [HumanMessage(content=message)]},
+                config=config,
+            )
+            messages = result.get("messages", [])
+            return AgentResponse(
+                reply=_extract_final_reply(messages),
+                reasoning=_extract_reasoning(messages[prev_count:]),
+            )
+
+        # Agente stateless: usar historia proporcionada explícitamente
+        if history is None:
+            history = []
+        input_messages = list(history) + [HumanMessage(content=message)]
         result = self.graph.invoke(
-            {"messages": [HumanMessage(content=message)]},
-            config=config,
+            {"messages": input_messages},
+            config=None,
         )
         messages = result.get("messages", [])
+        # Devolver solo los nuevos mensajes (los que se añadieron en esta invocación)
+        new_messages = messages[len(history) :]
         return AgentResponse(
-            reply=_extract_final_reply(messages),
-            reasoning=_extract_reasoning(messages[prev_count:]),
+            reply=_extract_final_reply(new_messages),
+            reasoning=_extract_reasoning(new_messages),
         )
 
     def stream(self, message: str, thread_id: str = "default") -> Iterable[dict]:
-        """Stream de estados del grafo (para pintar la cadena de pensamiento en vivo)."""
+        """Stream de estados del grafo (para pintar la cadena de pensamiento en vivo).
+
+        Solo funciona si el agente tiene checkpointer (modo stateful).
+        """
+        if self.graph.checkpointer is None:
+            logger.warning("stream() llamado en agente stateless; necesita checkpointer")
+            return
+
         config = {"configurable": {"thread_id": thread_id}}
         yield from self.graph.stream(
             {"messages": [HumanMessage(content=message)]},
@@ -147,14 +190,20 @@ class GrauAgent:
         )
 
     def reset(self, thread_id: str = "default") -> None:
-        """Descarta la memoria del hilo (útil al pulsar 'nueva conversación' en la UI)."""
-        try:
-            self.checkpointer.delete_thread(thread_id)
-        except AttributeError:
-            self.checkpointer = MemorySaver()
-            self.graph = create_react_agent(
-                model=self.llm,
-                tools=self.tools,
-                prompt=SYSTEM_PROMPT,
-                checkpointer=self.checkpointer,
-            )
+        """Descarta la memoria del hilo si el agente tiene checkpointer.
+
+        En modo stateless, esto es un no-op.
+        """
+        if self.graph.checkpointer is None:
+            return  # Agente stateless, sin memoria para limpiar
+
+        if hasattr(self.graph.checkpointer, "delete_thread"):
+            self.graph.checkpointer.delete_thread(thread_id)
+            return
+        # Fallback para versiones de LangGraph sin delete_thread: borrado quirúrgico
+        for attr in ("storage", "writes"):
+            store = getattr(self.graph.checkpointer, attr, None)
+            if store is None:
+                continue
+            for key in [k for k in list(store) if isinstance(k, tuple) and k[0] == thread_id]:
+                del store[key]

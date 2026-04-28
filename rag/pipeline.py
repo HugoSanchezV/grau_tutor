@@ -75,19 +75,24 @@ def rebuild_bm25_from_chroma() -> None:
             include=["documents", "metadatas"],
         )
         for id_, doc, meta in zip(result["ids"], result["documents"], result["metadatas"]):
+            # doc = texto_completo: "Tomo X: Tema\nApertura: ECO\nanalisis"
+            # Strip header lines to get pure comentarios — matches build_bm25_index behavior
+            comentarios_lines = [
+                line for line in doc.split("\n")
+                if not (line.startswith("Tomo ") or line.startswith("Apertura: "))
+            ]
+            comentarios = " ".join(comentarios_lines).strip()
             parts = [
                 meta.get("tema", ""),
                 meta.get("eco", ""),
-                meta.get("white", ""),
-                meta.get("black", ""),
-                doc,
+                comentarios,
             ]
             all_ids.append(id_)
             all_texts.append(" ".join(p for p in parts if p))
         offset += batch_size
 
     from rank_bm25 import BM25Okapi
-    from rag.bm25 import _tokenize
+    from rag.bm25 import _tokenize, _BM25_INDEX_VERSION
     import pickle, os
 
     tokenized = [_tokenize(t) for t in all_texts]
@@ -96,13 +101,49 @@ def rebuild_bm25_from_chroma() -> None:
     if parent:
         os.makedirs(parent, exist_ok=True)
     with open(settings.bm25_index_path, "wb") as f:
-        pickle.dump({"ids": all_ids, "bm25": bm25}, f)
-    logger.info(f"Índice BM25 reconstruido: {len(all_ids)} docs → {settings.bm25_index_path}")
+        pickle.dump({"version": _BM25_INDEX_VERSION, "ids": all_ids, "bm25": bm25}, f)
+    logger.info(f"Índice BM25 reconstruido: {len(all_ids)} docs → {settings.bm25_index_path} (v{_BM25_INDEX_VERSION})")
+
+
+def check_bm25_chroma_sync() -> None:
+    """Verifica el ratio de desincronización entre BM25 y ChromaDB sin reconstruir."""
+    client = get_chroma_client()
+    collection = get_or_create_collection(client)
+
+    bm25_data = None
+    try:
+        with open(settings.bm25_index_path, "rb") as f:
+            bm25_data = __import__("pickle").load(f)
+    except FileNotFoundError:
+        logger.error(f"BM25 índice no encontrado en {settings.bm25_index_path}")
+        return
+
+    bm25_ids = set(bm25_data.get("ids", []))
+
+    # Sample check
+    sample_ids = list(bm25_ids)[:100] if bm25_ids else []
+    if sample_ids:
+        existing = collection.get(ids=sample_ids, include=[])
+        existing_ids = set(existing.get("ids", []))
+        missing = sample_ids - existing_ids if isinstance(sample_ids, set) else [id_ for id_ in sample_ids if id_ not in existing_ids]
+        missing_count = len(missing)
+        sample_size = len(sample_ids)
+        ratio = missing_count / sample_size if sample_size > 0 else 0
+        logger.info(
+            f"Sincronización BM25/ChromaDB: {sample_size} IDs sampled, "
+            f"{missing_count} missing ({ratio*100:.1f}% stale ratio)"
+        )
+        if ratio > 0.05:
+            logger.error("Desincronización > 5% — ejecuta: python rag/pipeline.py --rebuild-bm25")
+        else:
+            logger.info("Sincronización OK")
 
 
 if __name__ == "__main__":
     if "--rebuild-bm25" in sys.argv:
         rebuild_bm25_from_chroma()
+    elif "--check-sync" in sys.argv:
+        check_bm25_chroma_sync()
     else:
         force = "--force" in sys.argv
         run_ingestion(force=force)

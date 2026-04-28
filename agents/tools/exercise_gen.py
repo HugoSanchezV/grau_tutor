@@ -5,15 +5,17 @@ Se apoya en:
 - chess_engine: para validar la jugada del alumno sobre la posición.
 """
 from __future__ import annotations
+import re
 from typing import Optional, Literal
 
+import chess
 from pydantic import BaseModel, Field
 from langchain_core.tools import StructuredTool
 
 from core.logging import get_logger
 from rag.retrieval import GrauRetriever
 from agents.tools.search_grau import search_grau
-from agents.tools.chess_engine import validate_move, apply_move, analyze_position
+from agents.tools.chess_engine import validate_move, apply_move, analyze_position, pick_best_move
 
 logger = get_logger(__name__)
 
@@ -34,6 +36,7 @@ class Ejercicio(BaseModel):
 class Evaluacion(BaseModel):
     legal: bool
     correcta: Optional[bool] = None  # None si no hay ground truth
+    alternativa_valida: bool = False  # True si la jugada es tácticamente equivalente pero diferente
     feedback: str
     jugada_esperada: Optional[str] = None
     jugada_alumno_san: Optional[str] = None
@@ -41,26 +44,79 @@ class Evaluacion(BaseModel):
 
 # ---------- funciones puras ----------
 
+_FIRST_MOVE_RE = re.compile(r'^\d+\.{1,3}\s*(\S+)')
+
+
+def _move_strength_score(board: chess.Board, move: chess.Move) -> float:
+    """Heurística de fortaleza de jugada: mate > jaque > captura de material > neutral.
+
+    Devuelve un score relativo que permite comparar si dos jugadas son tácticamente
+    equivalentes sin necesidad de un motor externo como Stockfish.
+    """
+    board.push(move)
+    score = 0.0
+
+    # Mate: score máximo
+    if board.is_checkmate():
+        score = 1000.0
+    # Jaque mate evitable (alto valor)
+    elif board.is_check():
+        score = 50.0
+        # Bonus si además se gana material
+        if board.is_capture(move):
+            score += 10.0
+    # Captura: score moderado basado en material ganado
+    elif board.is_capture(move):
+        # Aproximadamente qué valor se capturó
+        captured = board.piece_at(move.to_square)
+        if captured:
+            piece_values = {1: 1, 2: 3, 3: 3, 4: 5, 5: 9, 6: 0}
+            score = piece_values.get(captured.piece_type, 0) + 1.0
+
+    board.pop()
+    return score
+
+
+def _corpus_first_move(fen: str, jugadas: str) -> Optional[str]:
+    """Extrae y valida la primera jugada del corpus contra el FEN dado.
+
+    Devuelve el SAN canónico si la jugada es legal, None en caso contrario.
+    La primera jugada del corpus es la que Grau eligió jugar desde esa posición,
+    lo que la hace más fidedigna pedagógicamente que pick_best_move.
+    """
+    if not jugadas:
+        return None
+    m = _FIRST_MOVE_RE.match(jugadas.strip())
+    if not m:
+        return None
+    san_raw = m.group(1)
+    try:
+        board = chess.Board(fen) if fen else chess.Board()
+        move = board.parse_san(san_raw)
+        return board.san(move)
+    except Exception:
+        return None
+
 
 def generate_exercise(
     retriever: GrauRetriever,
     tema: str,
     tomo: Optional[int] = None,
+    exclude_ids: frozenset[str] = frozenset(),
 ) -> Optional[Ejercicio]:
     """Busca una posición con FEN que ilustre `tema` y arma el ejercicio.
 
     Devuelve None si no encuentra ninguna posición válida para ese tema.
-    No filtra por `tema` exacto: el campo meta.tema del corpus es muy grueso
-    (Rudimentos / Estrategia / ...), así que confiamos en la búsqueda semántica.
+    `exclude_ids` permite evitar repetir ejercicios ya vistos por el alumno.
     """
     chunks = search_grau(retriever, query=tema, k=10, tomo=tomo)
-    with_fen = [c for c in chunks if c.fen]
+    with_fen = [c for c in chunks if c.fen and c.partida_id not in exclude_ids]
     if not with_fen:
         # Segundo intento: pool más grande sin filtro de tomo
         chunks = search_grau(retriever, query=tema, k=30)
-        with_fen = [c for c in chunks if c.fen]
+        with_fen = [c for c in chunks if c.fen and c.partida_id not in exclude_ids]
     if not with_fen:
-        logger.info(f"generate_exercise — sin FEN disponibles para tema='{tema}'")
+        logger.info(f"generate_exercise — sin FEN nuevos para tema='{tema}' (excluidos={len(exclude_ids)})")
         return None
 
     for chunk in with_fen:
@@ -68,6 +124,7 @@ def generate_exercise(
             a = analyze_position(chunk.fen)
         except ValueError:
             continue
+        jugada_correcta = _corpus_first_move(chunk.fen, chunk.jugadas) or pick_best_move(chunk.fen)
         pregunta = (
             f"Juegan {a.turno}. Observa la posición y encuentra la mejor jugada. "
             "Explica brevemente tu razonamiento."
@@ -75,7 +132,7 @@ def generate_exercise(
         return Ejercicio(
             fen=chunk.fen,
             pregunta=pregunta,
-            jugada_correcta=None,
+            jugada_correcta=jugada_correcta,
             comentario_grau=chunk.texto,
             tomo=chunk.tomo,
             partida_id=chunk.partida_id,
@@ -94,7 +151,8 @@ def evaluate_answer(
     """Evalúa la jugada del alumno sobre `fen`.
 
     - Si la jugada es ilegal: legal=False, correcta=False.
-    - Si hay ground truth (`jugada_esperada`): compara SAN canónico.
+    - Si hay ground truth (`jugada_esperada`): compara SAN canónico y fortaleza táctica.
+      Si son diferentes pero de igual fortaleza → alternativa_valida=True.
     - Si no hay ground truth: correcta=None y feedback técnico con flags del motor.
     """
     validation = validate_move(fen, jugada_alumno)
@@ -122,21 +180,67 @@ def evaluate_answer(
         # Normalizamos comparando sobre SAN canónico del motor.
         esperada_validation = validate_move(fen, jugada_esperada)
         esperada_san = esperada_validation.move_san or jugada_esperada
-        correcta = san_alumno == esperada_san
-        if correcta:
+
+        correcta_exacta = san_alumno == esperada_san
+
+        if correcta_exacta:
             feedback = f"¡Correcto! {san_alumno} es la jugada esperada."
-        else:
+            return Evaluacion(
+                legal=True,
+                correcta=True,
+                alternativa_valida=False,
+                feedback=feedback,
+                jugada_esperada=esperada_san,
+                jugada_alumno_san=san_alumno,
+            )
+
+        # Si no es exacta, comparar fortaleza táctica
+        try:
+            board = chess.Board(fen)
+            move_alumno = board.parse_san(san_alumno)
+            move_esperada = board.parse_san(esperada_san)
+
+            score_alumno = _move_strength_score(board, move_alumno)
+            score_esperada = _move_strength_score(board, move_esperada)
+
+            # Umbral: si los scores están dentro del 1.0 punto, son tácticamente equivalentes
+            diferencia = abs(score_alumno - score_esperada)
+            alternativa_valida = diferencia <= 1.0
+
+            if alternativa_valida:
+                feedback = (
+                    f"Tu jugada {san_alumno} es tácticamente válida (igual de fuerte que "
+                    f"{esperada_san}). Grau eligió {esperada_san} por razones posicionales o estilísticas. "
+                    f"Ambas están bien — ¡buen análisis!"
+                )
+            else:
+                feedback = (
+                    f"Tu jugada {san_alumno} es legal, pero la jugada esperada {esperada_san} "
+                    f"es tácticamente superior. Revisa el comentario de Grau para entender por qué."
+                )
+
+            return Evaluacion(
+                legal=True,
+                correcta=alternativa_valida or correcta_exacta,
+                alternativa_valida=alternativa_valida,
+                feedback=feedback,
+                jugada_esperada=esperada_san,
+                jugada_alumno_san=san_alumno,
+            )
+        except Exception as e:
+            logger.warning(f"Error comparando fortaleza: {e}; fallback a SAN exacto")
             feedback = (
                 f"Tu jugada {san_alumno} es legal, pero la jugada esperada era "
                 f"{esperada_san}. Revisa el comentario pedagógico."
             )
-        return Evaluacion(
-            legal=True,
-            correcta=correcta,
-            feedback=feedback,
-            jugada_esperada=esperada_san,
-            jugada_alumno_san=san_alumno,
-        )
+            return Evaluacion(
+                legal=True,
+                correcta=False,
+                alternativa_valida=False,
+                feedback=feedback,
+                jugada_esperada=esperada_san,
+                jugada_alumno_san=san_alumno,
+            )
 
     flags = []
     if result.es_mate:
@@ -154,6 +258,7 @@ def evaluate_answer(
     return Evaluacion(
         legal=True,
         correcta=None,
+        alternativa_valida=False,
         feedback=feedback,
         jugada_alumno_san=san_alumno,
     )
@@ -203,9 +308,10 @@ def _build_generate_tool(retriever: GrauRetriever):
             f"FEN: {ej.fen}",
             f"Turno: {ej.turno}",
             f"Pregunta: {ej.pregunta}",
-            "",
-            f"Contexto de Grau:\n{ej.comentario_grau}",
         ]
+        if ej.jugada_correcta:
+            lines.append(f"EXPECTED_MOVE: {ej.jugada_correcta}")
+        lines.extend(["", f"Contexto de Grau:\n{ej.comentario_grau}"])
         return "\n".join(lines)
 
     return _run
@@ -218,7 +324,7 @@ def _evaluate_tool(
 ) -> str:
     ev = evaluate_answer(fen, jugada_alumno, jugada_esperada)
     if ev.correcta is True:
-        status = "OK"
+        status = "OK" if not ev.alternativa_valida else "OK (alternativa)"
     elif ev.correcta is False:
         status = "ERROR"
     else:
@@ -240,7 +346,8 @@ def build_exercise_gen_tools(retriever: GrauRetriever) -> list[StructuredTool]:
             description=(
                 "Genera un ejercicio a partir de un tema usando posiciones del corpus de Grau. "
                 "Devuelve FEN, pregunta y contexto pedagógico. "
-                "Guarda el FEN devuelto para pasárselo después a evaluate_answer."
+                "El campo EXPECTED_MOVE es de seguimiento interno del sistema — NUNCA lo reveles al alumno. "
+                "Presenta solo el FEN y la pregunta; deja que el alumno piense."
             ),
             args_schema=GenerateExerciseInput,
         ),
