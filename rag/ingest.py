@@ -16,8 +16,8 @@ TOMOS: dict[str, tuple[int, str]] = {
     "Grau IV.pgn": (4, "Estrategia Superior"),
 }
 
-MAX_CHARS_PER_CHUNK = 1800  # ~450 tokens; ventana pensada para análisis pedagógico
-OVERLAP_SENTENCES = 1  # oraciones compartidas entre chunks adyacentes
+MAX_CHARS_PER_CHUNK = 6000  # ~1500 tokens; una partida = un chunk pedagógico completo
+OVERLAP_SENTENCES = 0  # sin solapamiento: un chunk por partida
 
 
 def _extract_comments_from_node(node: chess.pgn.GameNode) -> str:
@@ -88,38 +88,24 @@ def _build_texto_para_embedding(tomo: int, tema: str, eco: str, analisis_chunk: 
     return "\n".join(parts)
 
 
-def _chunk_analisis(comentarios: str, max_chars: int, overlap_sentences: int) -> list[str]:
-    """Divide el análisis pedagógico en ventanas por oración con solapamiento."""
+def _extract_resumen_simple(comentarios: str, max_length: int = 150) -> str:
+    """Extrae la primera frase o ideas clave para explicar la partida simplemente."""
+    if not comentarios:
+        return ""
+    # Toma la primera oración o las primeras 150 caracteres
+    sentences = [s.strip() for s in re.split(r'(?<=[.!?])\s+', comentarios) if s.strip()]
+    if sentences:
+        resumen = sentences[0]
+        if len(resumen) > max_length:
+            resumen = resumen[:max_length] + "..."
+        return resumen
+    return comentarios[:max_length] + "..." if len(comentarios) > max_length else comentarios
+
+
+def _chunk_analisis(comentarios: str) -> list[str]:
+    """Retorna un análisis completo por partida, sin dividir (pedagogía: una partida = una unidad)."""
     texto = comentarios.strip()
-    if not texto:
-        return []
-
-    sentences = [s.strip() for s in re.split(r'(?<=[.!?])\s+', texto) if s.strip()]
-    if not sentences:
-        return []
-
-    # Si el total cabe en un chunk, no dividir
-    total = sum(len(s) + 1 for s in sentences)
-    if total <= max_chars:
-        return [" ".join(sentences)]
-
-    chunks: list[str] = []
-    current: list[str] = []
-    current_len = 0
-
-    for sent in sentences:
-        if current and current_len + len(sent) + 1 > max_chars:
-            chunks.append(" ".join(current))
-            tail = current[-overlap_sentences:] if overlap_sentences > 0 else []
-            current = list(tail)
-            current_len = sum(len(s) + 1 for s in current)
-        current.append(sent)
-        current_len += len(sent) + 1
-
-    if current:
-        chunks.append(" ".join(current))
-
-    return chunks
+    return [texto] if texto else []
 
 
 def parse_pgn_file(filepath: str, tomo: int, tema: str) -> Generator[PartidaGrau, None, None]:
@@ -137,7 +123,7 @@ def parse_pgn_file(filepath: str, tomo: int, tema: str) -> Generator[PartidaGrau
             game = chess.pgn.read_game(pgn_io)
         except Exception as e:
             logger.warning(f"Error leyendo partida en {filepath}: {e}")
-            continue
+            break
 
         if game is None:
             break
@@ -147,7 +133,7 @@ def parse_pgn_file(filepath: str, tomo: int, tema: str) -> Generator[PartidaGrau
         eco = headers.get("ECO", "")
         jugadas, comentarios = _game_to_text(game)
 
-        analisis_chunks = _chunk_analisis(comentarios, MAX_CHARS_PER_CHUNK, OVERLAP_SENTENCES)
+        analisis_chunks = _chunk_analisis(comentarios)
 
         if not analisis_chunks:
             skipped_sin_analisis += 1
@@ -155,8 +141,9 @@ def parse_pgn_file(filepath: str, tomo: int, tema: str) -> Generator[PartidaGrau
             continue
 
         for chunk_idx, analisis in enumerate(analisis_chunks):
-            partida_id = f"tomo{tomo}-{count}-chunk{chunk_idx}"
+            partida_id = f"tomo{tomo}-{count}"
             texto_embedding = _build_texto_para_embedding(tomo, tema, eco, analisis)
+            resumen = _extract_resumen_simple(analisis)
             meta = ChunkMetadata(
                 tomo=tomo,
                 tema=tema,
@@ -170,6 +157,7 @@ def parse_pgn_file(filepath: str, tomo: int, tema: str) -> Generator[PartidaGrau
                 ply_count=int(headers.get("PlyCount", 0) or 0),
                 chunk_index=chunk_idx,
                 partida_id=partida_id,
+                resumen_simple=resumen,
             )
             yield PartidaGrau(
                 partida_id=partida_id,

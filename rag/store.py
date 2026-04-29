@@ -12,6 +12,13 @@ def get_chroma_client() -> HttpClient:
         host=settings.chroma_host,
         port=settings.chroma_port,
     )
+    try:
+        client.heartbeat()
+    except Exception as e:
+        raise RuntimeError(
+            f"ChromaDB no disponible en {settings.chroma_host}:{settings.chroma_port}. "
+            f"Asegúrate de que el servidor esté corriendo. Error: {e}"
+        ) from e
     logger.info(f"ChromaDB conectado en {settings.chroma_host}:{settings.chroma_port}")
     return client
 

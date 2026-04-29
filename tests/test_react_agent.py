@@ -77,11 +77,11 @@ def test_extract_reasoning_captura_tool_call_y_resultado():
     assert "Fuente 1" in trace[1]["content"]
 
 
-def test_extract_reasoning_trunca_contenido_largo():
+def test_extract_reasoning_preserva_contenido_completo():
     long_content = "x" * 1000
     tool_result = ToolMessage(content=long_content, tool_call_id="c", name="search_grau")
     trace = _extract_reasoning([tool_result])
-    assert len(trace[0]["content"]) == 500
+    assert len(trace[0]["content"]) == 1000
 
 
 def test_extract_reasoning_varios_tool_calls_en_un_mensaje():

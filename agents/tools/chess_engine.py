@@ -138,6 +138,32 @@ def list_legal_moves(fen: str) -> list[str]:
     return [board.san(m) for m in board.legal_moves]
 
 
+def pick_best_move(fen: str) -> Optional[str]:
+    """Heuristic best-move: mate-in-1 > check > capture > any legal move."""
+    board = _parse_fen(fen)
+    check_moves: list[str] = []
+    capture_moves: list[str] = []
+    for move in board.legal_moves:
+        san = board.san(move)
+        board.push(move)
+        if board.is_checkmate():
+            board.pop()
+            return san
+        is_check = board.is_check()
+        board.pop()
+        if is_check:
+            check_moves.append(san)
+        elif board.is_capture(move):
+            capture_moves.append(san)
+    if check_moves:
+        return check_moves[0]
+    if capture_moves:
+        return capture_moves[0]
+    for move in board.legal_moves:
+        return board.san(move)
+    return None
+
+
 def analyze_position(fen: str) -> PositionAnalysis:
     board = _parse_fen(fen)
     return PositionAnalysis(
@@ -222,6 +248,9 @@ def _apply_tool(fen: str, move: str) -> str:
     return f"Jugada {r.san} aplicada. FEN: {r.fen_resultante}{suffix}"
 
 
+_LIST_MOVES_LIMIT = 15
+
+
 def _list_tool(fen: str) -> str:
     try:
         moves = list_legal_moves(fen)
@@ -229,7 +258,10 @@ def _list_tool(fen: str) -> str:
         return f"Error: {e}"
     if not moves:
         return "Sin jugadas legales (mate o ahogado)."
-    return ", ".join(moves)
+    total = len(moves)
+    shown = moves[:_LIST_MOVES_LIMIT]
+    suffix = f" (y {total - _LIST_MOVES_LIMIT} más)" if total > _LIST_MOVES_LIMIT else ""
+    return f"{', '.join(shown)}{suffix}"
 
 
 def _analyze_tool(fen: str) -> str:

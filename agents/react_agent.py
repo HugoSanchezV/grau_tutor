@@ -14,7 +14,7 @@ from langgraph.prebuilt import create_react_agent
 
 from agents.tools.chess_engine import build_chess_engine_tools
 from agents.tools.exercise_gen import build_exercise_gen_tools
-from agents.tools.search_grau import build_search_grau_tool
+from agents.tools.search_grau import SearchKConfig, build_search_grau_tool
 from core.checkpointer import make_checkpointer
 from core.llm import get_llm
 from core.logging import get_logger
@@ -54,9 +54,12 @@ class AgentResponse:
     reasoning: list[dict] = field(default_factory=list)
 
 
-def build_tools(retriever: GrauRetriever) -> list[BaseTool]:
+def build_tools(
+    retriever: GrauRetriever,
+    k_config: Optional[SearchKConfig] = None,
+) -> list[BaseTool]:
     """Ensambla las 7 tools del agente (1 search + 4 motor + 2 ejercicios)."""
-    tools: list[BaseTool] = [build_search_grau_tool(retriever)]
+    tools: list[BaseTool] = [build_search_grau_tool(retriever, k_config=k_config)]
     tools.extend(build_chess_engine_tools())
     tools.extend(build_exercise_gen_tools(retriever))
     return tools
@@ -81,7 +84,7 @@ def _extract_reasoning(messages: list[Any]) -> list[dict]:
                 {
                     "type": "tool_result",
                     "name": getattr(m, "name", "?"),
-                    "content": content[:500],
+                    "content": content,
                 }
             )
     return trace
@@ -116,9 +119,11 @@ class GrauAgent:
         llm: Optional[BaseChatModel] = None,
         system_prompt: str = SYSTEM_PROMPT,
         stateless: bool = True,
+        k_config: Optional[SearchKConfig] = None,
     ) -> None:
         self.llm = llm or get_llm()
-        self.tools = build_tools(retriever)
+        self.k_config = k_config or SearchKConfig()
+        self.tools = build_tools(retriever, k_config=self.k_config)
         self.system_prompt = system_prompt
 
         # Solo crear checkpointer si no es stateless (para uso standalone del agente)

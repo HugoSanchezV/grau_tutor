@@ -18,6 +18,9 @@ services:
       - ./agents:/app/agents
       - ./core:/app/core
       - ./rag:/app/rag
+      - ./graph:/app/graph
+      - ./memory:/app/memory
+      - ./contracts:/app/contracts
     depends_on:
       - chromadb
 

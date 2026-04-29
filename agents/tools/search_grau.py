@@ -1,4 +1,5 @@
 from __future__ import annotations
+from dataclasses import dataclass
 from typing import Optional
 from pydantic import BaseModel, Field, field_validator
 from langchain_core.tools import StructuredTool
@@ -6,6 +7,12 @@ from core.logging import get_logger
 from rag.retrieval import GrauRetriever
 
 logger = get_logger(__name__)
+
+
+@dataclass
+class SearchKConfig:
+    """Holder mutable del k por defecto. Se sincroniza desde la UI en tiempo de ejecución."""
+    default_k: int = 3
 
 
 class ChunkResult(BaseModel):
@@ -19,6 +26,7 @@ class ChunkResult(BaseModel):
     fen: str
     jugadas: str
     texto: str
+    resumen_simple: str = ""
     similarity: Optional[float] = None
 
     @classmethod
@@ -34,6 +42,7 @@ class ChunkResult(BaseModel):
             eco=meta.get("eco", ""),
             fen=meta.get("fen", ""),
             jugadas=meta.get("jugadas", ""),
+            resumen_simple=meta.get("resumen_simple", ""),
             texto=item["doc"],
             similarity=item.get("similarity"),
         )
@@ -47,12 +56,26 @@ class SearchGrauInput(BaseModel):
             "(ej. 'clavada', 'peón pasado', 'ataque al rey')."
         ),
     )
-    k: int = Field(
-        default=5,
-        ge=1,
-        le=15,
-        description="Número de pasajes a devolver (1–15).",
+    k: Optional[int] = Field(
+        default=None,
+        description=(
+            "Número de pasajes a devolver (1–15). Si se omite, usa el k "
+            "por defecto configurado para la sesión."
+        ),
     )
+
+    @field_validator("k", mode="before")
+    @classmethod
+    def coerce_k(cls, v: object) -> Optional[int]:
+        if v is None or v == "" or str(v).lower() in ("null", "none"):
+            return None
+        try:
+            val = int(v)
+        except (ValueError, TypeError):
+            raise ValueError(f"k inválido: {v!r}")
+        if not (1 <= val <= 15):
+            raise ValueError(f"k debe estar entre 1 y 15; se recibió {val}")
+        return val
     tomo: Optional[int] = Field(
         default=None,
         description=(
@@ -83,19 +106,11 @@ class SearchGrauInput(BaseModel):
 
 def _filter_chunks(
     chunks: list[ChunkResult],
-    tomo: Optional[int],
     tema: Optional[str],
 ) -> list[ChunkResult]:
-    if tomo is None and tema is None:
+    if tema is None:
         return chunks
-    out = []
-    for c in chunks:
-        if tomo is not None and c.tomo != tomo:
-            continue
-        if tema is not None and c.tema.lower() != tema.lower():
-            continue
-        out.append(c)
-    return out
+    return [c for c in chunks if c.tema.lower() == tema.lower()]
 
 
 def search_grau(
@@ -107,13 +122,17 @@ def search_grau(
 ) -> list[ChunkResult]:
     """Búsqueda programática (devuelve objetos tipados).
 
-    Si hay filtros, se recupera un pool más grande y se filtra después,
-    para no quedarnos cortos de resultados.
+    El filtro por tomo se empuja a ChromaDB (where clause); evita recuperar
+    candidatos del tomo equivocado antes de filtrar.
+    El filtro por tema (nombre de capítulo) sigue siendo post-filtro en Python,
+    ya que no discrimina bien en ChromaDB para consultas semánticas.
     """
-    pool = k * 4 if (tomo is not None or tema is not None) else k
-    raw_items = retriever.retrieve_raw(query, n_results=pool)
+    where: Optional[dict] = {"tomo": tomo} if tomo is not None else None
+    # Solo inflar el pool cuando hay post-filtro por tema; tomo lo maneja ChromaDB
+    pool = k * 4 if tema is not None else k
+    raw_items = retriever.retrieve_raw(query, n_results=pool, where=where)
     chunks = [ChunkResult.from_retrieval_item(it) for it in raw_items]
-    filtered = _filter_chunks(chunks, tomo, tema)
+    filtered = _filter_chunks(chunks, tema)  # tomo ya filtrado por ChromaDB where clause
     logger.info(
         f"search_grau — query='{query[:60]}...' pool={len(chunks)} "
         f"post_filter={len(filtered)} k={k}"
@@ -126,20 +145,30 @@ def format_chunks_for_llm(chunks: list[ChunkResult]) -> str:
         return "Sin resultados en el corpus de Grau para esa consulta."
     parts = []
     for i, c in enumerate(chunks, 1):
-        header = f"[Fuente {i} — Tomo {c.tomo} ({c.tema}), {c.white} vs {c.black}"
+        header = f"[Fuente {i}] Tomo {c.tomo} ({c.tema}): {c.white} vs {c.black} {c.result}"
         if c.eco:
-            header += f", ECO {c.eco}"
-        if c.similarity is not None:
-            header += f", sim={c.similarity:.2f}"
-        header += f", id={c.partida_id}]"
+            header += f" | ECO {c.eco}"
+        header += f"\n        ID: {c.partida_id}"
 
-        block = [header, c.texto]
+        block = [header]
+
+        # Resumen educativo
+        if c.resumen_simple:
+            block.append(f"\n📚 CLAVE: {c.resumen_simple}")
+
+        # Análisis pedagógico completo
+        block.append(f"\nAnálisis:\n{c.texto}")
+
+        # Movimientos
         if c.jugadas:
-            block.append(f"Jugadas: {c.jugadas}")
+            block.append(f"\nMovimientos: {c.jugadas}")
+
+        # FEN si existe
         if c.fen:
-            block.append(f"FEN: {c.fen}")
+            block.append(f"\nFEN: {c.fen}")
+
         parts.append("\n".join(block))
-    return "\n\n---\n\n".join(parts)
+    return "\n\n" + "="*60 + "\n\n".join(parts)
 
 
 TOOL_DESCRIPTION = (
@@ -151,16 +180,25 @@ TOOL_DESCRIPTION = (
 )
 
 
-def build_search_grau_tool(retriever: GrauRetriever) -> StructuredTool:
-    """Construye la LangChain Tool a partir de un retriever ya inicializado."""
+def build_search_grau_tool(
+    retriever: GrauRetriever,
+    k_config: Optional[SearchKConfig] = None,
+) -> StructuredTool:
+    """Construye la LangChain Tool a partir de un retriever ya inicializado.
+
+    `k_config` es un holder mutable: el valor `default_k` puede actualizarse
+    en caliente desde la UI sin reconstruir el agente.
+    """
+    k_config = k_config or SearchKConfig()
 
     def _run(
         query: str,
-        k: int = 5,
+        k: Optional[int] = None,
         tomo: Optional[int] = None,
         tema: Optional[str] = None,
     ) -> str:
-        chunks = search_grau(retriever, query=query, k=k, tomo=tomo, tema=tema)
+        effective_k = k if k is not None else k_config.default_k
+        chunks = search_grau(retriever, query=query, k=effective_k, tomo=tomo, tema=tema)
         return format_chunks_for_llm(chunks)
 
     return StructuredTool.from_function(

@@ -16,6 +16,7 @@ class ChunkMetadata(BaseModel):
     ply_count: int = Field(default=0)
     chunk_index: int = Field(default=0, description="Índice del chunk dentro de la partida")
     partida_id: str = Field(..., description="ID único: tomo-índice")
+    resumen_simple: str = Field(default="", description="Resumen educativo corto: qué aprende el estudiante")
 
 
 class PartidaGrau(BaseModel):
@@ -42,5 +43,6 @@ class PartidaGrau(BaseModel):
                 "ply_count": self.metadata.ply_count,
                 "partida_id": self.partida_id,
                 "jugadas": self.jugadas,
+                "resumen_simple": self.metadata.resumen_simple,
             },
         }

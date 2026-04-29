@@ -58,6 +58,11 @@ class TutorGraph:
         self.checkpointer = make_checkpointer("graph_checkpoints.db")
         self._graph = self._build()
 
+    @property
+    def k_config(self):
+        """Acceso directo al holder mutable del k de search_grau."""
+        return self.agent.k_config
+
     # ------------------------------------------------------------------
     # Build
     # ------------------------------------------------------------------

@@ -10,6 +10,10 @@ from core.logging import get_logger
 
 logger = get_logger(__name__)
 
+# Incrementar al cambiar stopwords, tokenización o campos indexados.
+# load_bm25_index rechaza índices con versión distinta y pide reconstruir.
+_BM25_INDEX_VERSION = 2
+
 _SPANISH_STOPWORDS = {
     "el", "la", "los", "las", "un", "una", "unos", "unas",
     "de", "del", "a", "al", "en", "con", "por", "para", "sin", "sobre",
@@ -23,6 +27,11 @@ _SPANISH_STOPWORDS = {
     "cuando", "donde", "cual", "cuales", "quien", "quienes",
     "porque", "entre", "desde", "hasta", "hacia", "durante",
     "ante", "tras", "según", "contra",
+    # Tokens de dominio ajedrez que aparecen en prácticamente todos los chunks
+    # y no aportan señal discriminante para BM25
+    "blancas", "negras", "juegan", "jugada", "jugadas",
+    "tablero", "pieza", "piezas", "posicion", "posición",
+    "partida", "partidas",
 }
 
 _TOKEN_RE = re.compile(r"\w+", re.UNICODE)
@@ -38,7 +47,9 @@ def _tokenize(text: str) -> list[str]:
 
 def _doc_text_for_bm25(chunk: PartidaGrau) -> str:
     meta = chunk.metadata
-    parts = [meta.tema, meta.eco, meta.white, meta.black, chunk.comentarios]
+    # Excluimos nombres de jugadores (White/Black): no discriminan búsquedas
+    # pedagógicas y sesgan el ranking hacia partidas de jugadores frecuentes.
+    parts = [meta.tema, meta.eco, chunk.comentarios]
     return " ".join(p for p in parts if p)
 
 
@@ -54,8 +65,8 @@ def build_bm25_index(chunks: Sequence[PartidaGrau], path: str) -> None:
     if parent:
         os.makedirs(parent, exist_ok=True)
     with open(path, "wb") as f:
-        pickle.dump({"ids": ids, "bm25": bm25}, f)
-    logger.info(f"Índice BM25 guardado en {path} ({len(ids)} docs)")
+        pickle.dump({"version": _BM25_INDEX_VERSION, "ids": ids, "bm25": bm25}, f)
+    logger.info(f"Índice BM25 guardado en {path} ({len(ids)} docs, v{_BM25_INDEX_VERSION})")
 
 
 def load_bm25_index(path: str) -> dict | None:
@@ -64,7 +75,14 @@ def load_bm25_index(path: str) -> dict | None:
         return None
     with open(path, "rb") as f:
         data = pickle.load(f)
-    logger.info(f"Índice BM25 cargado desde {path} ({len(data['ids'])} docs)")
+    version = data.get("version")
+    if version != _BM25_INDEX_VERSION:
+        logger.warning(
+            f"Índice BM25 obsoleto (versión {version!r} ≠ {_BM25_INDEX_VERSION}). "
+            f"Ejecuta: python rag/pipeline.py --rebuild-bm25"
+        )
+        return None
+    logger.info(f"Índice BM25 cargado desde {path} ({len(data['ids'])} docs, v{version})")
     return data
 
 
