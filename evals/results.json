@@ -11,17 +11,17 @@
           "categoria": "concepto_pedagogico",
           "relevance": [
             true,
-            true,
-            true,
             false,
-            false
+            false,
+            true,
+            true
           ],
           "retrieved_ids": [
-            "tomo3-43-chunk2",
-            "tomo3-49-chunk3",
-            "tomo3-50-chunk5",
-            "tomo3-14-chunk1",
-            "tomo3-95-chunk0"
+            "tomo3-49",
+            "tomo3-95",
+            "tomo3-80",
+            "tomo3-43",
+            "tomo3-44"
           ],
           "hit_rate": 1.0,
           "mrr": 1.0,
@@ -39,11 +39,11 @@
             true
           ],
           "retrieved_ids": [
-            "tomo2-212-chunk0",
-            "tomo1-92-chunk0",
-            "tomo2-212-chunk1",
-            "tomo2-226-chunk1",
-            "tomo1-95-chunk0"
+            "tomo1-92",
+            "tomo2-212",
+            "tomo2-222",
+            "tomo1-95",
+            "tomo2-223"
           ],
           "hit_rate": 1.0,
           "mrr": 1.0,
@@ -61,11 +61,11 @@
             false
           ],
           "retrieved_ids": [
-            "tomo4-137-chunk1",
-            "tomo3-119-chunk5",
-            "tomo4-133-chunk0",
-            "tomo3-87-chunk0",
-            "tomo3-16-chunk3"
+            "tomo3-87",
+            "tomo3-95",
+            "tomo3-92",
+            "tomo2-56",
+            "tomo4-137"
           ],
           "hit_rate": 0.0,
           "mrr": 0.0,
@@ -78,42 +78,42 @@
           "relevance": [
             false,
             false,
-            true,
+            false,
             false,
             false
           ],
           "retrieved_ids": [
-            "tomo2-242-chunk0",
-            "tomo2-86-chunk0",
-            "tomo1-21-chunk2",
-            "tomo4-7-chunk0",
-            "tomo2-80-chunk0"
+            "tomo2-242",
+            "tomo2-86",
+            "tomo4-7",
+            "tomo4-100",
+            "tomo2-80"
           ],
-          "hit_rate": 1.0,
-          "mrr": 0.3333333333333333,
-          "precision": 0.2
+          "hit_rate": 0.0,
+          "mrr": 0.0,
+          "precision": 0.0
         },
         {
           "id": "q05",
           "query": "qué hacer con un peón aislado",
           "categoria": "concepto_pedagogico",
           "relevance": [
-            false,
             true,
             false,
             false,
+            true,
             false
           ],
           "retrieved_ids": [
-            "tomo3-14-chunk1",
-            "tomo3-23-chunk0",
-            "tomo3-45-chunk0",
-            "tomo3-50-chunk4",
-            "tomo3-43-chunk2"
+            "tomo3-23",
+            "tomo3-45",
+            "tomo3-95",
+            "tomo3-44",
+            "tomo3-84"
           ],
           "hit_rate": 1.0,
-          "mrr": 0.5,
-          "precision": 0.2
+          "mrr": 1.0,
+          "precision": 0.4
         },
         {
           "id": "q06",
@@ -124,18 +124,18 @@
             true,
             false,
             true,
-            false
+            true
           ],
           "retrieved_ids": [
-            "tomo1-51-chunk0",
-            "tomo2-11-chunk0",
-            "tomo2-122-chunk0",
-            "tomo2-223-chunk0",
-            "tomo2-222-chunk0"
+            "tomo1-51",
+            "tomo2-11",
+            "tomo2-122",
+            "tomo2-223",
+            "tomo3-126"
           ],
           "hit_rate": 1.0,
           "mrr": 0.5,
-          "precision": 0.4
+          "precision": 0.6
         },
         {
           "id": "q07",
@@ -144,20 +144,20 @@
           "relevance": [
             true,
             true,
-            false,
-            false,
-            true
+            true,
+            true,
+            false
           ],
           "retrieved_ids": [
-            "tomo3-14-chunk1",
-            "tomo3-23-chunk0",
-            "tomo3-50-chunk0",
-            "tomo3-120-chunk0",
-            "tomo3-15-chunk0"
+            "tomo3-23",
+            "tomo3-15",
+            "tomo3-26",
+            "tomo3-14",
+            "tomo3-44"
           ],
           "hit_rate": 1.0,
           "mrr": 1.0,
-          "precision": 0.6
+          "precision": 0.8
         },
         {
           "id": "q08",
@@ -171,11 +171,11 @@
             false
           ],
           "retrieved_ids": [
-            "tomo1-84-chunk0",
-            "tomo2-175-chunk0",
-            "tomo4-85-chunk0",
-            "tomo2-116-chunk0",
-            "tomo4-49-chunk3"
+            "tomo1-84",
+            "tomo2-116",
+            "tomo1-101",
+            "tomo1-87",
+            "tomo1-102"
           ],
           "hit_rate": 0.0,
           "mrr": 0.0,
@@ -193,11 +193,11 @@
             true
           ],
           "retrieved_ids": [
-            "tomo3-123-chunk0",
-            "tomo3-127-chunk2",
-            "tomo3-70-chunk1",
-            "tomo4-69-chunk0",
-            "tomo3-70-chunk0"
+            "tomo3-123",
+            "tomo4-69",
+            "tomo4-132",
+            "tomo3-118",
+            "tomo3-70"
           ],
           "hit_rate": 1.0,
           "mrr": 1.0,
@@ -212,18 +212,18 @@
             true,
             true,
             true,
-            false
+            true
           ],
           "retrieved_ids": [
-            "tomo4-35-chunk1",
-            "tomo4-110-chunk1",
-            "tomo3-11-chunk0",
-            "tomo3-121-chunk3",
-            "tomo3-132-chunk0"
+            "tomo3-11",
+            "tomo4-35",
+            "tomo4-80",
+            "tomo4-110",
+            "tomo3-45"
           ],
           "hit_rate": 1.0,
           "mrr": 1.0,
-          "precision": 0.8
+          "precision": 1.0
         },
         {
           "id": "q11",
@@ -237,11 +237,11 @@
             true
           ],
           "retrieved_ids": [
-            "tomo3-8-chunk0",
-            "tomo4-75-chunk0",
-            "tomo4-130-chunk0",
-            "tomo4-70-chunk2",
-            "tomo4-75-chunk1"
+            "tomo3-7",
+            "tomo3-2",
+            "tomo4-75",
+            "tomo3-8",
+            "tomo4-130"
           ],
           "hit_rate": 1.0,
           "mrr": 1.0,
@@ -254,25 +254,311 @@
           "relevance": [
             true,
             true,
+            false,
+            false,
+            false
+          ],
+          "retrieved_ids": [
+            "tomo2-42",
+            "tomo1-105",
+            "tomo2-30",
+            "tomo1-50",
+            "tomo2-46"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 0.4
+        },
+        {
+          "id": "q13",
+          "query": "ejemplos de doble ataque o tenedor de caballo",
+          "categoria": "tactica",
+          "relevance": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "retrieved_ids": [
+            "tomo2-200",
+            "tomo1-70",
+            "tomo4-33",
+            "tomo2-45",
+            "tomo2-122"
+          ],
+          "hit_rate": 0.0,
+          "mrr": 0.0,
+          "precision": 0.0
+        },
+        {
+          "id": "q14",
+          "query": "cómo funciona un ataque a la descubierta",
+          "categoria": "tactica",
+          "relevance": [
             true,
+            false,
+            true,
+            false,
+            false
+          ],
+          "retrieved_ids": [
+            "tomo1-79",
+            "tomo2-214",
+            "tomo1-90",
+            "tomo2-216",
+            "tomo2-116"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 0.4
+        },
+        {
+          "id": "q15",
+          "query": "importancia del control del centro",
+          "categoria": "estrategia",
+          "relevance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "retrieved_ids": [
+            "tomo3-42",
+            "tomo4-83",
+            "tomo2-243",
+            "tomo4-70",
+            "tomo3-129"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 1.0
+        },
+        {
+          "id": "q16",
+          "query": "ventajas de tener una columna abierta para las torres",
+          "categoria": "estrategia",
+          "relevance": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "retrieved_ids": [
+            "tomo4-139",
+            "tomo4-102",
+            "tomo1-81",
+            "tomo4-123",
+            "tomo4-28"
+          ],
+          "hit_rate": 0.0,
+          "mrr": 0.0,
+          "precision": 0.0
+        },
+        {
+          "id": "q17",
+          "query": "principios de finales de torre",
+          "categoria": "final",
+          "relevance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "retrieved_ids": [
+            "tomo4-144",
+            "tomo4-141",
+            "tomo4-128",
+            "tomo1-53",
+            "tomo4-93"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 1.0
+        },
+        {
+          "id": "q18",
+          "query": "alfiles de distinto color en el final",
+          "categoria": "final",
+          "relevance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "retrieved_ids": [
+            "tomo4-27",
+            "tomo4-33",
+            "tomo4-46",
+            "tomo3-92",
+            "tomo4-13"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 1.0
+        },
+        {
+          "id": "q19",
+          "query": "ideas estratégicas de la defensa siciliana",
+          "categoria": "apertura",
+          "relevance": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "retrieved_ids": [
+            "tomo4-45",
+            "tomo2-153",
+            "tomo4-28",
+            "tomo2-240",
+            "tomo2-204"
+          ],
+          "hit_rate": 0.0,
+          "mrr": 0.0,
+          "precision": 0.0
+        },
+        {
+          "id": "q20",
+          "query": "planteo de la apertura española o ruy lópez",
+          "categoria": "apertura",
+          "relevance": [
+            false,
+            false,
+            false,
             false,
             true
           ],
           "retrieved_ids": [
-            "tomo2-42-chunk0",
-            "tomo2-22-chunk1",
-            "tomo1-105-chunk0",
-            "tomo2-30-chunk0",
-            "tomo4-17-chunk1"
+            "tomo2-116",
+            "tomo1-59",
+            "tomo1-87",
+            "tomo1-89",
+            "tomo4-79"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 0.2,
+          "precision": 0.2
+        },
+        {
+          "id": "q21",
+          "query": "estructuras del gambito de dama",
+          "categoria": "apertura",
+          "relevance": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "retrieved_ids": [
+            "tomo4-57",
+            "tomo1-92",
+            "tomo2-10",
+            "tomo1-95",
+            "tomo1-35"
+          ],
+          "hit_rate": 0.0,
+          "mrr": 0.0,
+          "precision": 0.0
+        },
+        {
+          "id": "q22",
+          "query": "qué es la pareja de alfiles y qué ventaja da",
+          "categoria": "concepto_pedagogico",
+          "relevance": [
+            true,
+            false,
+            false,
+            false,
+            false
+          ],
+          "retrieved_ids": [
+            "tomo4-41",
+            "tomo2-116",
+            "tomo4-13",
+            "tomo4-21",
+            "tomo4-55"
           ],
           "hit_rate": 1.0,
           "mrr": 1.0,
-          "precision": 0.8
+          "precision": 0.2
+        },
+        {
+          "id": "q23",
+          "query": "el caballo en una casilla fuerte o avanzada",
+          "categoria": "concepto_pedagogico",
+          "relevance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "retrieved_ids": [
+            "tomo4-11",
+            "tomo4-21",
+            "tomo4-33",
+            "tomo4-7",
+            "tomo4-27"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 1.0
+        },
+        {
+          "id": "q24",
+          "query": "partidas de Tarrasch",
+          "categoria": "jugador_historico",
+          "relevance": [
+            true,
+            true,
+            true,
+            false,
+            false
+          ],
+          "retrieved_ids": [
+            "tomo3-7",
+            "tomo3-66",
+            "tomo4-75",
+            "tomo1-11",
+            "tomo4-143"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 0.6
+        },
+        {
+          "id": "q25",
+          "query": "partidas de Steinitz, el primer campeón mundial",
+          "categoria": "jugador_historico",
+          "relevance": [
+            true,
+            true,
+            false,
+            true,
+            false
+          ],
+          "retrieved_ids": [
+            "tomo3-2",
+            "tomo4-43",
+            "tomo4-75",
+            "tomo1-61",
+            "tomo2-248"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 0.6
         }
       ],
-      "hit_rate": 0.8333333333333334,
-      "mrr": 0.6944444444444444,
-      "precision": 0.55
+      "hit_rate": 0.72,
+      "mrr": 0.668,
+      "precision": 0.512
     },
     {
       "system": "hybrid",
@@ -289,11 +575,11 @@
             true
           ],
           "retrieved_ids": [
-            "tomo3-45-chunk0",
-            "tomo3-44-chunk0",
-            "tomo3-51-chunk2",
-            "tomo3-43-chunk2",
-            "tomo3-49-chunk3"
+            "tomo3-45",
+            "tomo3-43",
+            "tomo3-44",
+            "tomo3-49",
+            "tomo3-51"
           ],
           "hit_rate": 1.0,
           "mrr": 1.0,
@@ -311,11 +597,11 @@
             true
           ],
           "retrieved_ids": [
-            "tomo1-95-chunk0",
-            "tomo2-212-chunk0",
-            "tomo1-92-chunk0",
-            "tomo2-237-chunk1",
-            "tomo2-212-chunk1"
+            "tomo1-92",
+            "tomo1-95",
+            "tomo2-222",
+            "tomo2-212",
+            "tomo2-214"
           ],
           "hit_rate": 1.0,
           "mrr": 1.0,
@@ -326,21 +612,21 @@
           "query": "cómo se juega la oposición en finales de rey y peón",
           "categoria": "final",
           "relevance": [
+            false,
+            false,
+            false,
             true,
-            false,
-            false,
-            false,
             false
           ],
           "retrieved_ids": [
-            "tomo4-23-chunk4",
-            "tomo4-133-chunk0",
-            "tomo4-137-chunk1",
-            "tomo4-23-chunk6",
-            "tomo3-119-chunk5"
+            "tomo4-137",
+            "tomo4-133",
+            "tomo3-74",
+            "tomo3-139",
+            "tomo3-87"
           ],
           "hit_rate": 1.0,
-          "mrr": 1.0,
+          "mrr": 0.25,
           "precision": 0.2
         },
         {
@@ -348,44 +634,44 @@
           "query": "cómo atacar al rey enrocado",
           "categoria": "tactica",
           "relevance": [
-            true,
+            false,
             false,
             false,
             false,
             false
           ],
           "retrieved_ids": [
-            "tomo3-61-chunk2",
-            "tomo4-6-chunk4",
-            "tomo2-242-chunk0",
-            "tomo2-66-chunk0",
-            "tomo2-86-chunk0"
+            "tomo4-115",
+            "tomo2-242",
+            "tomo2-86",
+            "tomo4-7",
+            "tomo4-100"
           ],
-          "hit_rate": 1.0,
-          "mrr": 1.0,
-          "precision": 0.2
+          "hit_rate": 0.0,
+          "mrr": 0.0,
+          "precision": 0.0
         },
         {
           "id": "q05",
           "query": "qué hacer con un peón aislado",
           "categoria": "concepto_pedagogico",
           "relevance": [
-            true,
             false,
             true,
             true,
-            true
+            true,
+            false
           ],
           "retrieved_ids": [
-            "tomo3-48-chunk1",
-            "tomo3-14-chunk1",
-            "tomo4-10-chunk0",
-            "tomo3-23-chunk0",
-            "tomo4-5-chunk2"
+            "tomo3-95",
+            "tomo3-13",
+            "tomo3-48",
+            "tomo3-23",
+            "tomo3-45"
           ],
           "hit_rate": 1.0,
-          "mrr": 1.0,
-          "precision": 0.8
+          "mrr": 0.5,
+          "precision": 0.6
         },
         {
           "id": "q06",
@@ -399,11 +685,11 @@
             true
           ],
           "retrieved_ids": [
-            "tomo2-223-chunk0",
-            "tomo2-11-chunk0",
-            "tomo3-130-chunk0",
-            "tomo2-5-chunk3",
-            "tomo3-126-chunk0"
+            "tomo2-223",
+            "tomo2-11",
+            "tomo3-130",
+            "tomo3-126",
+            "tomo3-124"
           ],
           "hit_rate": 1.0,
           "mrr": 1.0,
@@ -421,11 +707,11 @@
             true
           ],
           "retrieved_ids": [
-            "tomo3-14-chunk1",
-            "tomo3-15-chunk0",
-            "tomo3-23-chunk0",
-            "tomo2-212-chunk2",
-            "tomo3-26-chunk0"
+            "tomo3-15",
+            "tomo3-26",
+            "tomo3-23",
+            "tomo3-14",
+            "tomo3-24"
           ],
           "hit_rate": 1.0,
           "mrr": 1.0,
@@ -440,18 +726,18 @@
             false,
             false,
             false,
-            true
+            false
           ],
           "retrieved_ids": [
-            "tomo2-175-chunk0",
-            "tomo2-116-chunk0",
-            "tomo1-24-chunk0",
-            "tomo1-84-chunk0",
-            "tomo4-0-chunk0"
+            "tomo1-59",
+            "tomo1-84",
+            "tomo2-116",
+            "tomo1-101",
+            "tomo1-87"
           ],
-          "hit_rate": 1.0,
-          "mrr": 0.2,
-          "precision": 0.2
+          "hit_rate": 0.0,
+          "mrr": 0.0,
+          "precision": 0.0
         },
         {
           "id": "q09",
@@ -465,11 +751,11 @@
             true
           ],
           "retrieved_ids": [
-            "tomo4-69-chunk0",
-            "tomo3-121-chunk1",
-            "tomo3-123-chunk0",
-            "tomo4-69-chunk1",
-            "tomo4-35-chunk0"
+            "tomo3-123",
+            "tomo4-69",
+            "tomo4-132",
+            "tomo3-118",
+            "tomo2-244"
           ],
           "hit_rate": 1.0,
           "mrr": 1.0,
@@ -480,22 +766,22 @@
           "query": "partidas con Alekhine",
           "categoria": "jugador_historico",
           "relevance": [
+            true,
+            true,
+            true,
             false,
-            true,
-            true,
-            true,
-            true
+            false
           ],
           "retrieved_ids": [
-            "tomo3-132-chunk0",
-            "tomo4-35-chunk1",
-            "tomo4-110-chunk0",
-            "tomo4-35-chunk0",
-            "tomo4-110-chunk1"
+            "tomo4-35",
+            "tomo3-11",
+            "tomo4-110",
+            "tomo3-22",
+            "tomo3-105"
           ],
           "hit_rate": 1.0,
-          "mrr": 0.5,
-          "precision": 0.8
+          "mrr": 1.0,
+          "precision": 0.6
         },
         {
           "id": "q11",
@@ -509,11 +795,11 @@
             true
           ],
           "retrieved_ids": [
-            "tomo4-75-chunk1",
-            "tomo4-75-chunk2",
-            "tomo3-9-chunk0",
-            "tomo3-8-chunk0",
-            "tomo4-70-chunk2"
+            "tomo3-7",
+            "tomo4-75",
+            "tomo3-8",
+            "tomo3-72",
+            "tomo3-9"
           ],
           "hit_rate": 1.0,
           "mrr": 1.0,
@@ -531,20 +817,306 @@
             true
           ],
           "retrieved_ids": [
-            "tomo2-42-chunk0",
-            "tomo2-22-chunk1",
-            "tomo2-18-chunk0",
-            "tomo4-17-chunk1",
-            "tomo1-105-chunk0"
+            "tomo2-42",
+            "tomo2-18",
+            "tomo2-73",
+            "tomo1-16",
+            "tomo2-48"
           ],
           "hit_rate": 1.0,
           "mrr": 1.0,
           "precision": 1.0
+        },
+        {
+          "id": "q13",
+          "query": "ejemplos de doble ataque o tenedor de caballo",
+          "categoria": "tactica",
+          "relevance": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "retrieved_ids": [
+            "tomo2-200",
+            "tomo4-33",
+            "tomo1-70",
+            "tomo2-197",
+            "tomo2-192"
+          ],
+          "hit_rate": 0.0,
+          "mrr": 0.0,
+          "precision": 0.0
+        },
+        {
+          "id": "q14",
+          "query": "cómo funciona un ataque a la descubierta",
+          "categoria": "tactica",
+          "relevance": [
+            true,
+            false,
+            true,
+            false,
+            false
+          ],
+          "retrieved_ids": [
+            "tomo1-79",
+            "tomo2-214",
+            "tomo1-90",
+            "tomo2-216",
+            "tomo2-116"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 0.4
+        },
+        {
+          "id": "q15",
+          "query": "importancia del control del centro",
+          "categoria": "estrategia",
+          "relevance": [
+            true,
+            false,
+            true,
+            true,
+            true
+          ],
+          "retrieved_ids": [
+            "tomo3-42",
+            "tomo4-66",
+            "tomo4-1",
+            "tomo4-83",
+            "tomo2-243"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 0.8
+        },
+        {
+          "id": "q16",
+          "query": "ventajas de tener una columna abierta para las torres",
+          "categoria": "estrategia",
+          "relevance": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "retrieved_ids": [
+            "tomo4-102",
+            "tomo4-139",
+            "tomo1-81",
+            "tomo4-123",
+            "tomo4-28"
+          ],
+          "hit_rate": 0.0,
+          "mrr": 0.0,
+          "precision": 0.0
+        },
+        {
+          "id": "q17",
+          "query": "principios de finales de torre",
+          "categoria": "final",
+          "relevance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "retrieved_ids": [
+            "tomo4-128",
+            "tomo1-47",
+            "tomo4-114",
+            "tomo4-133",
+            "tomo4-144"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 1.0
+        },
+        {
+          "id": "q18",
+          "query": "alfiles de distinto color en el final",
+          "categoria": "final",
+          "relevance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "retrieved_ids": [
+            "tomo4-33",
+            "tomo4-69",
+            "tomo4-46",
+            "tomo2-138",
+            "tomo4-13"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 1.0
+        },
+        {
+          "id": "q19",
+          "query": "ideas estratégicas de la defensa siciliana",
+          "categoria": "apertura",
+          "relevance": [
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "retrieved_ids": [
+            "tomo2-204",
+            "tomo4-45",
+            "tomo2-153",
+            "tomo4-28",
+            "tomo2-240"
+          ],
+          "hit_rate": 0.0,
+          "mrr": 0.0,
+          "precision": 0.0
+        },
+        {
+          "id": "q20",
+          "query": "planteo de la apertura española o ruy lópez",
+          "categoria": "apertura",
+          "relevance": [
+            true,
+            false,
+            false,
+            false,
+            false
+          ],
+          "retrieved_ids": [
+            "tomo4-79",
+            "tomo2-139",
+            "tomo2-116",
+            "tomo1-59",
+            "tomo1-87"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 0.2
+        },
+        {
+          "id": "q21",
+          "query": "estructuras del gambito de dama",
+          "categoria": "apertura",
+          "relevance": [
+            false,
+            false,
+            true,
+            false,
+            false
+          ],
+          "retrieved_ids": [
+            "tomo4-57",
+            "tomo2-10",
+            "tomo2-140",
+            "tomo1-92",
+            "tomo1-95"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 0.3333333333333333,
+          "precision": 0.2
+        },
+        {
+          "id": "q22",
+          "query": "qué es la pareja de alfiles y qué ventaja da",
+          "categoria": "concepto_pedagogico",
+          "relevance": [
+            true,
+            false,
+            false,
+            false,
+            false
+          ],
+          "retrieved_ids": [
+            "tomo4-41",
+            "tomo2-224",
+            "tomo4-36",
+            "tomo4-19",
+            "tomo2-116"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 0.2
+        },
+        {
+          "id": "q23",
+          "query": "el caballo en una casilla fuerte o avanzada",
+          "categoria": "concepto_pedagogico",
+          "relevance": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "retrieved_ids": [
+            "tomo4-72",
+            "tomo3-43",
+            "tomo4-11",
+            "tomo4-21",
+            "tomo4-33"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 1.0
+        },
+        {
+          "id": "q24",
+          "query": "partidas de Tarrasch",
+          "categoria": "jugador_historico",
+          "relevance": [
+            true,
+            true,
+            true,
+            false,
+            false
+          ],
+          "retrieved_ids": [
+            "tomo3-7",
+            "tomo3-66",
+            "tomo4-75",
+            "tomo4-143",
+            "tomo3-109"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 1.0,
+          "precision": 0.6
+        },
+        {
+          "id": "q25",
+          "query": "partidas de Steinitz, el primer campeón mundial",
+          "categoria": "jugador_historico",
+          "relevance": [
+            false,
+            true,
+            false,
+            false,
+            true
+          ],
+          "retrieved_ids": [
+            "tomo4-75",
+            "tomo1-61",
+            "tomo2-248",
+            "tomo2-245",
+            "tomo4-43"
+          ],
+          "hit_rate": 1.0,
+          "mrr": 0.5,
+          "precision": 0.4
         }
       ],
-      "hit_rate": 1.0,
-      "mrr": 0.8916666666666667,
-      "precision": 0.7666666666666667
+      "hit_rate": 0.8,
+      "mrr": 0.7033333333333334,
+      "precision": 0.568
     }
   ]
 }

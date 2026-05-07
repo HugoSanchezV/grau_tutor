@@ -1,0 +1,128 @@
+{
+  "version": "1.0",
+  "description": "Dataset para evaluar faithfulness del agente: la respuesta debe (a) usar search_grau, (b) citar una fuente del corpus, (c) mencionar conceptos clave del corpus para esa pregunta. Las preguntas 'out_of_scope' validan abstención correcta.",
+  "queries": [
+    {
+      "id": "f01",
+      "tipo": "concepto",
+      "query": "¿Qué es un peón pasado?",
+      "must_use_search": true,
+      "must_cite_source": true,
+      "must_mention_any": ["peón pasado", "pasado", "promoción", "avanza"]
+    },
+    {
+      "id": "f02",
+      "tipo": "concepto",
+      "query": "Explícame qué es la clavada.",
+      "must_use_search": true,
+      "must_cite_source": true,
+      "must_mention_any": ["clavada", "clavar", "rey", "pieza"]
+    },
+    {
+      "id": "f03",
+      "tipo": "concepto",
+      "query": "¿Qué desventaja tiene tener peones doblados?",
+      "must_use_search": true,
+      "must_cite_source": true,
+      "must_mention_any": ["doblado", "debilidad", "estructura", "columna"]
+    },
+    {
+      "id": "f04",
+      "tipo": "final",
+      "query": "Cuéntame sobre la oposición en finales de rey y peón.",
+      "must_use_search": true,
+      "must_cite_source": true,
+      "must_mention_any": ["oposición", "rey", "casilla", "zugzwang"]
+    },
+    {
+      "id": "f05",
+      "tipo": "concepto",
+      "query": "¿Por qué es importante el peón aislado?",
+      "must_use_search": true,
+      "must_cite_source": true,
+      "must_mention_any": ["aislado", "debilidad", "casilla", "defensa"]
+    },
+    {
+      "id": "f06",
+      "tipo": "estrategia",
+      "query": "Háblame del control del centro en la apertura.",
+      "must_use_search": true,
+      "must_cite_source": true,
+      "must_mention_any": ["centro", "central", "peón", "espacio"]
+    },
+    {
+      "id": "f07",
+      "tipo": "tactica",
+      "query": "¿Qué es un sacrificio de calidad y cuándo conviene?",
+      "must_use_search": true,
+      "must_cite_source": true,
+      "must_mention_any": ["sacrificio", "calidad", "torre", "alfil", "caballo"]
+    },
+    {
+      "id": "f08",
+      "tipo": "tactica",
+      "query": "Dame un ejemplo de combinación que termine en mate.",
+      "must_use_search": true,
+      "must_cite_source": true,
+      "must_mention_any": ["combinación", "mate", "sacrificio", "ataque"]
+    },
+    {
+      "id": "f09",
+      "tipo": "jugador",
+      "query": "Muéstrame una partida comentada de Capablanca.",
+      "must_use_search": true,
+      "must_cite_source": true,
+      "must_mention_any": ["capablanca"]
+    },
+    {
+      "id": "f10",
+      "tipo": "concepto",
+      "query": "¿Qué ventaja da la pareja de alfiles?",
+      "must_use_search": true,
+      "must_cite_source": true,
+      "must_mention_any": ["alfil", "pareja", "diagonales", "abierta"]
+    },
+    {
+      "id": "f11",
+      "tipo": "final",
+      "query": "Dame una idea sobre finales de torre.",
+      "must_use_search": true,
+      "must_cite_source": true,
+      "must_mention_any": ["torre", "final", "rey", "peón"]
+    },
+    {
+      "id": "f12",
+      "tipo": "out_of_scope",
+      "query": "¿Cuál es la receta para hacer pizza margarita?",
+      "must_use_search": false,
+      "must_cite_source": false,
+      "must_mention_any": ["ajedrez", "no puedo", "no sé", "fuera del alcance", "tutor"],
+      "must_abstain": true
+    },
+    {
+      "id": "f13",
+      "tipo": "out_of_scope",
+      "query": "¿Cuántos planetas tiene el sistema solar?",
+      "must_use_search": false,
+      "must_cite_source": false,
+      "must_mention_any": ["ajedrez", "no puedo", "no sé", "fuera del alcance", "tutor"],
+      "must_abstain": true
+    },
+    {
+      "id": "f14",
+      "tipo": "concepto",
+      "query": "Explica el concepto de columnas abiertas y por qué son importantes.",
+      "must_use_search": true,
+      "must_cite_source": true,
+      "must_mention_any": ["columna", "torre", "abierta", "dominar"]
+    },
+    {
+      "id": "f15",
+      "tipo": "concepto",
+      "query": "¿Qué es un caballo bien colocado o en casilla fuerte?",
+      "must_use_search": true,
+      "must_cite_source": true,
+      "must_mention_any": ["caballo", "casilla", "central", "outpost", "fuerte"]
+    }
+  ]
+}

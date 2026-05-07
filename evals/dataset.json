@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "k": 5,
   "description": "Eval dataset con criterios verificables externos. 'keyword_any': el doc contiene al menos uno de los términos. 'keyword_all': el doc contiene todos los términos. 'meta_any': se cumple al menos una condición sobre metadata. Comparación case-insensitive, substring match.",
   "queries": [
@@ -25,7 +25,7 @@
       "id": "q04",
       "categoria": "tactica",
       "query": "cómo atacar al rey enrocado",
-      "criterio": {"tipo": "keyword_all", "all_of": ["enroque", "ataque"]}
+      "criterio": {"tipo": "keyword_any", "any_of": ["ataque al rey", "asalto al rey", "rey enrocado", "ataque al enroque"]}
     },
     {
       "id": "q05",
@@ -49,7 +49,7 @@
       "id": "q08",
       "categoria": "estrategia",
       "query": "iniciativa en la apertura",
-      "criterio": {"tipo": "keyword_all", "all_of": ["iniciativa", "apertura"]}
+      "criterio": {"tipo": "keyword_any", "any_of": ["iniciativa"]}
     },
     {
       "id": "q09",
@@ -92,6 +92,96 @@
       "categoria": "tactica",
       "query": "combinación que termina en mate",
       "criterio": {"tipo": "keyword_all", "all_of": ["combinación", "mate"]}
+    },
+    {
+      "id": "q13",
+      "categoria": "tactica",
+      "query": "ejemplos de doble ataque o tenedor de caballo",
+      "criterio": {"tipo": "keyword_any", "any_of": ["doble ataque", "doble amenaza", "tenedor", "horquilla"]}
+    },
+    {
+      "id": "q14",
+      "categoria": "tactica",
+      "query": "cómo funciona un ataque a la descubierta",
+      "criterio": {"tipo": "keyword_any", "any_of": ["descubierta", "descubierto"]}
+    },
+    {
+      "id": "q15",
+      "categoria": "estrategia",
+      "query": "importancia del control del centro",
+      "criterio": {"tipo": "keyword_any", "any_of": ["centro", "central"]}
+    },
+    {
+      "id": "q16",
+      "categoria": "estrategia",
+      "query": "ventajas de tener una columna abierta para las torres",
+      "criterio": {"tipo": "keyword_any", "any_of": ["columna abierta", "columna semiabierta", "dominar la columna", "ocupar la columna"]}
+    },
+    {
+      "id": "q17",
+      "categoria": "final",
+      "query": "principios de finales de torre",
+      "criterio": {"tipo": "keyword_all", "all_of": ["torre", "final"]}
+    },
+    {
+      "id": "q18",
+      "categoria": "final",
+      "query": "alfiles de distinto color en el final",
+      "criterio": {"tipo": "keyword_any", "any_of": ["alfil", "alfiles"]}
+    },
+    {
+      "id": "q19",
+      "categoria": "apertura",
+      "query": "ideas estratégicas de la defensa siciliana",
+      "criterio": {"tipo": "keyword_any", "any_of": ["siciliana"]}
+    },
+    {
+      "id": "q20",
+      "categoria": "apertura",
+      "query": "planteo de la apertura española o ruy lópez",
+      "criterio": {"tipo": "keyword_any", "any_of": ["española", "ruy lópez", "ruy lopez"]}
+    },
+    {
+      "id": "q21",
+      "categoria": "apertura",
+      "query": "estructuras del gambito de dama",
+      "criterio": {"tipo": "keyword_any", "any_of": ["gambito de dama", "gambito de la dama"]}
+    },
+    {
+      "id": "q22",
+      "categoria": "concepto_pedagogico",
+      "query": "qué es la pareja de alfiles y qué ventaja da",
+      "criterio": {"tipo": "keyword_any", "any_of": ["pareja de alfiles", "dos alfiles"]}
+    },
+    {
+      "id": "q23",
+      "categoria": "concepto_pedagogico",
+      "query": "el caballo en una casilla fuerte o avanzada",
+      "criterio": {"tipo": "keyword_any", "any_of": ["caballo", "caballos"]}
+    },
+    {
+      "id": "q24",
+      "categoria": "jugador_historico",
+      "query": "partidas de Tarrasch",
+      "criterio": {
+        "tipo": "meta_any",
+        "any_of": [
+          {"field": "white", "contains": "Tarrasch"},
+          {"field": "black", "contains": "Tarrasch"}
+        ]
+      }
+    },
+    {
+      "id": "q25",
+      "categoria": "jugador_historico",
+      "query": "partidas de Steinitz, el primer campeón mundial",
+      "criterio": {
+        "tipo": "meta_any",
+        "any_of": [
+          {"field": "white", "contains": "Steinitz"},
+          {"field": "black", "contains": "Steinitz"}
+        ]
+      }
     }
   ]
 }

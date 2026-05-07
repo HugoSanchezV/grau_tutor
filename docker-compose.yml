@@ -21,6 +21,7 @@ services:
       - ./graph:/app/graph
       - ./memory:/app/memory
       - ./contracts:/app/contracts
+      - ./evals:/app/evals
     depends_on:
       - chromadb
 

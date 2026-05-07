@@ -1,0 +1,171 @@
+{
+  "generation": [
+    {
+      "tema": "clavada",
+      "generated": true,
+      "fen_valid": true,
+      "has_expected_move": true,
+      "comentario_present": true,
+      "fen": "r1r1k3/pp1qn2p/5pp1/6N1/6Q1/8/PP3PPP/2R1R1K1 w q - 0 1",
+      "expected_move": "Rxe7+",
+      "partida_id": "tomo2-219",
+      "tomo": 2
+    },
+    {
+      "tema": "peón pasado",
+      "generated": true,
+      "fen_valid": true,
+      "has_expected_move": true,
+      "comentario_present": true,
+      "fen": "1r4k1/1r2q3/4p3/pn1p1p2/b1pP1Pp1/2P1P1P1/PRNQB2P/1R4K1 w - - 0 0",
+      "expected_move": "e4",
+      "partida_id": "tomo3-45",
+      "tomo": 3
+    },
+    {
+      "tema": "ataque al rey",
+      "generated": true,
+      "fen_valid": true,
+      "has_expected_move": true,
+      "comentario_present": true,
+      "fen": "8/8/r5kP/6P1/1R3K2/8/8/8 w - - 0 1",
+      "expected_move": "Rb8",
+      "partida_id": "tomo4-140",
+      "tomo": 4
+    },
+    {
+      "tema": "sacrificio",
+      "generated": true,
+      "fen_valid": true,
+      "has_expected_move": true,
+      "comentario_present": true,
+      "fen": "4k2r/1p1bb2p/p3pp2/3p4/2r2P2/2N3Pq/PPP1QB1P/R3R1K1 b k - 0 1",
+      "expected_move": "Qxg3+",
+      "partida_id": "tomo1-25",
+      "tomo": 1
+    },
+    {
+      "tema": "oposición",
+      "generated": true,
+      "fen_valid": true,
+      "has_expected_move": true,
+      "comentario_present": true,
+      "fen": "7k/3b4/1p5P/2p3K1/3pp1P1/1P2p3/P1P1B3/8 b - - 0 1",
+      "expected_move": "Bxg4",
+      "partida_id": "tomo2-230",
+      "tomo": 2
+    }
+  ],
+  "correctness": [
+    {
+      "id": "ex01",
+      "partida_id": "tomo1-13",
+      "tipo": "mate_combinacion",
+      "expected_move": "Rg6",
+      "marca_correcta": true,
+      "detecta_ilegal": true,
+      "alt_move": "Rh8",
+      "alt_legal": true,
+      "alt_alternativa_valida": true
+    },
+    {
+      "id": "ex02",
+      "partida_id": "tomo1-14",
+      "tipo": "preparacion_mate",
+      "expected_move": "f4",
+      "marca_correcta": true,
+      "detecta_ilegal": true,
+      "alt_move": "Qe8",
+      "alt_legal": true,
+      "alt_alternativa_valida": false
+    },
+    {
+      "id": "ex03",
+      "partida_id": "tomo1-26",
+      "tipo": "sacrificio_caballo",
+      "expected_move": "Ng3",
+      "marca_correcta": true,
+      "detecta_ilegal": true,
+      "alt_move": "Ng5",
+      "alt_legal": true,
+      "alt_alternativa_valida": true
+    },
+    {
+      "id": "ex04",
+      "partida_id": "tomo1-30",
+      "tipo": "mate_red",
+      "expected_move": "Rac1",
+      "marca_correcta": true,
+      "detecta_ilegal": true,
+      "alt_move": "Qe8",
+      "alt_legal": true,
+      "alt_alternativa_valida": false
+    },
+    {
+      "id": "ex05",
+      "partida_id": "tomo1-37",
+      "tipo": "estudio_final",
+      "expected_move": "c7",
+      "marca_correcta": true,
+      "detecta_ilegal": true,
+      "alt_move": "Kc7",
+      "alt_legal": true,
+      "alt_alternativa_valida": true
+    },
+    {
+      "id": "ex06",
+      "partida_id": "tomo1-38",
+      "tipo": "subpromocion",
+      "expected_move": "c8=N+",
+      "marca_correcta": true,
+      "detecta_ilegal": true,
+      "alt_move": "Qf8+",
+      "alt_legal": true,
+      "alt_alternativa_valida": true
+    },
+    {
+      "id": "ex07",
+      "partida_id": "tomo1-12",
+      "tipo": "ataque_inicial",
+      "expected_move": "Qh5+",
+      "marca_correcta": true,
+      "detecta_ilegal": true,
+      "alt_move": "Nf7",
+      "alt_legal": true,
+      "alt_alternativa_valida": false
+    },
+    {
+      "id": "ex08",
+      "partida_id": "tomo1-16",
+      "tipo": "preparacion_lenta",
+      "expected_move": "a4",
+      "marca_correcta": true,
+      "detecta_ilegal": true,
+      "alt_move": "Bg8",
+      "alt_legal": true,
+      "alt_alternativa_valida": false
+    },
+    {
+      "id": "ex09",
+      "partida_id": "tomo1-29",
+      "tipo": "defensa_activa",
+      "expected_move": "Qd2",
+      "marca_correcta": true,
+      "detecta_ilegal": true,
+      "alt_move": "Bc4",
+      "alt_legal": true,
+      "alt_alternativa_valida": false
+    },
+    {
+      "id": "ex10",
+      "partida_id": "tomo1-31",
+      "tipo": "sacrificio_dama",
+      "expected_move": "Qf5",
+      "marca_correcta": true,
+      "detecta_ilegal": true,
+      "alt_move": "Ba8",
+      "alt_legal": true,
+      "alt_alternativa_valida": false
+    }
+  ]
+}

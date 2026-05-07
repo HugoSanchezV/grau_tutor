@@ -1,0 +1,93 @@
+{
+  "version": "1.0",
+  "description": "Dataset de FENs reales del corpus + jugada esperada (ground truth = primera jugada del análisis de Grau). Permite evaluar el motor de evaluate_answer y la tasa de generación válida de generate_exercise.",
+  "exercises": [
+    {
+      "id": "ex01",
+      "partida_id": "tomo1-13",
+      "fen": "k5r1/6r1/2NP3R/pRPp4/P4p2/4p3/4P3/n4K2 w - - 0 1",
+      "expected_move": "Rg6",
+      "tipo": "mate_combinacion",
+      "comentario": "Sacrificio de torre que conduce a mate en 4."
+    },
+    {
+      "id": "ex02",
+      "partida_id": "tomo1-14",
+      "fen": "3q1r1k/p5pp/3p1p2/4n2Q/7B/7P/4RPPK/8 w - - 0 1",
+      "expected_move": "f4",
+      "tipo": "preparacion_mate",
+      "comentario": "Avance de peón que prepara mate en 4."
+    },
+    {
+      "id": "ex03",
+      "partida_id": "tomo1-26",
+      "fen": "r1b2k1r/ppq2p2/2nb3p/2pn4/3P1p2/2PB1N2/PP1QN1PP/R1B1R1K1 w - - 0 1",
+      "expected_move": "Ng3",
+      "tipo": "sacrificio_caballo",
+      "comentario": "Sacrificio de caballo que abre la posición del rey negro."
+    },
+    {
+      "id": "ex04",
+      "partida_id": "tomo1-30",
+      "fen": "r1bq3r/ppp1n1pp/1b6/4P2Q/3k4/6P1/P4P1P/R3R1K1 w - - 0 1",
+      "expected_move": "Rac1",
+      "tipo": "mate_red",
+      "comentario": "Chigorin vs Gunsberg — incorporación de torre para tejer red de mate."
+    },
+    {
+      "id": "ex05",
+      "partida_id": "tomo1-37",
+      "fen": "8/8/1KP5/3r4/8/8/8/k7 w - - 0 1",
+      "expected_move": "c7",
+      "tipo": "estudio_final",
+      "comentario": "Estudio Barbier/Saavedra — peón corona pero hay sutileza con subpromoción."
+    },
+    {
+      "id": "ex06",
+      "partida_id": "tomo1-38",
+      "fen": "8/2P1k3/8/5Q2/8/3pp3/4rp2/3K4 w - - 0 1",
+      "expected_move": "c8=N+",
+      "tipo": "subpromocion",
+      "comentario": "Subpromoción a caballo con jaque (no a dama) — clave del estudio."
+    },
+    {
+      "id": "ex07",
+      "partida_id": "tomo1-12",
+      "fen": "rnbqkb1r/pppp2pp/5p2/2n1N3/2B5/2N5/PPPP1PPP/R1BQK2R w KQkq - 0 1",
+      "expected_move": "Qh5+",
+      "tipo": "ataque_inicial",
+      "comentario": "Jaque inicial que rompe el desarrollo negro."
+    },
+    {
+      "id": "ex08",
+      "partida_id": "tomo1-16",
+      "fen": "4b3/pkb4q/1pp1Bp2/4pPp1/4P2r/2PQB3/PP6/2KR4 w - - 0 1",
+      "expected_move": "a4",
+      "tipo": "preparacion_lenta",
+      "comentario": "Jacobson vs Von Henning — preparación lenta que culmina en mate."
+    },
+    {
+      "id": "ex09",
+      "partida_id": "tomo1-29",
+      "fen": "4kb2/8/1p1p4/1P1Pp3/4P1np/2rB2q1/2Q5/5R1K w - - 0 2",
+      "expected_move": "Qd2",
+      "tipo": "defensa_activa",
+      "comentario": "Blackburne vs Winawer — reina centraliza para defensa y contraataque."
+    },
+    {
+      "id": "ex10",
+      "partida_id": "tomo1-31",
+      "fen": "3r2k1/p4ppp/5P2/qp2b3/2pr4/P1N2B2/1PQ2PPP/5RK1 w - - 0 1",
+      "expected_move": "Qf5",
+      "tipo": "sacrificio_dama",
+      "comentario": "Reina se ofrece para abrir línea de mate."
+    }
+  ],
+  "themes_for_generation": [
+    "clavada",
+    "peón pasado",
+    "ataque al rey",
+    "sacrificio",
+    "oposición"
+  ]
+}
