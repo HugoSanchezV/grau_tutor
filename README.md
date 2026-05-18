@@ -189,13 +189,13 @@ Para la misma consulta, el panel "Cadena de Pensamiento" muestra la herramienta 
 
 ### Ejercicio generado desde el corpus
 
-Al pedir un ejercicio, el grafo entra en flujo Evaluador: recupera una posición real del corpus (Tomo 3, tema "sobrecarga de piezas"), arma el ejercicio con FEN y comentario pedagógico, y renderiza el tablero SVG en el panel lateral.
+Al pedir un ejercicio, el grafo entra en flujo Evaluador: recupera una posición real del corpus (Tomo 2, tema "ataque doble"), arma el ejercicio con FEN y comentario pedagógico, y renderiza el tablero SVG en el panel lateral.
 
 ![Ejercicio generado](docs/screenshots/03-exercise.png)
 
 ### Evaluación de la respuesta del alumno
 
-El alumno responde con su jugada (`a6+`). El Evaluador valida con `python-chess`, compara contra la jugada esperada de Grau, da retroalimentación y actualiza el progreso (40 consultas, 6 ejercicios, 17% aciertos visibles en el panel).
+El alumno responde con su jugada (`Kb6+`). El Evaluador valida con `python-chess`, compara contra la jugada esperada de Grau, da retroalimentación, actualiza el progreso y lanza el HITL.
 
 ![Evaluación de jugada](docs/screenshots/04-hitl.png)
 
