@@ -22,30 +22,6 @@ class GrauRetriever:
         self.n_candidates = n_candidates
         self.bm25_index = load_bm25_index(bm25_index_path or settings.bm25_index_path)
 
-        # Startup consistency check: verificar que BM25 e ChromaDB estén sincronizados
-        if self.bm25_index:
-            self._check_bm25_chroma_sync()
-
-    def _check_bm25_chroma_sync(self) -> None:
-        """Verifica que el índice BM25 está sincronizado con ChromaDB al arrancar."""
-        if not self.bm25_index:
-            return
-
-        sample_size = min(10, len(self.bm25_index.get("ids", [])))
-        if sample_size == 0:
-            return
-
-        sample_ids = self.bm25_index["ids"][:sample_size]
-        existing = self.collection.get(ids=sample_ids, include=[])
-        existing_ids = set(existing.get("ids", []))
-        missing = [id_ for id_ in sample_ids if id_ not in existing_ids]
-
-        if missing:
-            logger.warning(
-                f"BM25/ChromaDB desincronización detectada al arrancar: {len(missing)}/{sample_size} "
-                f"IDs del sample no existen en ChromaDB. Ejecuta: python rag/pipeline.py --rebuild-bm25"
-            )
-
     def _hybrid_retrieve(self, question: str, top_n: int, where: dict | None = None) -> list[dict]:
         query_emb = embed_query(question)
         dense_res = query_collection(
@@ -69,27 +45,11 @@ class GrauRetriever:
             sparse_hits = bm25_search(self.bm25_index, question, n=self.n_candidates)
             sparse_ids = [id_ for id_, _ in sparse_hits]
 
-            # Filtrar IDs de BM25 que no existen en ChromaDB ANTES de RRF
-            # para evitar asignarles ranks altos que luego se descartan
-            valid_sparse_ids = [id_ for id_ in sparse_ids if id_ in by_id]
-            stale_count = len(sparse_ids) - len(valid_sparse_ids)
-            if stale_count > 0:
-                stale_ratio = stale_count / len(sparse_ids) if sparse_ids else 0
-                if stale_ratio > 0.05:  # > 5% de stale IDs = error
-                    logger.error(
-                        f"BM25 índice desincronizado: {stale_count}/{len(sparse_ids)} IDs "
-                        f"({stale_ratio*100:.1f}%) no existen en ChromaDB. "
-                        f"Ejecuta: python rag/pipeline.py --rebuild-bm25"
-                    )
-                else:
-                    logger.warning(
-                        f"BM25 tiene {stale_count} IDs stale (ratio={stale_ratio*100:.1f}%)"
-                    )
-
-            fused_ids = rrf_fuse([dense_ids, valid_sparse_ids], top_n=top_n)
+            fused_ids = rrf_fuse([dense_ids, sparse_ids], top_n=top_n)
+            overlap = sum(1 for id_ in sparse_ids if id_ in by_id)
             logger.info(
-                f"Híbrido — dense: {len(dense_ids)} | bm25 válidos: {len(valid_sparse_ids)} "
-                f"({stale_count} stale) | fusionados (top {top_n}): {len(fused_ids)}"
+                f"Híbrido — dense: {len(dense_ids)} | bm25: {len(sparse_ids)} "
+                f"(overlap con dense: {overlap}) | fusionados (top {top_n}): {len(fused_ids)}"
             )
         else:
             fused_ids = dense_ids[:top_n]

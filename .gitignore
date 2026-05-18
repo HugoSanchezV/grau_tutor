@@ -19,4 +19,5 @@ db/
 .DS_Store
 Thumbs.db
 
-*.md
+# Prompts internos (no forman parte del repo público)
+docs/prompt_documentacion_tecnica.md

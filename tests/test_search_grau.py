@@ -52,6 +52,23 @@ def _retriever_with(items: list[dict]) -> MagicMock:
     return mock
 
 
+def _retriever_respecting_where(items: list[dict]) -> MagicMock:
+    """Mock que aplica el filtro `where={"tomo": N}` igual que ChromaDB.
+
+    Necesario porque el filtro `tomo` ahora se delega al motor vectorial
+    (predicate push-down), no se hace post-filtro en Python.
+    """
+    mock = MagicMock()
+
+    def _fake_retrieve(query, n_results=5, where=None):
+        if where and "tomo" in where:
+            return [it for it in items if it["meta"]["tomo"] == where["tomo"]]
+        return items
+
+    mock.retrieve_raw.side_effect = _fake_retrieve
+    return mock
+
+
 # ---------- ChunkResult ----------
 
 
@@ -93,10 +110,14 @@ def test_search_grau_filtra_por_tomo():
         _make_item("tomo2-2", tomo=2, tema="Estrategia"),
         _make_item("tomo3-1", tomo=3, tema="Medio juego"),
     ]
-    retriever = _retriever_with(items)
+    # El filtro tomo se delega a ChromaDB vía where; el mock lo emula.
+    retriever = _retriever_respecting_where(items)
     out = search_grau(retriever, query="peones", k=5, tomo=2)
     assert len(out) == 2
     assert all(c.tomo == 2 for c in out)
+    # Verificamos que el filtro viajó como where, no se hizo post-filtro Python
+    call_kwargs = retriever.retrieve_raw.call_args.kwargs
+    assert call_kwargs.get("where") == {"tomo": 2}
 
 
 def test_search_grau_filtra_por_tema_case_insensitive():
@@ -110,13 +131,23 @@ def test_search_grau_filtra_por_tema_case_insensitive():
     assert out[0].tomo == 2
 
 
-def test_search_grau_con_filtros_amplia_el_pool():
-    """Cuando hay filtros, debe pedir más candidatos al retriever (pool = k * 4)."""
-    items = [_make_item(f"tomo2-{i}", tomo=2) for i in range(20)]
+def test_search_grau_filtro_tema_amplia_el_pool():
+    """Filtro por tema (post-filtro Python) infla el pool a k*4 para compensar."""
+    items = [_make_item(f"tomo2-{i}", tomo=2, tema="Estrategia") for i in range(20)]
     retriever = _retriever_with(items)
-    search_grau(retriever, query="x", k=5, tomo=2)
+    search_grau(retriever, query="x", k=5, tema="Estrategia")
     call_kwargs = retriever.retrieve_raw.call_args.kwargs
     assert call_kwargs.get("n_results") == 20
+
+
+def test_search_grau_filtro_tomo_no_amplia_el_pool():
+    """Filtro por tomo se delega a ChromaDB (where), no requiere inflar el pool."""
+    items = [_make_item(f"tomo2-{i}", tomo=2) for i in range(5)]
+    retriever = _retriever_respecting_where(items)
+    search_grau(retriever, query="x", k=5, tomo=2)
+    call_kwargs = retriever.retrieve_raw.call_args.kwargs
+    assert call_kwargs.get("n_results") == 5
+    assert call_kwargs.get("where") == {"tomo": 2}
 
 
 def test_search_grau_sin_filtros_no_amplia_el_pool():
@@ -129,7 +160,7 @@ def test_search_grau_sin_filtros_no_amplia_el_pool():
 
 def test_search_grau_devuelve_vacio_si_filtro_no_matchea():
     items = [_make_item("tomo2-1", tomo=2)]
-    retriever = _retriever_with(items)
+    retriever = _retriever_respecting_where(items)  # ChromaDB filtra por where
     out = search_grau(retriever, query="x", k=5, tomo=4)
     assert out == []
 
@@ -150,10 +181,11 @@ def test_format_incluye_metadata_clave():
     assert "Tomo 2" in out
     assert "Capablanca" in out
     assert "ECO C60" in out
-    assert "id=tomo2-1" in out
+    # Formato actual: "ID: <partida_id>" en línea separada (era "id=...")
+    assert "ID: tomo2-1" in out
     assert "FEN:" in out
-    assert "Jugadas:" in out
-    assert "sim=0.82" in out
+    # Las jugadas ahora se etiquetan como "Movimientos:"
+    assert "Movimientos:" in out
 
 
 def test_format_sin_fen_no_muestra_linea_fen():
@@ -201,7 +233,7 @@ def test_build_tool_invocacion_devuelve_string():
 
 def test_build_tool_pasa_filtros_al_retriever():
     items = [_make_item("tomo2-1", tomo=2), _make_item("tomo4-1", tomo=4)]
-    retriever = _retriever_with(items)
+    retriever = _retriever_respecting_where(items)  # filtro tomo viaja por where
     tool = build_search_grau_tool(retriever)
     result = tool.invoke({"query": "x", "k": 5, "tomo": 4})
     assert "tomo4-1" in result

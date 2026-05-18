@@ -140,7 +140,9 @@ def test_grau_agent_construye_con_llm_inyectado(mock_create):
     mock_create.assert_called_once()
     kwargs = mock_create.call_args.kwargs
     assert kwargs["prompt"] == SYSTEM_PROMPT
-    assert kwargs["checkpointer"] is agent.checkpointer
+    # Fix #1 (auditoría): el agente es stateless por defecto. La persistencia
+    # la maneja el grafo externo (TutorGraph), no el agente.
+    assert kwargs["checkpointer"] is None
 
 
 @patch("agents.react_agent.create_react_agent")
@@ -210,11 +212,26 @@ def test_grau_agent_stream_yield_chunks(mock_create):
 
 
 @patch("agents.react_agent.create_react_agent")
-def test_grau_agent_memoria_entre_turnos_mismo_thread(mock_create):
-    """El agente pasa SIEMPRE el mismo checkpointer al grafo: LangGraph se ocupa del resto."""
+def test_grau_agent_stateful_inicializa_checkpointer(mock_create):
+    """En modo stateful (uso standalone), el agente sí construye su propio checkpointer."""
     mock_create.return_value = MagicMock()
-    agent = GrauAgent(retriever=_retriever(), llm=MagicMock())
-    assert mock_create.call_args.kwargs["checkpointer"] is agent.checkpointer
+    with patch("agents.react_agent.make_checkpointer") as mock_ckpt:
+        sentinel = MagicMock()
+        mock_ckpt.return_value = sentinel
+        GrauAgent(retriever=_retriever(), llm=MagicMock(), stateless=False)
+    assert mock_create.call_args.kwargs["checkpointer"] is sentinel
+
+
+@patch("agents.react_agent.create_react_agent")
+def test_grau_agent_stateless_no_crea_checkpointer(mock_create):
+    """Fix #1: en modo stateless (default), el agente NO instancia checkpointer propio.
+    El grafo externo (TutorGraph) es la única fuente de verdad de la persistencia.
+    """
+    mock_create.return_value = MagicMock()
+    with patch("agents.react_agent.make_checkpointer") as mock_ckpt:
+        GrauAgent(retriever=_retriever(), llm=MagicMock())  # stateless=True por defecto
+    mock_ckpt.assert_not_called()
+    assert mock_create.call_args.kwargs["checkpointer"] is None
 
 
 # ---------- SYSTEM_PROMPT sanity ----------

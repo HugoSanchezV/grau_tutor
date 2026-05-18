@@ -9,7 +9,7 @@ class TutorState(TypedDict):
     messages: Annotated[list[BaseMessage], add_messages]
     thread_id: str                      # ID del hilo externo (sincroniza memoria del agente)
     student_id: str
-    mode: str                          # "tutor" | "evaluador"
+    mode: str                          # "tutor" | "evaluador" | "refusal"
     current_fen: Optional[str]         # FEN del ejercicio activo
     expected_move: Optional[str]       # Jugada correcta esperada (si existe)
     evaluation_reasoning: Optional[str]  # Texto del evaluador (para HITL)
@@ -17,3 +17,4 @@ class TutorState(TypedDict):
     hitl_decision: Optional[str]       # "acepto" | "disputo" (post-HITL)
     reasoning_trace: list[dict]        # Cadena de pensamiento para la UI
     progress_summary: str              # Resumen de progreso del alumno
+    refusal_reason: Optional[str]      # "injection" | "off_topic" cuando router rechaza

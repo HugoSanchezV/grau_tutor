@@ -61,6 +61,39 @@ st.session_state.setdefault("hitl_pending", False)
 st.session_state.setdefault("hitl_reasoning", None)
 st.session_state.setdefault("reasoning_trace", [])
 st.session_state.setdefault("search_k", graph.k_config.default_k)
+st.session_state.setdefault("preset_question", None)
+
+# ---------------------------------------------------------------------------
+# Preguntas de ejemplo por categoría
+# ---------------------------------------------------------------------------
+
+_PREGUNTAS_EJEMPLO: dict[str, list[str]] = {
+    "⚔️ Táctica": [
+        "¿Qué es una horquilla? Muéstrame un ejemplo.",
+        "Explícame qué es una clavada y cómo aprovecharla.",
+        "¿Qué es un ataque de rayos X en ajedrez?",
+        "¿Qué es una descoberta y cómo se ejecuta?",
+        "¿Qué significa 'sacrificio de material' y cuándo vale la pena?",
+    ],
+    "📖 Apertura": [
+        "¿Cuáles son los principios básicos de una buena apertura?",
+        "¿Qué apertura me recomiendas para principiantes?",
+        "¿Por qué es importante controlar el centro en la apertura?",
+        "¿Qué es el desarrollo de piezas y por qué es crucial al inicio?",
+    ],
+    "🏁 Final": [
+        "¿Cómo se gana un final de rey y peón contra rey?",
+        "¿Qué es la oposición de reyes y para qué sirve?",
+        "¿Cómo hago jaque mate con torre y rey?",
+        "¿Qué es un peón pasado y por qué es ventajoso?",
+    ],
+    "🧩 Ejercicio": [
+        "Dame un ejercicio táctico sencillo para principiantes.",
+        "Propónme un problema de mate en 2.",
+        "Quiero practicar finales de rey y peón. Dame una posición.",
+        "Dame una posición con una horquilla para que yo la encuentre.",
+    ],
+}
 
 thread_id: str = st.session_state["thread_id"]
 student_id: str = st.session_state["student_id"]
@@ -125,7 +158,27 @@ with col_side:
         st.rerun()
 
     with st.container(border=True):
-        st.markdown("### 🔍 Búsqueda")
+        st.markdown("### ♟️ Posición")
+        board_slot = st.empty()
+        if st.session_state["current_fen"]:
+            with board_slot.container():
+                render_board_panel(st.session_state["current_fen"])
+        else:
+            board_slot.info("No hay posición activa todavía.")
+
+    with st.expander("💡 Preguntas de ejemplo", expanded=True):
+        st.caption("¿No sabes qué preguntar? Elige una:")
+        categoria = st.selectbox(
+            "Categoría",
+            options=list(_PREGUNTAS_EJEMPLO.keys()),
+            label_visibility="collapsed",
+        )
+        for pregunta in _PREGUNTAS_EJEMPLO[categoria]:
+            if st.button(pregunta, use_container_width=True, key=f"preset_{pregunta}"):
+                st.session_state["preset_question"] = pregunta
+                st.rerun()
+
+    with st.expander("🔍 Búsqueda", expanded=False):
         st.slider(
             "Fuentes por consulta (k)",
             min_value=1,
@@ -137,21 +190,10 @@ with col_side:
             ),
         )
 
-    with st.container(border=True):
-        st.markdown("### ♟️ Posición")
-        board_slot = st.empty()
-        if st.session_state["current_fen"]:
-            with board_slot.container():
-                render_board_panel(st.session_state["current_fen"])
-        else:
-            board_slot.info("No hay posición activa todavía.")
-
-    with st.container(border=True):
-        st.markdown("### 📈 Progreso")
+    with st.expander("📈 Progreso", expanded=False):
         render_progress_panel(student_id)
 
-    with st.container(border=True):
-        st.markdown("### 🧠 Cadena de Pensamiento")
+    with st.expander("🧠 Cadena de Pensamiento", expanded=False):
         st.caption(f"Modelo: {os.getenv('LLM_MODEL', 'llama-3.3-70b-versatile')}")
         if st.session_state["reasoning_trace"]:
             _render_reasoning(st.session_state["reasoning_trace"])
@@ -160,7 +202,7 @@ with col_side:
 
 # ---- Panel de chat --------------------------------------------------------
 with col_chat:
-    chat_panel = st.container(border=True)
+    chat_panel = st.container(border=True, height=600)
     with chat_panel:
         for msg in st.session_state["messages"]:
             with st.chat_message(msg["role"]):
@@ -189,11 +231,16 @@ with col_chat:
             _apply_response(hitl_resp)
             st.rerun()
 
+    # --- Pregunta pre-cargada desde el selector de ejemplos ---
+    _preset = st.session_state.pop("preset_question", None)
+
     # --- Input del usuario ---
-    if prompt := st.chat_input(
+    _typed = st.chat_input(
         "Escribe tu duda, jugada o pide un ejercicio…",
         disabled=st.session_state["hitl_pending"],
-    ):
+    )
+    prompt = _preset or _typed
+    if prompt:
         st.session_state["messages"].append({"role": "user", "content": prompt})
 
         graph.k_config.default_k = int(st.session_state["search_k"])

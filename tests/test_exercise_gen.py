@@ -68,7 +68,8 @@ def test_generate_exercise_devuelve_ejercicio_con_fen():
     assert ej.partida_id == "tomo2-1"
     assert ej.turno == "blancas"
     assert "blancas" in ej.pregunta.lower()
-    assert ej.jugada_correcta is None
+    # _corpus_first_move extrae la primera jugada del corpus ("1.e4 e5...") como ground truth
+    assert ej.jugada_correcta == "e4"
     assert "Grau" in ej.comentario_grau or "pedagógico" in ej.comentario_grau
 
 
@@ -162,10 +163,22 @@ def test_evaluate_answer_correcta_normaliza_uci_a_san():
 
 
 def test_evaluate_answer_incorrecta_con_esperada():
-    ev = evaluate_answer(START_FEN, "e4", jugada_esperada="d4")
+    # Fix #4 (auditoría): jugadas tácticamente equivalentes ahora cuentan como correctas
+    # vía alternativa_valida. Para forzar correcta=False necesitamos jugadas con fortaleza
+    # claramente distinta (p.ej. mate-en-1 esperado vs jugada legal que no da mate).
+    ev = evaluate_answer(MATE_EN_1_FEN, "Qg5", jugada_esperada="Qg7")
     assert ev.legal is True
     assert ev.correcta is False
-    assert "esperada" in ev.feedback.lower()
+    assert ev.alternativa_valida is False
+    assert "esperada" in ev.feedback.lower() or "superior" in ev.feedback.lower()
+
+
+def test_evaluate_answer_alternativa_valida_con_esperada():
+    """Fix #4: jugadas tácticamente equivalentes (igual fortaleza) → alternativa_valida=True."""
+    ev = evaluate_answer(START_FEN, "e4", jugada_esperada="d4")
+    assert ev.legal is True
+    assert ev.alternativa_valida is True
+    assert ev.correcta is True  # alternativa válida cuenta como correcta
 
 
 def test_evaluate_answer_reporta_mate():

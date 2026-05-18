@@ -9,7 +9,7 @@ from langgraph.graph import END, START, StateGraph
 from agents.react_agent import GrauAgent
 from core.checkpointer import make_checkpointer
 from core.logging import get_logger
-from graph.nodes import evaluador_node, hitl_review_node, router_node, tutor_node
+from graph.nodes import evaluador_node, hitl_review_node, refusal_node, router_node, tutor_node
 from graph.state import TutorState
 from rag.retrieval import GrauRetriever
 
@@ -35,7 +35,10 @@ class GraphResponse:
 # ---------------------------------------------------------------------------
 
 def _route_from_router(state: TutorState) -> str:
-    return state.get("mode", "tutor")
+    mode = state.get("mode", "tutor")
+    if mode not in ("tutor", "evaluador", "refusal"):
+        return "tutor"
+    return mode
 
 
 def _route_from_evaluador(state: TutorState) -> str:
@@ -82,12 +85,13 @@ class TutorGraph:
         builder.add_node("tutor", _tutor)
         builder.add_node("evaluador", _evaluador)
         builder.add_node("hitl_review", hitl_review_node)
+        builder.add_node("refusal", refusal_node)
 
         builder.add_edge(START, "router")
         builder.add_conditional_edges(
             "router",
             _route_from_router,
-            {"tutor": "tutor", "evaluador": "evaluador"},
+            {"tutor": "tutor", "evaluador": "evaluador", "refusal": "refusal"},
         )
         builder.add_edge("tutor", END)
         builder.add_conditional_edges(
@@ -96,6 +100,7 @@ class TutorGraph:
             {"hitl_review": "hitl_review", END: END},
         )
         builder.add_edge("hitl_review", END)
+        builder.add_edge("refusal", END)
 
         return builder.compile(
             checkpointer=self.checkpointer,
@@ -163,6 +168,7 @@ class TutorGraph:
                 "hitl_decision": None,
                 "reasoning_trace": [],
                 "progress_summary": "",
+                "refusal_reason": None,
             }
 
         result = self._graph.invoke(input_data, config=config)

@@ -215,8 +215,11 @@ def test_tool_apply_reporta_mate():
 def test_tool_list_devuelve_csv():
     tools = {t.name: t for t in build_chess_engine_tools()}
     out = tools["list_legal_moves"].invoke({"fen": START_FEN})
-    assert "e4" in out and "Nf3" in out
-    assert out.count(",") >= 10  # hay 20 jugadas, al menos 10 comas
+    # El wrapper trunca a 15 jugadas para no inflar el contexto del LLM.
+    # Desde la posición inicial hay 20 → debe aparecer el sufijo "y 5 más".
+    assert "Nf3" in out
+    assert out.count(",") >= 10
+    assert "y 5 más" in out
 
 
 def test_tool_analyze_muestra_turno():
